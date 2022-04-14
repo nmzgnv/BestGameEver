@@ -77,8 +77,13 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 0
     compressionQuality: 0
+=======
+    textureCompression: 2
+    compressionQuality: 50
+>>>>>>> feature/player_hp
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
@@ -89,8 +94,13 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 0
     compressionQuality: 0
+=======
+    textureCompression: 2
+    compressionQuality: 50
+>>>>>>> feature/player_hp
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
@@ -101,8 +111,13 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 0
     compressionQuality: 0
+=======
+    textureCompression: 2
+    compressionQuality: 50
+>>>>>>> feature/player_hp
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
