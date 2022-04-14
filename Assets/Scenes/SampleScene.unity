@@ -385,8 +385,8 @@ GameObject:
   - component: {fileID: 1459847149}
   - component: {fileID: 1459847154}
   - component: {fileID: 1459847155}
-  - component: {fileID: 1459847156}
   - component: {fileID: 1459847157}
+  - component: {fileID: 1459847158}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -430,7 +430,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2857143, y: 0.25714287}
+    oldSize: {x: 1, y: 0.9}
     newSize: {x: 2, y: 1.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -538,7 +538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
-  animationController: {fileID: 1459847156}
+  runAnimationParameterName: Speed
 --- !u!114 &1459847155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,19 +552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 1459847154}
---- !u!114 &1459847156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1459847148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ad8b693514d7684d84343e9d436cae1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  runAnimationParameterName: Speed
+  attack: {fileID: 1459847158}
 --- !u!114 &1459847157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -577,7 +565,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32bb316364ccbb44d84a3fb644fe052b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement: {fileID: 1459847154}
+  mainCamera: {fileID: 519420031}
+--- !u!114 &1459847158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459847148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65c2fa59f87531f4880b05ea37c4b425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1923213356
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,20 +2,22 @@ using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator))]
 public class PhysicsMovement : MonoBehaviour
 {
     [SerializeField]
     private float speed;
 
-
     [SerializeField]
-    private PlayerAnimationController animationController;
+    private string runAnimationParameterName;
 
     private Rigidbody2D _rigidbody;
+    private Animator _animator;
 
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
     }
 
     public void Move(Vector2 direction)
@@ -26,7 +28,7 @@ public class PhysicsMovement : MonoBehaviour
         if (horizontalDirection != 0 && Math.Sign(transform.localScale.x) != Math.Sign(horizontalDirection))
             Flip();
 
-        animationController.SetSpeed(direction.magnitude);
+        _animator.SetFloat(runAnimationParameterName, direction.magnitude);
     }
 
 
