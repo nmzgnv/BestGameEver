@@ -14,6 +14,13 @@ public class Weapon : MonoBehaviour
     private float _elapsed;
     private float _rateOfFire;
 
+    public bool CanShoot { get; set; }
+
+    public Transform BulletSpawnPoint
+    {
+        get => bulletSpawnPoint;
+    }
+
     private void Start()
     {
         _rateOfFire = 1 / shotsPerSecond;
@@ -24,7 +31,7 @@ public class Weapon : MonoBehaviour
         _elapsed += Time.deltaTime;
 
 
-        if (_elapsed >= _rateOfFire)
+        if (_elapsed >= _rateOfFire && CanShoot)
         {
             _elapsed %= _rateOfFire;
             Instantiate(bullet, bulletSpawnPoint.position, transform.rotation);

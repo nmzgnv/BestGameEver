@@ -3,7 +3,7 @@ using UnityEngine;
 
 
 [RequireComponent(typeof(PhysicsMovement))]
-public class Fipper : MonoBehaviour
+public class Flipper : MonoBehaviour
 {
     private PhysicsMovement _physicsMovement;
 
