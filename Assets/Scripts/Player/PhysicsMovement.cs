@@ -2,14 +2,13 @@ using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(Animator))]
 public class PhysicsMovement : MonoBehaviour
 {
     [SerializeField]
     private float speed;
 
     [SerializeField]
-    private string runAnimationParameterName;
+    private string runAnimationParameterName = "Optional";
 
     private Rigidbody2D _rigidbody;
     private Animator _animator;
@@ -28,7 +27,8 @@ public class PhysicsMovement : MonoBehaviour
         if (horizontalDirection != 0 && Math.Sign(transform.localScale.x) != Math.Sign(horizontalDirection))
             Flip();
 
-        _animator.SetFloat(runAnimationParameterName, direction.magnitude);
+        if (_animator != null)
+            _animator.SetFloat(runAnimationParameterName, direction.magnitude);
     }
 
 
