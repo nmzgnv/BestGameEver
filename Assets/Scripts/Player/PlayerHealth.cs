@@ -25,6 +25,7 @@ public class PlayerHealth : MonoBehaviour
 
         curHealth--;
         lastDamageTime = Time.realtimeSinceStartup;
+        Debug.Log($"Remain {curHealth} HP");
 
         if (curHealth == 0)
             Die();
@@ -39,5 +40,12 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject);
+    }
+
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        var bullet = other.gameObject.GetComponent<Bullet>();
+        if (bullet)
+            ReceiveDamage();
     }
 }
