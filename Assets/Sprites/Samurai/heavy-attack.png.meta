@@ -35,6 +35,18 @@ TextureImporter:
   - first:
       213: -7107267831006331815
     second: heavy-attack_15
+  - first:
+      213: -7918690644763659864
+    second: heavy-attack_2
+  - first:
+      213: 1370240619378396468
+    second: heavy-attack_3
+  - first:
+      213: 9023972546218346255
+    second: heavy-attack_6
+  - first:
+      213: 2615559638096914866
+    second: heavy-attack_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -143,8 +155,8 @@ TextureImporter:
         y: 1
         width: 11
         height: 28
-      alignment: 9
-      pivot: {x: 0.8595253, y: 0.016020361}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -164,8 +176,8 @@ TextureImporter:
         y: 1
         width: 14
         height: 33
-      alignment: 9
-      pivot: {x: 0.89044625, y: 0.014571645}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,12 +193,12 @@ TextureImporter:
       name: heavy-attack_4
       rect:
         serializedVersion: 2
-        x: 184
+        x: 239
         y: 1
-        width: 14
+        width: 15
         height: 33
-      alignment: 9
-      pivot: {x: 0.890673, y: 0.020227997}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,12 +214,12 @@ TextureImporter:
       name: heavy-attack_5
       rect:
         serializedVersion: 2
-        x: 239
+        x: 297
         y: 1
-        width: 15
-        height: 33
-      alignment: 9
-      pivot: {x: 0.90322775, y: 0.01510662}
+        width: 38
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,12 +235,12 @@ TextureImporter:
       name: heavy-attack_7
       rect:
         serializedVersion: 2
-        x: 297
+        x: 413
         y: 1
-        width: 38
-        height: 30
-      alignment: 9
-      pivot: {x: 0.46162415, y: 0.016266048}
+        width: 33
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -244,12 +256,12 @@ TextureImporter:
       name: heavy-attack_9
       rect:
         serializedVersion: 2
-        x: 357
+        x: 525
         y: 1
-        width: 33
-        height: 22
-      alignment: 9
-      pivot: {x: 0.40866366, y: 0.024365008}
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,12 +277,12 @@ TextureImporter:
       name: heavy-attack_10
       rect:
         serializedVersion: 2
-        x: 413
+        x: 581
         y: 1
-        width: 33
-        height: 17
-      alignment: 9
-      pivot: {x: 0.40487763, y: 0.020795815}
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,85 +295,85 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: heavy-attack_12
-      rect:
-        serializedVersion: 2
-        x: 469
-        y: 1
-        width: 33
-        height: 17
-      alignment: 9
-      pivot: {x: 0.4080755, y: 0.03159373}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad8c21c6a170dc580800000000000000
-      internalID: -8805373886375737126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: heavy-attack_13
-      rect:
-        serializedVersion: 2
-        x: 525
-        y: 1
-        width: 28
-        height: 17
-      alignment: 9
-      pivot: {x: 0.4822039, y: 0.035171717}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9e722b1ef47b6610800000000000000
-      internalID: 1615513526068215451
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: heavy-attack_14
-      rect:
-        serializedVersion: 2
-        x: 581
-        y: 1
-        width: 25
-        height: 18
-      alignment: 9
-      pivot: {x: 0.5407764, y: 0.032019522}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f46e8358602eabe30800000000000000
-      internalID: 4520173693652493903
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: heavy-attack_15
+      name: heavy-attack_2
       rect:
         serializedVersion: 2
         x: 128
         y: 1
         width: 14
         height: 33
-      alignment: 9
-      pivot: {x: 0.8919013, y: 0.018270059}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95c7e494099ed5d90800000000000000
-      internalID: -7107267831006331815
+      spriteID: 8a137a840d82b1290800000000000000
+      internalID: -7918690644763659864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy-attack_3
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1
+        width: 14
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d4cde5592140310800000000000000
+      internalID: 1370240619378396468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy-attack_6
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07c83048379b3d70800000000000000
+      internalID: 9023972546218346255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heavy-attack_8
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1
+        width: 33
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9ad9d02a55c4420800000000000000
+      internalID: 2615559638096914866
       vertices: []
       indices: 
       edges: []
