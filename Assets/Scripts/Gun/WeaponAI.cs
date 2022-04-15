@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Weapon))]
@@ -11,6 +12,9 @@ public class WeaponAI : MonoBehaviour
 
     [SerializeField]
     private float restoreSpeed = 1;
+
+    [SerializeField]
+    private float ignoreRayCastRadius = 2;
 
 
     private Weapon _weapon;
@@ -29,8 +33,12 @@ public class WeaponAI : MonoBehaviour
         var targetPosition = target.position;
         var vectorToTarget = targetPosition - startPosition;
 
-        var hit = Physics2D.Raycast(startPosition, vectorToTarget);
-        Debug.DrawLine(startPosition, hit.point, Color.red);
+        var hitFrom = startPosition + ignoreRayCastRadius * vectorToTarget.normalized;
+        var hit = Physics2D.Raycast(hitFrom, vectorToTarget);
+
+        Debug.DrawLine(startPosition, hitFrom, Color.red); // ignored ray
+        Debug.DrawLine(hitFrom, targetPosition, Color.blue);
+        Debug.Log($"{hit.collider.gameObject.name}");
 
         var isPlayerVisible = hit.collider.GetComponent<PlayerAttack>() != null; // TODO change condition 
         _weapon.CanShoot = isPlayerVisible;

@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6910390214540118523}
   - component: {fileID: 6910390214540118524}
-  - component: {fileID: 6910390214540118525}
   - component: {fileID: 6910390214540118526}
   - component: {fileID: 7654970080312057599}
   - component: {fileID: 1507170219857295812}
-  m_Layer: 0
+  - component: {fileID: 6910390214540118525}
+  m_Layer: 7
   m_Name: MachineGunBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6910390214540118527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.56, y: -0.201, z: 0}
-  m_LocalScale: {x: 0.032410968, y: 0.042996597, z: 1}
+  m_LocalPosition: {x: 1.51203, y: -0.22247, z: 0}
+  m_LocalScale: {x: 0.019436669, y: 0.025784807, z: 0.59969413}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -6182675468979826861, guid: 149b0225f7b7f22489f5c4c4c9b9ba85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -86,19 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6910390214540118525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6910390214540118527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6496498055ebf844b608a68f4a482e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 0
 --- !u!61 &6910390214540118526
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -112,18 +99,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.01178503, y: 0}
+  m_Offset: {x: 0.055814266, y: 0.016595662}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.96, y: 1}
+    oldSize: {x: 7.4, y: 2.5}
     newSize: {x: 2.96, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.9562545, y: 1}
+  m_Size: {x: 7.183339, y: 2.4272366}
   m_EdgeRadius: 0
 --- !u!50 &7654970080312057599
 Rigidbody2D:
@@ -159,4 +146,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
-  runAnimationParameterName: Optional
+--- !u!114 &6910390214540118525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6910390214540118527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6496498055ebf844b608a68f4a482e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  destroyAfterSeconds: 2
