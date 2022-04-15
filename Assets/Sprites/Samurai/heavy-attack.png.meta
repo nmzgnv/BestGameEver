@@ -151,12 +151,12 @@ TextureImporter:
       name: heavy-attack_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 1
-        width: 11
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 0
+        y: 0
+        width: 56
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,12 +172,12 @@ TextureImporter:
       name: heavy-attack_1
       rect:
         serializedVersion: 2
-        x: 72
-        y: 1
-        width: 14
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 56
+        y: 0
+        width: 56
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,12 +193,12 @@ TextureImporter:
       name: heavy-attack_4
       rect:
         serializedVersion: 2
-        x: 239
-        y: 1
-        width: 15
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 224
+        y: 0
+        width: 56
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -214,12 +214,12 @@ TextureImporter:
       name: heavy-attack_5
       rect:
         serializedVersion: 2
-        x: 297
-        y: 1
-        width: 38
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 280
+        y: 0
+        width: 56
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -235,12 +235,12 @@ TextureImporter:
       name: heavy-attack_7
       rect:
         serializedVersion: 2
-        x: 413
-        y: 1
-        width: 33
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 392
+        y: 0
+        width: 56
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,12 +256,12 @@ TextureImporter:
       name: heavy-attack_9
       rect:
         serializedVersion: 2
-        x: 525
-        y: 1
-        width: 28
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 504
+        y: 0
+        width: 56
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -277,12 +277,12 @@ TextureImporter:
       name: heavy-attack_10
       rect:
         serializedVersion: 2
-        x: 581
-        y: 1
-        width: 25
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 560
+        y: 0
+        width: 56
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -298,12 +298,12 @@ TextureImporter:
       name: heavy-attack_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1
-        width: 14
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 112
+        y: 0
+        width: 56
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -319,12 +319,12 @@ TextureImporter:
       name: heavy-attack_3
       rect:
         serializedVersion: 2
-        x: 184
-        y: 1
-        width: 14
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 168
+        y: 0
+        width: 56
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -340,12 +340,12 @@ TextureImporter:
       name: heavy-attack_6
       rect:
         serializedVersion: 2
-        x: 357
-        y: 1
-        width: 33
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 336
+        y: 0
+        width: 56
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -361,12 +361,12 @@ TextureImporter:
       name: heavy-attack_8
       rect:
         serializedVersion: 2
-        x: 469
-        y: 1
-        width: 33
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 448
+        y: 0
+        width: 56
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

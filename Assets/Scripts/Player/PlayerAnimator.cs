@@ -7,9 +7,9 @@ public class PlayerAnimator : MonoBehaviour
     [SerializeField]
     private string runAnimationParameterName = "Optional";
 
-    [SerializeField] 
+    [SerializeField]
     private string attackAnimationParameterName;
-    
+
     private Animator _animator;
     private PhysicsMovement _physicsMovement;
 
