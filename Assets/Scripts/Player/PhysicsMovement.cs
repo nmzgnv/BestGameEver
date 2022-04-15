@@ -7,15 +7,8 @@ public class PhysicsMovement : MonoBehaviour
     private float speed;
 
     private Rigidbody2D _rigidbody;
-    private Vector2 _previousPosition;
 
-    public Vector2 Velocity { get; private set; }
-
-    private void FixedUpdate()
-    {
-        Velocity = (_rigidbody.position - _previousPosition) / Time.fixedDeltaTime;
-        _previousPosition = _rigidbody.position;
-    }
+    public Vector2 LastMoveDirection { get; private set; }
 
     private void Start()
     {
@@ -26,5 +19,6 @@ public class PhysicsMovement : MonoBehaviour
     public void Move(Vector2 direction)
     {
         _rigidbody.MovePosition(_rigidbody.position + direction * speed);
+        LastMoveDirection = direction;
     }
 }

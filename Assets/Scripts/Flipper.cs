@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 
 [RequireComponent(typeof(PhysicsMovement))]
@@ -23,8 +22,7 @@ public class Flipper : MonoBehaviour
 
     private void Update()
     {
-        var horizontalDirection = _physicsMovement.Velocity.x;
-        // Debug.Log($"{horizontalDirection} {Math.Sign(transform.localScale.x)} {Math.Sign(horizontalDirection)}");
+        var horizontalDirection = _physicsMovement.LastMoveDirection.x;
         if (horizontalDirection != 0 && Math.Sign(_transform.localScale.x) != Math.Sign(horizontalDirection))
             Flip();
     }

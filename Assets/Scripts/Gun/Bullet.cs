@@ -7,6 +7,9 @@ public class Bullet : MonoBehaviour
     [SerializeField]
     private int damage;
 
+    [SerializeField]
+    private float destroyAfterSeconds = 2;
+
     private PhysicsMovement _physicsMovement;
 
     public int Damage
@@ -17,7 +20,7 @@ public class Bullet : MonoBehaviour
     private void Start()
     {
         _physicsMovement = GetComponent<PhysicsMovement>();
-        Destroy(gameObject, 2.0F);
+        Destroy(gameObject, destroyAfterSeconds);
     }
 
     private void FixedUpdate()
@@ -28,6 +31,5 @@ public class Bullet : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D other)
     {
         Destroy(gameObject);
-        Debug.Log("Bullet destroyed");
     }
 }
