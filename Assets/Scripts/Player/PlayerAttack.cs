@@ -1,11 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections.LowLevel.Unsafe;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] private PlayerAnimator animator;
+    [SerializeField] private float attackRange;
+    [SerializeField] private LayerMask damageableLayer; 
     private Rigidbody2D _rigidbody;
     private Camera _camera;
     private Flipper _flipper;
@@ -17,13 +21,6 @@ public class PlayerAttack : MonoBehaviour
         _camera = Camera.main;
     }
 
-    public void OnDrawGizmosSelected()
-    {
-        var mousePosition = Input.mousePosition;
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(Camera.main.ScreenToWorldPoint(Input.mousePosition), 2);
-    }
-
     public void Attack()
     {
         animator.PlayAttackAnimation();
@@ -32,6 +29,11 @@ public class PlayerAttack : MonoBehaviour
         if (mousePosition.x > transform.position.x && _flipper.isFlipped ||
             mousePosition.x < transform.position.x && !_flipper.isFlipped)
             _flipper.Flip();
+
+        var attackPoint = transform.position + new Vector3(!_flipper.isFlipped ? .5f : -.5f, 0, 0);
+        var enemies = Physics2D.OverlapCircleAll(attackPoint, attackRange, damageableLayer);
+        foreach(var enemy in enemies)
+            enemy.GetComponent<PlayerHealth>().ReceiveDamage();
     }
 
     
