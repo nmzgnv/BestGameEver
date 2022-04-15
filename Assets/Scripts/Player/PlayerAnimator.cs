@@ -18,6 +18,6 @@ public class PlayerAnimator : MonoBehaviour
 
     private void Update()
     {
-        _animator.SetFloat(runAnimationParameterName, _physicsMovement.Velocity.magnitude);
+        _animator.SetFloat(runAnimationParameterName, _physicsMovement.LastMoveDirection.magnitude);
     }
 }
