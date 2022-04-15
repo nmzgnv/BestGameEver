@@ -1,21 +1,25 @@
+using System;
 using UnityEngine;
 
 public class TeleportationScript : MonoBehaviour
 {
     /*
-    TODO: Скорее всего нужно искать mainCamera на Awake или Start
     TODO: Нужно прикрутить анимации и обрабатывать со всей физикой
     */
     // [SerializeField]
     // private PhysicsMovement movement;
-    [SerializeField]
-    private Camera mainCamera;
-    
+    private Camera _mainCamera;
+
+    private void Start()
+    {
+        _mainCamera = Camera.main;
+    }
+
     void Update()
     {
         if (Input.GetMouseButton(1))
         {
-            var targetPos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+            var targetPos = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
 
             transform.position = new Vector3(targetPos.x, targetPos.y, 0);
         }
