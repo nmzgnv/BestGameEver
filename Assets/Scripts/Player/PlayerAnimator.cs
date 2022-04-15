@@ -7,6 +7,9 @@ public class PlayerAnimator : MonoBehaviour
     [SerializeField]
     private string runAnimationParameterName = "Optional";
 
+    [SerializeField] 
+    private string attackAnimationParameterName;
+    
     private Animator _animator;
     private PhysicsMovement _physicsMovement;
 
@@ -19,5 +22,10 @@ public class PlayerAnimator : MonoBehaviour
     private void Update()
     {
         _animator.SetFloat(runAnimationParameterName, _physicsMovement.Velocity.magnitude);
+    }
+
+    public void PlayAttackAnimation()
+    {
+        _animator.SetTrigger(attackAnimationParameterName);
     }
 }

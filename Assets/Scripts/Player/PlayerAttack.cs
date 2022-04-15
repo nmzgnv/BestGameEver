@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    [SerializeField] private PlayerAnimator animator;
     public void Attack()
     {
-        Debug.Log("Attack");
+        animator.PlayAttackAnimation();
     }
 
-    void Start()
-    {
-        
-    }
 
-    
 }
