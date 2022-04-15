@@ -16,7 +16,7 @@ public class Flipper : MonoBehaviour
     private void Update()
     {
         var horizontalDirection = _physicsMovement.Velocity.x;
-        Debug.Log($"{horizontalDirection} {Math.Sign(transform.localScale.x)} {Math.Sign(horizontalDirection)}");
+        // Debug.Log($"{horizontalDirection} {Math.Sign(transform.localScale.x)} {Math.Sign(horizontalDirection)}");
         if (horizontalDirection != 0 && Math.Sign(transform.localScale.x) != Math.Sign(horizontalDirection))
             Flip();
     }

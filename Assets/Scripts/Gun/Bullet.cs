@@ -17,6 +17,7 @@ public class Bullet : MonoBehaviour
     private void Start()
     {
         _physicsMovement = GetComponent<PhysicsMovement>();
+        Destroy(gameObject, 2.0F);
     }
 
     private void FixedUpdate()
