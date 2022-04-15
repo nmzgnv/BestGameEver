@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 7617333517865339863}
   - component: {fileID: 7617333517865339862}
   - component: {fileID: 7617333517865339857}
+  - component: {fileID: 1899230110}
   m_Layer: 6
   m_Name: Machine Gun
   m_TagString: Untagged
@@ -56,7 +57,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7617333517865339861}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.298, y: -0.494, z: 0}
   m_LocalScale: {x: 0.27631038, y: 0.26084757, z: 0.3599}
   m_Children:
@@ -145,4 +146,30 @@ MonoBehaviour:
   target: {fileID: 0}
   aimSpeed: 5
   restoreSpeed: 3
-  ignoreRayCastRadius: 2
+  ignoreRayCastRadius: 0.8
+--- !u!61 &1899230110
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7617333517865339861}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.001395464, y: 0.18440717}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.5, y: 1.6}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.4893293, y: 1.2157096}
+  m_EdgeRadius: 0
