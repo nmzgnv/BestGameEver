@@ -934,27 +934,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset x2_6
-      rect:
-        serializedVersion: 2
-        x: 767
-        y: 1343
-        width: 66
-        height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0725f807ecfabe70800000000000000
-      internalID: 9131889263665030924
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: tileset x2_7
       rect:
         serializedVersion: 2
@@ -1441,10 +1420,10 @@ TextureImporter:
       name: tileset x2_31
       rect:
         serializedVersion: 2
-        x: 767
+        x: 769
         y: 1215
-        width: 66
-        height: 67
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

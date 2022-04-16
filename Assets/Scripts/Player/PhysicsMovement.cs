@@ -10,7 +10,7 @@ public class PhysicsMovement : MonoBehaviour
 
     public Vector2 LastMoveDirection { get; private set; }
 
-    private void Start()
+    private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
     }

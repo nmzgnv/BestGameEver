@@ -11,6 +11,12 @@ public class CameraMovementController : MonoBehaviour
     [SerializeField]
     private float smooth;
 
+    public Transform Target
+    {
+        get => target;
+        set => target = value;
+    }
+
     public void Update()
     {
         var newPosition = Vector3.Lerp(transform.position, target.position + offset, Time.deltaTime * smooth);
