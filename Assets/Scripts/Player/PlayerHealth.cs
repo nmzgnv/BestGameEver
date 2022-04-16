@@ -44,6 +44,7 @@ public class PlayerHealth : MonoBehaviour
     {
         _animator.PlayDieAnimation();
         GetComponent<Rigidbody2D>().simulated = false;
+        
     }
 
     public void OnCollisionEnter2D(Collision2D other)
