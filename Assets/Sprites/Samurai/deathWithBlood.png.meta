@@ -1,40 +1,49 @@
 fileFormatVersion: 2
-guid: 083e5563dd3576a469fae9fb18b386b6
+guid: e44abc4ccaf469b4c8049b03798f41d1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9192638271177797499
-    second: death_0
+      213: 2596592428827228066
+    second: deathWithBlood_0
   - first:
-      213: 8559509556701815258
-    second: death_1
+      213: 8358118029096472835
+    second: deathWithBlood_1
   - first:
-      213: -5286180679089938723
-    second: death_2
+      213: -311890962489371280
+    second: deathWithBlood_2
   - first:
-      213: -1891855120789479077
-    second: death_3
+      213: -8182787742709890637
+    second: deathWithBlood_3
   - first:
-      213: -5582970244224541034
-    second: death_4
+      213: -7873787735178588240
+    second: deathWithBlood_4
   - first:
-      213: 830680230883465780
-    second: death_5
+      213: 7235865786902619121
+    second: deathWithBlood_5
   - first:
-      213: 6596258498841548387
-    second: death_6
+      213: 7732273790343052458
+    second: deathWithBlood_6
   - first:
-      213: -4147321062969920389
-    second: death_7
+      213: -235900383259231433
+    second: deathWithBlood_7
   - first:
-      213: 2602597460433512539
-    second: death_8
+      213: 993697000874139771
+    second: deathWithBlood_8
   - first:
-      213: -2134515381725696932
-    second: death_9
+      213: 2942646756959728020
+    second: deathWithBlood_9
   - first:
-      213: -270028788923616002
-    second: death_10
+      213: -565854716387153258
+    second: deathWithBlood_10
+  - first:
+      213: 112026971369139511
+    second: deathWithBlood_11
+  - first:
+      213: -7334274187491280685
+    second: deathWithBlood_12
+  - first:
+      213: 6162913236244492458
+    second: deathWithBlood_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -124,7 +133,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: death_0
+      name: deathWithBlood_0
       rect:
         serializedVersion: 2
         x: 0
@@ -138,14 +147,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58059c172303d6080800000000000000
-      internalID: -9192638271177797499
+      spriteID: 2a737b28e03f80420800000000000000
+      internalID: 2596592428827228066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_1
+      name: deathWithBlood_1
       rect:
         serializedVersion: 2
         x: 32
@@ -159,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad1e5c2779c79c670800000000000000
-      internalID: 8559509556701815258
+      spriteID: 301551370100ef370800000000000000
+      internalID: 8358118029096472835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_2
+      name: deathWithBlood_2
       rect:
         serializedVersion: 2
         x: 64
@@ -180,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dde9f440ea6b3a6b0800000000000000
-      internalID: -5286180679089938723
+      spriteID: 0759a2472d0fbabf0800000000000000
+      internalID: -311890962489371280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_3
+      name: deathWithBlood_3
       rect:
         serializedVersion: 2
         x: 96
@@ -201,14 +210,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b51e6d68ac7ceb5e0800000000000000
-      internalID: -1891855120789479077
+      spriteID: 3b14b5bf6e5e07e80800000000000000
+      internalID: -8182787742709890637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_4
+      name: deathWithBlood_4
       rect:
         serializedVersion: 2
         x: 128
@@ -222,14 +231,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69e9b69842e4582b0800000000000000
-      internalID: -5582970244224541034
+      spriteID: 0bf4adf95cfaab290800000000000000
+      internalID: -7873787735178588240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_5
+      name: deathWithBlood_5
       rect:
         serializedVersion: 2
         x: 160
@@ -243,14 +252,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43a9fb3d44b278b00800000000000000
-      internalID: 830680230883465780
+      spriteID: 1f3abbe8895fa6460800000000000000
+      internalID: 7235865786902619121
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_6
+      name: deathWithBlood_6
       rect:
         serializedVersion: 2
         x: 192
@@ -264,14 +273,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3661a1ef72e9a8b50800000000000000
-      internalID: 6596258498841548387
+      spriteID: aacf5738b0e8e4b60800000000000000
+      internalID: 7732273790343052458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_7
+      name: deathWithBlood_7
       rect:
         serializedVersion: 2
         x: 224
@@ -285,14 +294,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b74be287771c176c0800000000000000
-      internalID: -4147321062969920389
+      spriteID: 73b747de9d9e9bcf0800000000000000
+      internalID: -235900383259231433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_8
+      name: deathWithBlood_8
       rect:
         serializedVersion: 2
         x: 256
@@ -306,14 +315,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b582972e9984e1420800000000000000
-      internalID: 2602597460433512539
+      spriteID: b70697f48225acd00800000000000000
+      internalID: 993697000874139771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_9
+      name: deathWithBlood_9
       rect:
         serializedVersion: 2
         x: 288
@@ -327,14 +336,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5ce1a8c19da062e0800000000000000
-      internalID: -2134515381725696932
+      spriteID: 4913a0872a166d820800000000000000
+      internalID: 2942646756959728020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_10
+      name: deathWithBlood_10
       rect:
         serializedVersion: 2
         x: 320
@@ -348,8 +357,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef434154f3aa04cf0800000000000000
-      internalID: -270028788923616002
+      spriteID: 69aa34b222ea528f0800000000000000
+      internalID: -565854716387153258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathWithBlood_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d68b9dfeffd8100800000000000000
+      internalID: 112026971369139511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathWithBlood_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8f3413c7c673a90800000000000000
+      internalID: -7334274187491280685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deathWithBlood_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0f7e39fe0178550800000000000000
+      internalID: 6162913236244492458
       vertices: []
       indices: 
       edges: []

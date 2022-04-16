@@ -4,11 +4,10 @@ using UnityEngine;
 [RequireComponent(typeof(PhysicsMovement))]
 public class PlayerAnimator : MonoBehaviour
 {
-    [SerializeField]
-    private string runAnimationParameterName = "Optional";
-
-    [SerializeField]
-    private string attackAnimationParameterName;
+    [SerializeField] private string runAnimationParameter = "Speed";
+    [SerializeField] private string attackAnimationParameter = "Attack";
+    [SerializeField] private string takingDamageParameter = "TakeDamage";
+    [SerializeField] private string dieParameter = "Die";
 
     private Animator _animator;
     private PhysicsMovement _physicsMovement;
@@ -21,11 +20,21 @@ public class PlayerAnimator : MonoBehaviour
 
     private void Update()
     {
-        _animator.SetFloat(runAnimationParameterName, _physicsMovement.LastMoveDirection.magnitude);
+        _animator.SetFloat(runAnimationParameter, _physicsMovement.LastMoveDirection.magnitude);
     }
 
     public void PlayAttackAnimation()
     {
-        _animator.SetTrigger(attackAnimationParameterName);
+        _animator.SetTrigger(attackAnimationParameter);
+    }
+
+    public void PlayTakeDamageAnimation()
+    {
+        _animator.SetTrigger(takingDamageParameter);
+    }
+
+    public void PlayDieAnimation()
+    {
+        _animator.SetTrigger(dieParameter);
     }
 }
