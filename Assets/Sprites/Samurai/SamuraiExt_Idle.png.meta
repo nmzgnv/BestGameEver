@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: 16304a087d0ae0e4089953873f3cf3b7
+guid: 8615e8eb0e20402498a63daf9db5c2a5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2705519209539237195
-    second: take-dmg_0
+      213: -9109408467312809663
+    second: SamuraiExt_Idle_0
   - first:
-      213: 5697041287922692663
-    second: take-dmg_1
+      213: -3395250487698381672
+    second: SamuraiExt_Idle_1
+  - first:
+      213: -6841747358298149662
+    second: SamuraiExt_Idle_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,7 +55,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: take-dmg_0
+      name: SamuraiExt_Idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 63
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +114,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b45f499f26feb8520800000000000000
-      internalID: 2705519209539237195
+      spriteID: 14962ef3341e49180800000000000000
+      internalID: -9109408467312809663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: take-dmg_1
+      name: SamuraiExt_Idle_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 63
         y: 0
-        width: 32
-        height: 32
+        width: 65
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +135,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 732bd5dfdd4ff0f40800000000000000
-      internalID: 5697041287922692663
+      spriteID: 89424459ba5a1e0d0800000000000000
+      internalID: -3395250487698381672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SamuraiExt_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eceba9d60b3d01a0800000000000000
+      internalID: -6841747358298149662
       vertices: []
       indices: 
       edges: []

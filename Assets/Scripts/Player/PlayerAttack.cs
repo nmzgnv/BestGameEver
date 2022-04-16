@@ -3,9 +3,6 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     [SerializeField]
-    private PlayerAnimator animator;
-
-    [SerializeField]
     private float attackRange;
 
     [SerializeField]
@@ -16,11 +13,13 @@ public class PlayerAttack : MonoBehaviour
 
     private Camera _camera;
     private Flipper _flipper;
+    private PlayerAnimator _animator;
 
     public void Start()
     {
         _flipper = GetComponent<Flipper>();
         _camera = Camera.main;
+        _animator = GetComponent<PlayerAnimator>();
     }
 
     public void OnDrawGizmosSelected()
@@ -33,7 +32,7 @@ public class PlayerAttack : MonoBehaviour
 
     public void Attack()
     {
-        animator.PlayAttackAnimation();
+        _animator.PlayAttackAnimation();
 
         var mousePosition = _camera.ScreenToWorldPoint(Input.mousePosition);
         if (mousePosition.x > transform.position.x && _flipper.isFlipped ||
