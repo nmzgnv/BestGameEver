@@ -7,6 +7,12 @@ public class WeaponAI : MonoBehaviour
     [SerializeField]
     private Transform target;
 
+    public Transform Target
+    {
+        get => target;
+        set => target = value;
+    }
+
     [SerializeField]
     private float aimSpeed = 1;
 
@@ -30,7 +36,7 @@ public class WeaponAI : MonoBehaviour
     private void Update()
     {
         var startPosition = transform.position;
-        var targetPosition = target.position;
+        var targetPosition = Target.position;
         var vectorToTarget = targetPosition - startPosition;
 
         var hitFrom = startPosition + ignoreRayCastRadius * vectorToTarget.normalized;
@@ -38,7 +44,6 @@ public class WeaponAI : MonoBehaviour
 
         Debug.DrawLine(startPosition, hitFrom, Color.red); // ignored ray
         Debug.DrawLine(hitFrom, targetPosition, Color.blue);
-        Debug.Log($"{hit.collider.gameObject.name}");
 
         var isPlayerVisible = hit.collider.GetComponent<PlayerAttack>() != null; // TODO change condition 
         _weapon.CanShoot = isPlayerVisible;
