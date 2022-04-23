@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 2045833673137278394}
   - component: {fileID: 2045833673137278373}
   - component: {fileID: 2045833673137278372}
+  - component: {fileID: 3217972911029347535}
   - component: {fileID: 2045833673137278370}
   - component: {fileID: 2045833673137278369}
   - component: {fileID: 2045833673137278371}
@@ -222,6 +223,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: 2045833673137278373}
   attack: {fileID: 2045833673137278369}
+--- !u!114 &3217972911029347535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045833673137278395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57edd159cda33f343be03e477946fc29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manaPoints: 0
+  manaByFixedUpdate: 0
 --- !u!114 &2045833673137278370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,6 +249,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32bb316364ccbb44d84a3fb644fe052b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  radius: 0
+  teleportationDelay: 0
+  teleportCost: 0
 --- !u!114 &2045833673137278369
 MonoBehaviour:
   m_ObjectHideFlags: 0

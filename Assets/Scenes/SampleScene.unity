@@ -14333,6 +14333,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2045833673137278370, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
+      propertyPath: radius
+      value: 1.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045833673137278370, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
+      propertyPath: teleportCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045833673137278370, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
+      propertyPath: radiusToColliders
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045833673137278370, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
+      propertyPath: cooldownToNextTeleport
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2045833673137278374, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -14392,6 +14408,14 @@ PrefabInstance:
     - target: {fileID: 2045833673137278395, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217972911029347535, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
+      propertyPath: manaPoints
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217972911029347535, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
+      propertyPath: manaByFixedUpdate
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
