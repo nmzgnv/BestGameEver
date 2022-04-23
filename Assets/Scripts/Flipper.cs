@@ -29,9 +29,6 @@ public class Flipper : MonoBehaviour
 
     public void Flip()
     {
-        var scale = _transform.localScale;
-        scale.x *= -1;
-        _transform.localScale = scale;
-        isFlipped = !isFlipped;
+        return;
     }
 }
