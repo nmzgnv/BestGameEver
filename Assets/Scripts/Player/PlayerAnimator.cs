@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerAnimator : MonoBehaviour
 {
     [SerializeField] private string runAnimationParameter = "Speed";
+    [SerializeField] private string horizontalSpeedParameter = "HorizontalSpeed";
+    [SerializeField] private string verticalSpeedParameter = "VerticalSpeed";
     [SerializeField] private string attackAnimationParameter = "Attack";
     [SerializeField] private string takingDamageParameter = "TakeDamage";
     [SerializeField] private string dieParameter = "Die";
@@ -20,6 +22,8 @@ public class PlayerAnimator : MonoBehaviour
 
     private void Update()
     {
+        _animator.SetFloat(horizontalSpeedParameter, _physicsMovement.LastMoveDirection.x);
+        _animator.SetFloat(verticalSpeedParameter, _physicsMovement.LastMoveDirection.y);
         _animator.SetFloat(runAnimationParameter, _physicsMovement.LastMoveDirection.magnitude);
     }
 
