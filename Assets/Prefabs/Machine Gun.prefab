@@ -147,6 +147,7 @@ MonoBehaviour:
   aimSpeed: 5
   restoreSpeed: 3
   ignoreRayCastRadius: 0.8
+  minShootRadius: 1.5
 --- !u!61 &1899230110
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -163,7 +164,7 @@ BoxCollider2D:
   m_Offset: {x: -0.001395464, y: 0.18440717}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: -0.27012482, y: 0.65214396}
     oldSize: {x: 2.5, y: 1.6}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5

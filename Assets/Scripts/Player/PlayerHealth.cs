@@ -44,7 +44,7 @@ public class PlayerHealth : MonoBehaviour
             curHealth++;
     }
 
-    private IEnumerator DieAfterDelay(int seconds)
+    private IEnumerator DestroyAfterDelay(int seconds)
     {
         yield return new WaitForSeconds(seconds);
         Destroy(gameObject);
@@ -54,7 +54,9 @@ public class PlayerHealth : MonoBehaviour
     {
         _animator.PlayDieAnimation();
         GetComponent<Rigidbody2D>().simulated = false;
-        StartCoroutine(DieAfterDelay(1));
+        foreach (Transform child in transform)
+            Destroy(child.gameObject);
+        StartCoroutine(DestroyAfterDelay(1));
     }
 
     public void OnCollisionEnter2D(Collision2D other)

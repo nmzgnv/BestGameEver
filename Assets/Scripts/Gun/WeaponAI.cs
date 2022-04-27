@@ -22,7 +22,9 @@ public class WeaponAI : MonoBehaviour
     [SerializeField]
     private float ignoreRayCastRadius = 2;
 
-
+    [SerializeField]
+    private float minShootRadius = 2;
+    
     private Weapon _weapon;
     private Transform _initialTransform;
 
@@ -46,11 +48,12 @@ public class WeaponAI : MonoBehaviour
         Debug.DrawLine(hitFrom, targetPosition, Color.blue);
 
         var isPlayerVisible = hit.collider.GetComponent<PlayerAttack>() != null; // TODO change condition 
-        _weapon.CanShoot = isPlayerVisible;
 
         if (!isPlayerVisible)
             vectorToTarget = _initialTransform.position - startPosition;
-
+        
+        _weapon.CanShoot = isPlayerVisible && vectorToTarget.magnitude > minShootRadius;
+        
         var speed = isPlayerVisible ? aimSpeed : restoreSpeed;
         var angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg;
         var q = Quaternion.AngleAxis(angle, Vector3.forward);
