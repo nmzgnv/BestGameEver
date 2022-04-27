@@ -1,14 +1,18 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField]
     private int maxHealth;
+
     private int curHealth;
 
     [SerializeField]
     private float invulnerableTime;
+
     private float lastDamageTime;
+
     private bool IsInvulnerable =>
         Time.realtimeSinceStartup - lastDamageTime < invulnerableTime;
 
@@ -29,7 +33,7 @@ public class PlayerHealth : MonoBehaviour
         curHealth--;
         lastDamageTime = Time.realtimeSinceStartup;
         _animator.PlayTakeDamageAnimation();
-        
+
         if (curHealth == 0)
             Die();
     }
@@ -39,12 +43,18 @@ public class PlayerHealth : MonoBehaviour
         if (curHealth < maxHealth)
             curHealth++;
     }
-    
+
+    private IEnumerator DieAfterDelay(int seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        Destroy(gameObject);
+    }
+
     private void Die()
     {
         _animator.PlayDieAnimation();
         GetComponent<Rigidbody2D>().simulated = false;
-        
+        StartCoroutine(DieAfterDelay(1));
     }
 
     public void OnCollisionEnter2D(Collision2D other)

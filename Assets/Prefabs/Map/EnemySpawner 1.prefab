@@ -46,4 +46,4 @@ MonoBehaviour:
   spawnCount: 2
   objectToSpawn: {fileID: 1163200265232194797, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
   target: {fileID: 0}
-  delaySeconds: 5
+  delaySeconds: 20

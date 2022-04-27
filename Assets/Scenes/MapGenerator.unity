@@ -594,7 +594,7 @@ MonoBehaviour:
   destroyableObjectPrefab: {fileID: 1763843685705352121, guid: e746b26486747d442bf106d016fe71da, type: 3}
   wallPrefab: {fileID: 2465790306178970087, guid: 34db8806451705649a6e34d24cd1f8a4, type: 3}
   cellSize: 0.65
-  enemySpawnerProbability: 0.02
+  enemySpawnerProbability: 0.002
   destroyableObjectsProbability: 0.06
   height: 30
   width: 30
@@ -724,6 +724,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2045833673137278370, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
+      propertyPath: teleportCost
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 2045833673137278374, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -775,6 +779,10 @@ PrefabInstance:
     - target: {fileID: 2045833673137278395, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217972911029347535, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
+      propertyPath: manaPoints
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
