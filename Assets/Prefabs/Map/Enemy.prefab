@@ -17,6 +17,8 @@ GameObject:
   - component: {fileID: 1163200265232194784}
   - component: {fileID: 1163200265232194787}
   - component: {fileID: 1163200265232194786}
+  - component: {fileID: 1556440318957538233}
+  - component: {fileID: 6758692774851499439}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -173,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fb2c175522f4a74983c99a7afdf47e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.1
+  speed: 0.02
 --- !u!114 &1163200265232194784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,6 +202,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runAnimationParameter: Speed
+  horizontalSpeedParameter: HorizontalSpeed
+  verticalSpeedParameter: VerticalSpeed
   attackAnimationParameter: Attack
   takingDamageParameter: TakeDamage
   dieParameter: Die
@@ -217,6 +221,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   invulnerableTime: 0.1
+--- !u!114 &1556440318957538233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163200265232194797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
+--- !u!114 &6758692774851499439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163200265232194797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cda914ea342bc01498c9659cf13016d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reachedPositionDistance: 1
+  target: {fileID: 0}
 --- !u!1001 &8760257755035797958
 PrefabInstance:
   m_ObjectHideFlags: 0

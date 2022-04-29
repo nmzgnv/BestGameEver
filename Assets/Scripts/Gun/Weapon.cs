@@ -36,7 +36,6 @@ public class Weapon : MonoBehaviour
     {
         _elapsed += Time.deltaTime;
 
-
         if (_elapsed >= _rateOfFire && CanShoot)
         {
             _elapsed %= _rateOfFire;

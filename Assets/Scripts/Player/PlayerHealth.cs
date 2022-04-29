@@ -15,7 +15,9 @@ public class PlayerHealth : MonoBehaviour
 
     private bool IsInvulnerable =>
         Time.realtimeSinceStartup - lastDamageTime < invulnerableTime;
-
+    
+    [SerializeField]
+    private HealthBar healthBar;
     private PlayerAnimator _animator;
 
     private void Start()
@@ -23,6 +25,7 @@ public class PlayerHealth : MonoBehaviour
         curHealth = maxHealth;
         lastDamageTime = Time.realtimeSinceStartup;
         _animator = GetComponent<PlayerAnimator>();
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     public void ReceiveDamage()
@@ -33,7 +36,8 @@ public class PlayerHealth : MonoBehaviour
         curHealth--;
         lastDamageTime = Time.realtimeSinceStartup;
         _animator.PlayTakeDamageAnimation();
-
+healthBar.SetHealth(curHealth);
+        
         if (curHealth == 0)
             Die();
     }
@@ -42,6 +46,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (curHealth < maxHealth)
             curHealth++;
+        healthBar.SetHealth(curHealth);
     }
 
     private IEnumerator DestroyAfterDelay(int seconds)
