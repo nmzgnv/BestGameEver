@@ -5,20 +5,24 @@ using UnityEngine;
 
 public class ManaController : MonoBehaviour
 {
-    [SerializeField] private int manaPoints;
-    [SerializeField] private int manaByFixedUpdate;
+    [SerializeField] private float manaPoints;
+    [SerializeField] private float manaByFixedUpdate;
 
-    private int _currentManaPoints;
+    private float _currentManaPoints;
+
+    [SerializeField]
+    private UIBar manaBar;
     
     void Awake()
     {
         _currentManaPoints = manaPoints;
+        manaBar.SetMaxValue(manaPoints);
     }
 
     void FixedUpdate()
     {
         _currentManaPoints = Math.Min(_currentManaPoints + manaByFixedUpdate, manaPoints);
-        Debug.Log("Mana: " + _currentManaPoints);
+        manaBar.SetValue(_currentManaPoints);
     }
 
     /// <summary>
@@ -33,7 +37,7 @@ public class ManaController : MonoBehaviour
         {
             _currentManaPoints -= manaCost;
             func();
-            Debug.Log("Used " + manaCost + " mana");
+            
             return true;
         }
 
