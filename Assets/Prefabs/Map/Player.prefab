@@ -82,7 +82,6 @@ GameObject:
   - component: {fileID: 2045833673137278383}
   - component: {fileID: 1040212315}
   - component: {fileID: -4561939699064562268}
-  - component: {fileID: 1040212318}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -153,7 +152,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2, y: 1.8}
+  m_Size: {x: 1.5, y: 1.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -320,6 +319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   invulnerableTime: 0.1
+  healthBar: {fileID: 0}
 --- !u!70 &1040212315
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -337,20 +337,6 @@ CapsuleCollider2D:
   m_Size: {x: 0.70210934, y: 0.9117744}
   m_Direction: 0
 --- !u!114 &-4561939699064562268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045833673137278395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e278ce83cb18cfc469f0e7d18d4b7fdd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _attackRadiusCenter: {fileID: 2045833672259659681}
-  _bulletTarget: {fileID: 2045833671882388283}
---- !u!114 &1040212318
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

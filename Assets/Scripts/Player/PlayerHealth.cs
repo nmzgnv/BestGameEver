@@ -25,7 +25,8 @@ public class PlayerHealth : MonoBehaviour
         curHealth = maxHealth;
         lastDamageTime = Time.realtimeSinceStartup;
         _animator = GetComponent<PlayerAnimator>();
-        healthBar.SetMaxHealth(maxHealth);
+        if (healthBar != null)
+            healthBar.SetMaxHealth(maxHealth);
     }
 
     public void ReceiveDamage()
@@ -36,7 +37,8 @@ public class PlayerHealth : MonoBehaviour
         curHealth--;
         lastDamageTime = Time.realtimeSinceStartup;
         _animator.PlayTakeDamageAnimation();
-healthBar.SetHealth(curHealth);
+        if (healthBar != null)
+            healthBar.SetHealth(curHealth);
         
         if (curHealth == 0)
             Die();
