@@ -5,6 +5,7 @@ public class PhysicsMovement : MonoBehaviour
 {
     [SerializeField]
     private float speed;
+    public float Speed { get; }
 
     private Rigidbody2D _rigidbody;
 
@@ -15,10 +16,9 @@ public class PhysicsMovement : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody2D>();
     }
 
-
     public void Move(Vector2 direction)
     {
-        _rigidbody.MovePosition(_rigidbody.position + direction * speed);
+        _rigidbody.MovePosition(_rigidbody.position + direction.normalized * speed);
         LastMoveDirection = direction;
     }
 }
