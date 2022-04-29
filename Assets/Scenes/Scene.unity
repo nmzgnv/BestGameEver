@@ -6798,6 +6798,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1079902636 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2892840609046005351, guid: 65614e8b875953447b41ffabeac8497c, type: 3}
+  m_PrefabInstance: {fileID: 2892840607651168111}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1104715165
 GameObject:
   m_ObjectHideFlags: 0
@@ -14488,22 +14499,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2045833673137278370, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: radius
-      value: 1.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 2045833673137278370, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: teleportCost
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2045833673137278370, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: radiusToColliders
-      value: 0.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 2045833673137278370, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: cooldownToNextTeleport
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 2045833673137278374, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -14575,14 +14570,6 @@ PrefabInstance:
     - target: {fileID: 2045833673137278395, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3217972911029347535, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: manaPoints
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3217972911029347535, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: manaByFixedUpdate
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
@@ -14681,6 +14668,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2892840609046005352, guid: 65614e8b875953447b41ffabeac8497c, type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1079902636}
     - target: {fileID: 2892840609046005353, guid: 65614e8b875953447b41ffabeac8497c, type: 3}
       propertyPath: m_Name
       value: HealthBar

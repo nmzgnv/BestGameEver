@@ -11,6 +11,12 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField]
     private Transform attackRadiusCenter;
 
+    [SerializeField]
+    private AudioSource audioSource;
+
+    [SerializeField]
+    private AudioClip hitSound;
+
     private Camera _camera;
     private Flipper _flipper;
     private PlayerAnimator _animator;
@@ -38,7 +44,10 @@ public class PlayerAttack : MonoBehaviour
         if (mousePosition.x > transform.position.x && _flipper.isFlipped ||
             mousePosition.x < transform.position.x && !_flipper.isFlipped)
             _flipper.Flip();
-
+        
+        audioSource.pitch = Random.Range(0.9f, 1.1f);
+        audioSource.PlayOneShot(hitSound);
+        
         var enemies = Physics2D.OverlapCircleAll(attackRadiusCenter.position, attackRange, damageableLayer);
         foreach (var enemy in enemies)
         {
