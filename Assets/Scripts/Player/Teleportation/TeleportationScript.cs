@@ -16,6 +16,8 @@ public class TeleportationScript : MonoBehaviour
     [SerializeField] private int teleportCost;
     [SerializeField] private float radiusToColliders;
 
+    [SerializeField] private Animator _animator;
+    
     private void Awake()
     {
         _mainCamera = Camera.main;
