@@ -146,7 +146,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: 8793639957104055765, guid: 4aa9799417937794ca87ba65cdceba27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57edd159cda33f343be03e477946fc29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manaPoints: 100
+  maxManaPoints: 1000
   manaByFixedUpdate: 1
 --- !u!114 &2045833673137278370
 MonoBehaviour:
@@ -251,10 +251,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32bb316364ccbb44d84a3fb644fe052b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 3.5
-  cooldownToNextTeleport: 10
-  teleportCost: 50
-  radiusToColliders: 0.33
+  radius: 4
+  cooldownToNextTeleport: 15
+  teleportCost: 40
+  radiusToColliders: 0.15
 --- !u!114 &2045833673137278369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,6 +274,7 @@ MonoBehaviour:
   attackRadiusCenter: {fileID: 2045833672259659681}
   audioSource: {fileID: 6940375622485846727}
   hitSound: {fileID: 8300000, guid: dd17d6e5c7ba1fc46a43adaff94a9b52, type: 3}
+  movementFreezeTime: 0.5
 --- !u!114 &2045833673137278371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,9 +318,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac681aac268ffbd42a9e294571bc3733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 20
   invulnerableTime: 0.1
-  healthBar: {fileID: 0}
 --- !u!70 &1040212315
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5255,7 +5255,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
