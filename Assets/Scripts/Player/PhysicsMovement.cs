@@ -3,13 +3,13 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PhysicsMovement : MonoBehaviour
 {
+    public Vector2 LastMoveDirection { get; private set; }
+    public bool CanMove { get; set; } = true;
+
     [SerializeField]
     private float speed;
-    public float Speed { get; }
 
     private Rigidbody2D _rigidbody;
-
-    public Vector2 LastMoveDirection { get; private set; }
 
     private void Awake()
     {
@@ -18,6 +18,7 @@ public class PhysicsMovement : MonoBehaviour
 
     public void Move(Vector2 direction)
     {
+        if (!CanMove) return;
         _rigidbody.MovePosition(_rigidbody.position + direction.normalized * speed);
         LastMoveDirection = direction;
     }

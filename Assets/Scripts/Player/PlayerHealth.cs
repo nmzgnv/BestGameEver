@@ -1,32 +1,38 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public event Action OnPlayerTakesDamage;
+    public event Action OnPlayerApplyHeal;
+    public event Action OnPlayerDie;
+
     [SerializeField]
     private int maxHealth;
-
-    private int curHealth;
 
     [SerializeField]
     private float invulnerableTime;
 
-    private float lastDamageTime;
+    private int _currentHealth;
+    private float _lastDamageTime;
+    private PlayerAnimator _animator;
 
     private bool IsInvulnerable =>
-        Time.realtimeSinceStartup - lastDamageTime < invulnerableTime;
-    
-    [SerializeField]
-    private HealthBar healthBar;
-    private PlayerAnimator _animator;
+        Time.realtimeSinceStartup - _lastDamageTime < invulnerableTime;
+
+    public int MaxHealth => maxHealth;
+    public int Health => _currentHealth;
+
+    private void Awake()
+    {
+        _currentHealth = maxHealth;
+        _animator = GetComponent<PlayerAnimator>();
+    }
 
     private void Start()
     {
-        curHealth = maxHealth;
-        lastDamageTime = Time.realtimeSinceStartup;
-        _animator = GetComponent<PlayerAnimator>();
-        if (healthBar != null)
-            healthBar.SetMaxHealth(maxHealth);
+        _lastDamageTime = Time.realtimeSinceStartup;
     }
 
     public void ReceiveDamage()
@@ -34,21 +40,22 @@ public class PlayerHealth : MonoBehaviour
         if (IsInvulnerable)
             return;
 
-        curHealth--;
-        lastDamageTime = Time.realtimeSinceStartup;
+        _currentHealth--;
+        _lastDamageTime = Time.realtimeSinceStartup;
         _animator.PlayTakeDamageAnimation();
-        if (healthBar != null)
-            healthBar.SetHealth(curHealth);
-        
-        if (curHealth == 0)
+        OnPlayerTakesDamage?.Invoke();
+
+        if (_currentHealth <= 0)
             Die();
     }
 
     public void ReceiveHeal()
     {
-        if (curHealth < maxHealth)
-            curHealth++;
-        healthBar.SetHealth(curHealth);
+        if (_currentHealth < maxHealth)
+        {
+            _currentHealth++;
+            OnPlayerApplyHeal?.Invoke();
+        }
     }
 
     private IEnumerator DestroyAfterDelay(int seconds)
@@ -59,10 +66,15 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
+        OnPlayerDie?.Invoke();
         _animator.PlayDieAnimation();
-        GetComponent<Rigidbody2D>().simulated = false;
+
+        var rb = GetComponent<Rigidbody2D>();
+        if (rb != null) rb.simulated = false;
+
         foreach (Transform child in transform)
             Destroy(child.gameObject);
+
         StartCoroutine(DestroyAfterDelay(1));
     }
 

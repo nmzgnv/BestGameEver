@@ -221,7 +221,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   invulnerableTime: 0.1
-  healthBar: {fileID: 0}
 --- !u!114 &1556440318957538233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,10 +261,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda914ea342bc01498c9659cf13016d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reachedPositionDistance: 1
-  sightRange: 0
-  attackRange: 0
-  target: {fileID: 2045833673137278374, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
+  reachedPositionDistance: 0.3
+  sightRange: 15
+  attackRange: 2
+  target: {fileID: 0}
 --- !u!1001 &8760257755035797958
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -5,20 +5,28 @@ using UnityEngine;
 
 public class ManaController : MonoBehaviour
 {
-    [SerializeField] private int manaPoints;
-    [SerializeField] private int manaByFixedUpdate;
+    public event Action OnManaPointsChanged;
+
+    [SerializeField]
+    private int maxManaPoints;
+
+    [SerializeField]
+    private int manaByFixedUpdate;
 
     private int _currentManaPoints;
-    
+
+    public int MaxManaPoint => maxManaPoints;
+    public int Mana => _currentManaPoints;
+
     void Awake()
     {
-        _currentManaPoints = manaPoints;
+        _currentManaPoints = maxManaPoints;
     }
 
     void FixedUpdate()
     {
-        _currentManaPoints = Math.Min(_currentManaPoints + manaByFixedUpdate, manaPoints);
-        Debug.Log("Mana: " + _currentManaPoints);
+        _currentManaPoints = Math.Min(_currentManaPoints + manaByFixedUpdate, maxManaPoints);
+        OnManaPointsChanged?.Invoke();
     }
 
     /// <summary>
