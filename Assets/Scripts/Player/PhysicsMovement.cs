@@ -4,6 +4,8 @@ using UnityEngine;
 public class PhysicsMovement : MonoBehaviour
 {
     public Vector2 LastMoveDirection { get; private set; }
+    public Vector2 LastViewDirection { get; private set; }
+    
     public bool CanMove { get; set; } = true;
 
     [SerializeField]
@@ -21,5 +23,7 @@ public class PhysicsMovement : MonoBehaviour
         if (!CanMove) return;
         _rigidbody.MovePosition(_rigidbody.position + direction.normalized * speed);
         LastMoveDirection = direction;
+        if(direction.magnitude > 0.1)
+            LastViewDirection = direction.normalized;
     }
 }

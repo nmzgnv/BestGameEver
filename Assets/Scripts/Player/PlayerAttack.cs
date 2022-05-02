@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -20,17 +22,13 @@ public class PlayerAttack : MonoBehaviour
 
     [SerializeField]
     private float movementFreezeTime;
-
-    private Camera _camera;
-    private Flipper _flipper;
-    private PlayerAnimator _animator;
+    
+    public event Action OnPlayerAttacks;
+    
     private PhysicsMovement _physicsMovement;
 
     public void Start()
     {
-        _flipper = GetComponent<Flipper>();
-        _camera = Camera.main;
-        _animator = GetComponent<PlayerAnimator>();
         _physicsMovement = GetComponent<PhysicsMovement>();
     }
 
@@ -45,7 +43,6 @@ public class PlayerAttack : MonoBehaviour
     private IEnumerator SetAttackState()
     {
         _physicsMovement.CanMove = false;
-        _animator.PlayAttackAnimation();
         yield return new WaitForSeconds(movementFreezeTime);
         _physicsMovement.CanMove = true;
     }
@@ -53,11 +50,8 @@ public class PlayerAttack : MonoBehaviour
     public void Attack()
     {
         StartCoroutine(SetAttackState());
-        var mousePosition = _camera.ScreenToWorldPoint(Input.mousePosition);
-        if (mousePosition.x > transform.position.x && _flipper.isFlipped ||
-            mousePosition.x < transform.position.x && !_flipper.isFlipped)
-            _flipper.Flip();
 
+        OnPlayerAttacks?.Invoke();
         audioSource.pitch = Random.Range(0.9f, 1.1f);
         audioSource.PlayOneShot(hitSound);
 
