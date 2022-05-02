@@ -9959,7 +9959,7 @@ PrefabInstance:
       objectReference: {fileID: 704000326}
     - target: {fileID: 2045833673137278370, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
       propertyPath: teleportCost
-      value: 500
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2045833673137278374, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
       propertyPath: m_RootOrder

@@ -21,10 +21,9 @@ public class PhysicsMovement : MonoBehaviour
     public void Move(Vector2 direction)
     {
         if (!CanMove) return;
-        direction.Normalize();
-        _rigidbody.MovePosition(_rigidbody.position + direction * speed);
+        _rigidbody.MovePosition(_rigidbody.position + direction.normalized * speed);
         LastMoveDirection = direction;
-        if(direction.magnitude > 0.1) 
+        if(direction.magnitude > 0.1)
             LastViewDirection = direction.normalized;
     }
 }

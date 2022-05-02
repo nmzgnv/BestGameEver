@@ -12,13 +12,16 @@ public class PlayerAnimator : MonoBehaviour
     private readonly string attackAnimationParameter = "Attack";
     private readonly string takingDamageParameter = "TakeDamage";
     private readonly string dieParameter = "Die";
+    private readonly string teleportUpParameter = "TeleportUp";
+    private readonly string teleportDownParameter = "TeleportDown";
 
     [SerializeField] private PlayerHealth playerHealth;
     [SerializeField] private PlayerAttack playerAttack;
-
+    [SerializeField] private TeleportationScript playerTeleport;
+    
     private Animator _animator;
     private PhysicsMovement _physicsMovement;
-    
+
     private void Awake()
     {
         if (playerHealth != null)
@@ -30,6 +33,12 @@ public class PlayerAnimator : MonoBehaviour
         if (playerAttack != null)
         {
             playerAttack.OnPlayerAttacks += PlayAttackAnimation;
+        }
+
+        if (playerTeleport != null)
+        {
+            playerTeleport.OnTeleportDown += PlayTeleportDownAnimation;
+            playerTeleport.OnTeleportUp += PlayTeleportUpAnimation;
         }
     }
     
@@ -61,5 +70,15 @@ public class PlayerAnimator : MonoBehaviour
     private void PlayDieAnimation()
     {
         _animator.SetTrigger(dieParameter);
+    }
+    
+    public void PlayTeleportDownAnimation()
+    {
+        _animator.SetTrigger(teleportDownParameter);
+    }
+
+    public void PlayTeleportUpAnimation()
+    {
+        _animator.SetTrigger(teleportUpParameter);
     }
 }

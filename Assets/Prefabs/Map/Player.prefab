@@ -300,14 +300,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4dbe05f60ea81e40983803e0f0770ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runAnimationParameter: Speed
-  horizontalSpeedParameter: HorizontalSpeed
-  verticalSpeedParameter: VerticalSpeed
-  attackAnimationParameter: Attack
-  takingDamageParameter: TakeDamage
-  dieParameter: Die
   playerHealth: {fileID: 2045833673137278383}
   playerAttack: {fileID: 2045833673137278369}
+  playerTeleport: {fileID: 2045833673137278370}
 --- !u!114 &2045833673137278383
 MonoBehaviour:
   m_ObjectHideFlags: 0

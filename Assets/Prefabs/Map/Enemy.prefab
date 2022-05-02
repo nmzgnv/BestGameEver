@@ -131,7 +131,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0034592152, y: -0.4005029}
+  m_Offset: {x: -0.0034592152, y: 0.23595184}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -142,7 +142,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.603919, y: 0.80614525}
+  m_Size: {x: 0.603919, y: 0.39952147}
   m_EdgeRadius: 0
 --- !u!95 &1163200265232194789
 Animator:
@@ -201,12 +201,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4dbe05f60ea81e40983803e0f0770ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runAnimationParameter: Speed
-  horizontalSpeedParameter: HorizontalSpeed
-  verticalSpeedParameter: VerticalSpeed
-  attackAnimationParameter: Attack
-  takingDamageParameter: TakeDamage
-  dieParameter: Die
   playerHealth: {fileID: 1163200265232194786}
   playerAttack: {fileID: 0}
 --- !u!114 &1163200265232194786
@@ -288,11 +282,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7617333517865339856, guid: 156d9332a67e1b84cb4474548e4014b6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.051
+      value: 0.079
       objectReference: {fileID: 0}
     - target: {fileID: 7617333517865339856, guid: 156d9332a67e1b84cb4474548e4014b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.374
+      value: 0.394
       objectReference: {fileID: 0}
     - target: {fileID: 7617333517865339856, guid: 156d9332a67e1b84cb4474548e4014b6, type: 3}
       propertyPath: m_LocalPosition.z
