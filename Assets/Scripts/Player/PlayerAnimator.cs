@@ -4,16 +4,35 @@ using UnityEngine;
 [RequireComponent(typeof(PhysicsMovement))]
 public class PlayerAnimator : MonoBehaviour
 {
-    [SerializeField] private string runAnimationParameter = "Speed";
-    [SerializeField] private string horizontalSpeedParameter = "HorizontalSpeed";
-    [SerializeField] private string verticalSpeedParameter = "VerticalSpeed";
-    [SerializeField] private string attackAnimationParameter = "Attack";
-    [SerializeField] private string takingDamageParameter = "TakeDamage";
-    [SerializeField] private string dieParameter = "Die";
+    private readonly string runAnimationParameter = "Speed";
+    private readonly string horizontalSpeedParameter = "HorizontalSpeed";
+    private readonly string verticalSpeedParameter = "VerticalSpeed";
+    private readonly string horizontalViewParameter = "HorizontalView";
+    private readonly string verticalViewParameter = "VerticalView";
+    private readonly string attackAnimationParameter = "Attack";
+    private readonly string takingDamageParameter = "TakeDamage";
+    private readonly string dieParameter = "Die";
+
+    [SerializeField] private PlayerHealth playerHealth;
+    [SerializeField] private PlayerAttack playerAttack;
 
     private Animator _animator;
     private PhysicsMovement _physicsMovement;
+    
+    private void Awake()
+    {
+        if (playerHealth != null)
+        {
+            playerHealth.OnPlayerTakesDamage += PlayTakeDamageAnimation;
+            playerHealth.OnPlayerDie += PlayDieAnimation;
+        }
 
+        if (playerAttack != null)
+        {
+            playerAttack.OnPlayerAttacks += PlayAttackAnimation;
+        }
+    }
+    
     private void Start()
     {
         _physicsMovement = GetComponent<PhysicsMovement>();
@@ -24,20 +43,22 @@ public class PlayerAnimator : MonoBehaviour
     {
         _animator.SetFloat(horizontalSpeedParameter, _physicsMovement.LastMoveDirection.x);
         _animator.SetFloat(verticalSpeedParameter, _physicsMovement.LastMoveDirection.y);
+        _animator.SetFloat(horizontalViewParameter, _physicsMovement.LastViewDirection.x);
+        _animator.SetFloat(verticalViewParameter, _physicsMovement.LastViewDirection.y);
         _animator.SetFloat(runAnimationParameter, _physicsMovement.LastMoveDirection.magnitude);
     }
 
-    public void PlayAttackAnimation()
+    private void PlayAttackAnimation()
     {
         _animator.SetTrigger(attackAnimationParameter);
     }
 
-    public void PlayTakeDamageAnimation()
+    private void PlayTakeDamageAnimation()
     {
         _animator.SetTrigger(takingDamageParameter);
     }
 
-    public void PlayDieAnimation()
+    private void PlayDieAnimation()
     {
         _animator.SetTrigger(dieParameter);
     }

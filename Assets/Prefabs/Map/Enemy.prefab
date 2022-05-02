@@ -86,12 +86,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -8983559724226023794, guid: b516878eb776e294c93f23eb1aac228d, type: 3}
+  m_Sprite: {fileID: 1908008167850263735, guid: 9328785098fca5545adab6e1a834239d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2, y: 1.8}
+  m_Size: {x: 1.6, y: 1.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -134,9 +134,9 @@ BoxCollider2D:
   m_Offset: {x: -0.0034592152, y: -0.4005029}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 1.6, y: 1.6}
-    newSize: {x: 2, y: 1.8}
+    newSize: {x: 1.6, y: 1.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -207,6 +207,8 @@ MonoBehaviour:
   attackAnimationParameter: Attack
   takingDamageParameter: TakeDamage
   dieParameter: Die
+  playerHealth: {fileID: 1163200265232194786}
+  playerAttack: {fileID: 0}
 --- !u!114 &1163200265232194786
 MonoBehaviour:
   m_ObjectHideFlags: 0

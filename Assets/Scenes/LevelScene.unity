@@ -926,6 +926,14 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1829739608}
+    - target: {fileID: 1163200265232194784, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163200265232194787, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1393210970}
     - target: {fileID: 1163200265232194790, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1533,6 +1541,28 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1361477798 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2045833673137278369, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
+  m_PrefabInstance: {fileID: 2045833672315253335}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65c2fa59f87531f4880b05ea37c4b425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1393210970 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1163200265232194786, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
+  m_PrefabInstance: {fileID: 1217573331}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac681aac268ffbd42a9e294571bc3733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1459847153 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2045833673137278374, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
@@ -9919,6 +9949,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2045833673137278368, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
+      propertyPath: playerAttack
+      value: 
+      objectReference: {fileID: 1361477798}
+    - target: {fileID: 2045833673137278368, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 704000326}
     - target: {fileID: 2045833673137278370, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
       propertyPath: teleportCost
       value: 500
@@ -9929,11 +9967,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2045833673137278374, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.54
+      value: -2.35
       objectReference: {fileID: 0}
     - target: {fileID: 2045833673137278374, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.99
+      value: 13.19
       objectReference: {fileID: 0}
     - target: {fileID: 2045833673137278374, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
       propertyPath: m_LocalPosition.z

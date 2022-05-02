@@ -16,7 +16,6 @@ public class PlayerHealth : MonoBehaviour
 
     private int _currentHealth;
     private float _lastDamageTime;
-    private PlayerAnimator _animator;
 
     private bool IsInvulnerable =>
         Time.realtimeSinceStartup - _lastDamageTime < invulnerableTime;
@@ -27,7 +26,6 @@ public class PlayerHealth : MonoBehaviour
     private void Awake()
     {
         _currentHealth = maxHealth;
-        _animator = GetComponent<PlayerAnimator>();
     }
 
     private void Start()
@@ -42,7 +40,6 @@ public class PlayerHealth : MonoBehaviour
 
         _currentHealth--;
         _lastDamageTime = Time.realtimeSinceStartup;
-        _animator.PlayTakeDamageAnimation();
         OnPlayerTakesDamage?.Invoke();
 
         if (_currentHealth <= 0)
@@ -67,8 +64,7 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         OnPlayerDie?.Invoke();
-        _animator.PlayDieAnimation();
-
+        
         var rb = GetComponent<Rigidbody2D>();
         if (rb != null) rb.simulated = false;
 
