@@ -56,8 +56,7 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
-            float length = currentPath.GetRange(currentWaypoint, currentPath.Count - currentWaypoint).Sum(vector => vector.magnitude);
-            if (length < 3 * reachedPositionDistance)
+            if (currentWaypoint >= currentPath.Count - 1)
                 seeker.StartPath(transform.position, GetRoamingPosition(), OnPathComplete);
         }
     }
