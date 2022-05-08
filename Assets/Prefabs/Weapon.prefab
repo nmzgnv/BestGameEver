@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a35faaf45de899a498ad36f5fd79da5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotsPerSecond: 4
+  shotsPerSecond: 100
   bullet: {fileID: 6910390214540118527, guid: ecf151eda8370af4f86b6f5263e11ab5, type: 3}
   bulletSpawnPoint: {fileID: 7395465963613864967}
   audioSource: {fileID: 3648114401198328418}
