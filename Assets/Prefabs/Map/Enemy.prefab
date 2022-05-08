@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 1163200265232194786}
   - component: {fileID: 1556440318957538233}
   - component: {fileID: 6758692774851499439}
+  - component: {fileID: 1097800128934883822}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -85,7 +86,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 3
   m_Sprite: {fileID: 1908008167850263735, guid: 9328785098fca5545adab6e1a834239d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -183,7 +184,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1163200265232194797}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9f22d6b349566e41ad1d709bb065285, type: 3}
   m_Name: 
@@ -203,6 +204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1163200265232194786}
   playerAttack: {fileID: 0}
+  playerTeleport: {fileID: 0}
 --- !u!114 &1163200265232194786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,10 +259,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda914ea342bc01498c9659cf13016d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reachedPositionDistance: 0.3
+  reachedPositionDistance: 1
   sightRange: 15
-  attackRange: 2
+  attackRange: 3
   target: {fileID: 0}
+--- !u!114 &1097800128934883822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163200265232194797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172f0d29405dd7849ad316e19e951041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 1163200265232194786}
+  enemyAI: {fileID: 6758692774851499439}
+  weaponAI: {fileID: 1163200264527626775}
 --- !u!1001 &8760257755035797958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -332,6 +349,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7617333517865339863, guid: 156d9332a67e1b84cb4474548e4014b6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 156d9332a67e1b84cb4474548e4014b6, type: 3}
 --- !u!4 &1163200264527626774 stripped
@@ -339,3 +360,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7617333517865339856, guid: 156d9332a67e1b84cb4474548e4014b6, type: 3}
   m_PrefabInstance: {fileID: 8760257755035797958}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1163200264527626775 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7617333517865339857, guid: 156d9332a67e1b84cb4474548e4014b6, type: 3}
+  m_PrefabInstance: {fileID: 8760257755035797958}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e661424a763906d4bad9cbb1f34f0b78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

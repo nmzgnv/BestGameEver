@@ -14,11 +14,21 @@ public class TeleportationScript : MonoBehaviour
     private ManaController _manaController;
     private PhysicsMovement _physicsMovement;
 
-    [SerializeField] private float radius;
-    [SerializeField] private int cooldownToNextTeleport;
-    [SerializeField] private int teleportCost;
-    [SerializeField] private float radiusToColliders;
-    
+    [SerializeField]
+    private float radius;
+
+    [SerializeField]
+    private int cooldownToNextTeleport;
+
+    [SerializeField]
+    private int teleportCost;
+
+    [SerializeField]
+    private float radiusToColliders;
+
+    [SerializeField]
+    private Transform teleportRadiusCenter;
+
     public event Action OnTeleportDown;
     public event Action OnTeleportUp;
 
@@ -33,11 +43,11 @@ public class TeleportationScript : MonoBehaviour
         _manaController = GetComponent<ManaController>();
         _physicsMovement = GetComponent<PhysicsMovement>();
     }
-    
+
     void FixedUpdate()
     {
         _teleportationDelay = Math.Max(_teleportationDelay - 1, 0);
-        
+
         if (_teleportationDelay == 0 && Input.GetMouseButton(1))
         {
             var targetPos = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
@@ -50,7 +60,7 @@ public class TeleportationScript : MonoBehaviour
         }
     }
 
-    
+
     public void TeleportUp()
     {
         transform.position = _targetPosition;
@@ -60,7 +70,7 @@ public class TeleportationScript : MonoBehaviour
 
     private bool TryToTeleport(Vector3 targetPos)
     {
-        return InRadius(targetPos) 
+        return InRadius(targetPos)
                && IsFree(targetPos)
                && _manaController.TryDoAction(teleportCost, () =>
                {
@@ -72,7 +82,7 @@ public class TeleportationScript : MonoBehaviour
 
     private bool InRadius(Vector3 position)
     {
-        return (transform.position - position).magnitude < radius;
+        return (teleportRadiusCenter.position - position).magnitude < radius;
     }
 
     private bool IsFree(Vector2 position)
@@ -82,9 +92,9 @@ public class TeleportationScript : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(transform.position, radius);
-        #endif
+        Gizmos.DrawWireSphere(teleportRadiusCenter.position, radius);
+#endif
     }
 }

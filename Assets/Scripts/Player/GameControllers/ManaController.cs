@@ -18,14 +18,27 @@ public class ManaController : MonoBehaviour
     public int MaxManaPoint => maxManaPoints;
     public int Mana => _currentManaPoints;
 
-    void Awake()
+    public void IncreaseMaxManaAndRestore(int value)
+    {
+        maxManaPoints += value;
+        _currentManaPoints = maxManaPoints;
+        OnManaPointsChanged?.Invoke();
+    }
+
+    private void Awake()
     {
         _currentManaPoints = maxManaPoints;
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         _currentManaPoints = Math.Min(_currentManaPoints + manaByFixedUpdate, maxManaPoints);
+        OnManaPointsChanged?.Invoke();
+    }
+
+    public void AddMana(int value)
+    {
+        _currentManaPoints = Mathf.Min(maxManaPoints, _currentManaPoints + value);
         OnManaPointsChanged?.Invoke();
     }
 
