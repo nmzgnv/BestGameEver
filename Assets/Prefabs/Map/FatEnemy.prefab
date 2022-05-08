@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 6758692774851499439}
   - component: {fileID: 1097800128934883822}
   m_Layer: 6
-  m_Name: Enemy
+  m_Name: FatEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 1908008167850263735, guid: 9328785098fca5545adab6e1a834239d, type: 3}
+  m_Sprite: {fileID: 7161438850350122366, guid: 8ead2d4487bb45744a7e355e7b641857, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -132,7 +132,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0034592152, y: 0.21548696}
+  m_Offset: {x: -0.0034592152, y: 0.32101664}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -143,7 +143,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.603919, y: 0.3585917}
+  m_Size: {x: 0.603919, y: 0.45160204}
   m_EdgeRadius: 0
 --- !u!95 &1163200265232194789
 Animator:
@@ -155,7 +155,7 @@ Animator:
   m_GameObject: {fileID: 1163200265232194797}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: eb77e9d669aaa7344b727ad2af071779, type: 2}
+  m_Controller: {fileID: 9100000, guid: b6b19c947627ba84491ca643492d3853, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
