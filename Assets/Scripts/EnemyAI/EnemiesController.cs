@@ -11,6 +11,7 @@ public class EnemiesController : MonoBehaviour
     public void SetTarget(Transform target)
     {
         AttackTarget = target;
+        Debug.Log(_enemies.Count);
         foreach (var enemy in _enemies)
             SetUpEnemy(enemy, AttackTarget);
     }
@@ -22,7 +23,7 @@ public class EnemiesController : MonoBehaviour
         Debug.Log($"Enemy {enemy.name} set up");
     }
 
-    private void Start()
+    private void Awake()
     {
         _enemies = FindObjectsOfType<Enemy>().ToList();
         Debug.Log($"enemies count: {_enemies.Count}");

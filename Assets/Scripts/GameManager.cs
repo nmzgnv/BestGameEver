@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
         _player = FindObjectOfType<Player>();
         if (_player == null)
             Debug.LogWarning("Player not found!");
-
+        
         _enemiesController.SetTarget(_player.BulletTarget);
         _player.Health.OnPlayerDie += () => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         _cameraMovementController.Target = _player.BulletTarget;

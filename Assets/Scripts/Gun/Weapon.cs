@@ -40,7 +40,7 @@ public class Weapon : MonoBehaviour
         {
             _elapsed %= _rateOfFire;
             Instantiate(bullet, bulletSpawnPoint.position, transform.rotation);
-            
+
             audioSource.pitch = Random.Range(0.8f, 1.2f);
             audioSource.PlayOneShot(shotSound, 0.6f);
         }
