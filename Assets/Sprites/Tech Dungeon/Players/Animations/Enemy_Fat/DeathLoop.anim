@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LeftBackward_view
+  m_Name: DeathLoop
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 5860412799035241161, guid: 92d00d3805834264cae629148aee098a, type: 3}
+      value: {fileID: -992979650049217246, guid: 9328785098fca5545adab6e1a834239d, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -40,7 +40,7 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 5860412799035241161, guid: 92d00d3805834264cae629148aee098a, type: 3}
+    - {fileID: -992979650049217246, guid: 9328785098fca5545adab6e1a834239d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
