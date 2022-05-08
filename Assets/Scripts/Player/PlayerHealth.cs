@@ -14,6 +14,9 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField]
     private float invulnerableTime;
 
+    [SerializeField]
+    private float destroyAfterSecs = 1;
+
     private int _currentHealth;
     private float _lastDamageTime;
 
@@ -46,16 +49,23 @@ public class PlayerHealth : MonoBehaviour
             Die();
     }
 
-    public void ReceiveHeal()
+    public void ReceiveHeal(int points = 1)
     {
         if (_currentHealth < maxHealth)
         {
-            _currentHealth++;
+            _currentHealth = Mathf.Min(_currentHealth + points, maxHealth);
             OnPlayerApplyHeal?.Invoke();
         }
     }
 
-    private IEnumerator DestroyAfterDelay(int seconds)
+    public void IncreaseMaxHealthAndHeal(int points = 1)
+    {
+        maxHealth += points;
+        _currentHealth = maxHealth;
+        OnPlayerApplyHeal?.Invoke();
+    }
+
+    private IEnumerator DestroyAfterDelay(float seconds)
     {
         yield return new WaitForSeconds(seconds);
         Destroy(gameObject);
@@ -64,14 +74,14 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         OnPlayerDie?.Invoke();
-        
+
         var rb = GetComponent<Rigidbody2D>();
         if (rb != null) rb.simulated = false;
 
         foreach (Transform child in transform)
             Destroy(child.gameObject);
 
-        StartCoroutine(DestroyAfterDelay(1));
+        StartCoroutine(DestroyAfterDelay(destroyAfterSecs));
     }
 
     public void OnCollisionEnter2D(Collision2D other)

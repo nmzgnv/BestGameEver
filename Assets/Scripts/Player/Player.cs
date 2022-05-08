@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -10,13 +8,24 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Transform _bulletTarget;
 
-    public Transform BulletTarget
+    private PlayerHealth _playerHealth;
+    private PlayerAttack _playerAttack;
+    private ManaController _manaController;
+    private AudioSource _audioSource;
+
+    private void Awake()
     {
-        get => _bulletTarget;
+        _playerHealth = GetComponent<PlayerHealth>();
+        _playerAttack = GetComponent<PlayerAttack>();
+        _manaController = GetComponent<ManaController>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
-    public Transform AttackRadiusCenter
-    {
-        get => _attackRadiusCenter;
-    }
+    public AudioSource AudioSource => _audioSource;
+    public PlayerHealth Health => _playerHealth;
+    public PlayerAttack Attack => _playerAttack;
+    public ManaController Mana => _manaController;
+
+    public Transform BulletTarget => _bulletTarget;
+    public Transform AttackRadiusCenter => _attackRadiusCenter;
 }

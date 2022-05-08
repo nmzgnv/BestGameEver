@@ -72,12 +72,12 @@ public class PlayerAnimator : MonoBehaviour
         _animator.SetTrigger(dieParameter);
     }
     
-    public void PlayTeleportDownAnimation()
+    private void PlayTeleportDownAnimation()
     {
         _animator.SetTrigger(teleportDownParameter);
     }
 
-    public void PlayTeleportUpAnimation()
+    private void PlayTeleportUpAnimation()
     {
         _animator.SetTrigger(teleportUpParameter);
     }

@@ -26,6 +26,12 @@ public class EnemyAI : MonoBehaviour
 
     private Vector3 startingPosition;
 
+    public Transform Target
+    {
+        get => target;
+        set => target = value;
+    }
+
     private void Awake()
     {
         seeker = GetComponent<Seeker>();
@@ -35,7 +41,7 @@ public class EnemyAI : MonoBehaviour
     private void Start()
     {
         startingPosition = transform.position;
-        currentPath = new List<Vector3>() { startingPosition };
+        currentPath = new List<Vector3>() {startingPosition};
         currentWaypoint = 0;
         reachedEndOfPath = true;
     }
@@ -48,6 +54,8 @@ public class EnemyAI : MonoBehaviour
 
     private void UpdatePath()
     {
+        if (target == null)
+            return;
         if (IsPlayerInSightArea())
         {
             Vector3 vectorToTarget = target.position - transform.position;
@@ -68,8 +76,9 @@ public class EnemyAI : MonoBehaviour
 
         if (Vector3.Distance(transform.position, currentPath[currentWaypoint]) < reachedPositionDistance)
         {
-            currentWaypoint++;   
+            currentWaypoint++;
         }
+
         if (currentWaypoint >= currentPath.Count)
         {
             reachedEndOfPath = true;
@@ -81,7 +90,8 @@ public class EnemyAI : MonoBehaviour
 
     private Vector3 GetRoamingPosition()
     {
-        return startingPosition + new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized * Random.Range(0f, 5f);
+        return startingPosition +
+               new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized * Random.Range(0f, 5f);
     }
 
     private bool IsPlayerInSightArea()

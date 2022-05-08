@@ -24,7 +24,7 @@ public class WeaponAI : MonoBehaviour
 
     [SerializeField]
     private float minShootRadius = 2;
-    
+
     private Weapon _weapon;
     private Transform _initialTransform;
 
@@ -38,6 +38,10 @@ public class WeaponAI : MonoBehaviour
     private void Update()
     {
         var startPosition = transform.position;
+
+        if (Target == null)
+            return;
+
         var targetPosition = Target.position;
         var vectorToTarget = targetPosition - startPosition;
 
@@ -51,9 +55,9 @@ public class WeaponAI : MonoBehaviour
 
         if (!isPlayerVisible)
             vectorToTarget = _initialTransform.position - startPosition;
-        
+
         _weapon.CanShoot = isPlayerVisible && vectorToTarget.magnitude > minShootRadius;
-        
+
         var speed = isPlayerVisible ? aimSpeed : restoreSpeed;
         var angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg;
         var q = Quaternion.AngleAxis(angle, Vector3.forward);
