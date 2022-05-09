@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fb2c175522f4a74983c99a7afdf47e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.02
+  speed: 0.04
 --- !u!114 &1163200265232194784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,6 +333,10 @@ PrefabInstance:
     - target: {fileID: 7150563991394296581, guid: 8e8dc7d2091587b4c8ef985e1f297384, type: 3}
       propertyPath: m_Name
       value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267541024237381852, guid: 8e8dc7d2091587b4c8ef985e1f297384, type: 3}
+      propertyPath: shotsPerSecond
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e8dc7d2091587b4c8ef985e1f297384, type: 3}
