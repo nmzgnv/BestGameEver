@@ -1180,7 +1180,11 @@ PrefabInstance:
     - target: {fileID: 6758692774851499439, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1459847153}
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758692774851499439, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
+      propertyPath: reachedPositionDistance
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
 --- !u!114 &704000326 stripped
@@ -1706,14 +1710,14 @@ PrefabInstance:
     - target: {fileID: 6758692774851499439, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1459847153}
+      objectReference: {fileID: 0}
     - target: {fileID: 6758692774851499439, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
       propertyPath: attackRange
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6758692774851499439, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
       propertyPath: reachedPositionDistance
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
@@ -5922,7 +5926,7 @@ PrefabInstance:
     - target: {fileID: 6758692774851499439, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1459847153}
+      objectReference: {fileID: 0}
     - target: {fileID: 6758692774851499439, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
       propertyPath: attackRange
       value: 3
@@ -6102,16 +6106,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6758692774851499439, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1459847153}
-    - target: {fileID: 6758692774851499439, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
-      propertyPath: attackRange
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6758692774851499439, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
       propertyPath: reachedPositionDistance
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}

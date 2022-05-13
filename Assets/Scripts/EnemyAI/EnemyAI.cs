@@ -22,6 +22,7 @@ public class EnemyAI : MonoBehaviour
     private List<Vector3> currentPath;
     private int currentWaypoint;
     private bool reachedEndOfPath;
+    private float lastMoveTime;
 
     private Vector3 startingPosition;
 
@@ -43,6 +44,7 @@ public class EnemyAI : MonoBehaviour
         currentPath = new List<Vector3>() { startingPosition };
         currentWaypoint = 0;
         reachedEndOfPath = true;
+        lastMoveTime = Time.realtimeSinceStartup;
     }
 
     private void Update()
@@ -56,7 +58,11 @@ public class EnemyAI : MonoBehaviour
 
     private void UpdatePath()
     {
-        if (IsPlayerInSightArea())
+        if (Time.realtimeSinceStartup - lastMoveTime > 1f)
+        {
+            seeker.StartPath(transform.position, GetRoamingPosition(), OnPathComplete);
+        }
+        else if (IsPlayerInSightArea())
         {
             Vector3 vectorToTarget = target.position - transform.position;
             vectorToTarget *= (vectorToTarget.magnitude - attackRange) / vectorToTarget.magnitude;
@@ -77,6 +83,7 @@ public class EnemyAI : MonoBehaviour
             && Vector3.Distance(transform.position, currentPath[currentWaypoint]) < reachedPositionDistance)
         {
             currentWaypoint++;
+            lastMoveTime = Time.realtimeSinceStartup;
         }
         if (currentWaypoint >= currentPath.Count)
         {
