@@ -135,7 +135,7 @@ BoxCollider2D:
   m_Offset: {x: -0.0034592152, y: 0.21548696}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: 0.25}
     oldSize: {x: 1.6, y: 1.6}
     newSize: {x: 1.6, y: 1.6}
     adaptiveTilingThreshold: 0.5
@@ -336,7 +336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7267541024237381852, guid: 8e8dc7d2091587b4c8ef985e1f297384, type: 3}
       propertyPath: shotsPerSecond
-      value: 100
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e8dc7d2091587b4c8ef985e1f297384, type: 3}
