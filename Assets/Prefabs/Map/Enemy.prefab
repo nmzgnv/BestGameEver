@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 1163200265232194810}
   - component: {fileID: 1163200265232194789}
   - component: {fileID: 1163200265232194788}
-  - component: {fileID: 1163200265232194784}
   - component: {fileID: 1163200265232194787}
   - component: {fileID: 1163200265232194786}
   - component: {fileID: 1556440318957538233}
@@ -46,7 +45,7 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1.6, y: 1.6}
-  m_Pivot: {x: 0.5, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1163200265232194808
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -132,7 +131,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0034592152, y: 0.21548696}
+  m_Offset: {x: 0, y: -0.15}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.25}
@@ -143,7 +142,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.603919, y: 0.3585917}
+  m_Size: {x: 0.4, y: 0.3}
   m_EdgeRadius: 0
 --- !u!95 &1163200265232194789
 Animator:
@@ -190,6 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFlipped: 0
+
 --- !u!114 &1163200265232194787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,8 +260,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda914ea342bc01498c9659cf13016d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reachedPositionDistance: 1
-  sightRange: 15
+  reachedPositionDistance: 0.5
+  sightRange: 12
   attackRange: 3
   target: {fileID: 0}
 --- !u!114 &1097800128934883822
@@ -296,7 +296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4791170097684291810, guid: 8e8dc7d2091587b4c8ef985e1f297384, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.431
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 4791170097684291810, guid: 8e8dc7d2091587b4c8ef985e1f297384, type: 3}
       propertyPath: m_LocalPosition.z
@@ -308,15 +308,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4791170097684291810, guid: 8e8dc7d2091587b4c8ef985e1f297384, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4791170097684291810, guid: 8e8dc7d2091587b4c8ef985e1f297384, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4791170097684291810, guid: 8e8dc7d2091587b4c8ef985e1f297384, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4791170097684291810, guid: 8e8dc7d2091587b4c8ef985e1f297384, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
