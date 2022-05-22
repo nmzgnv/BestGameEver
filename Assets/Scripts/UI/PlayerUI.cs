@@ -18,7 +18,6 @@ public class PlayerUI : MonoBehaviour
 
     private void RefreshHealth()
     {
-        healthSlider.maxValue = playerHealth.MaxHealth;
         healthSlider.value = playerHealth.Health;
     }
 
@@ -37,6 +36,7 @@ public class PlayerUI : MonoBehaviour
 
     private void Start()
     {
+        healthSlider.maxValue = playerHealth.MaxPossibleHealth;
         RefreshHealth();
         RefreshMana();
     }

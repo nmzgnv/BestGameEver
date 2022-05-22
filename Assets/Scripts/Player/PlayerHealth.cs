@@ -8,8 +8,10 @@ public class PlayerHealth : MonoBehaviour
     public event Action OnPlayerApplyHeal;
     public event Action OnPlayerDie;
 
+    [SerializeField] private int maxPossibleHealth = 6;
+    
     [SerializeField]
-    private int maxHealth;
+    private int maxHealth = 3;
 
     [SerializeField]
     private float invulnerableTime;
@@ -23,6 +25,7 @@ public class PlayerHealth : MonoBehaviour
     private bool IsInvulnerable =>
         Time.realtimeSinceStartup - _lastDamageTime < invulnerableTime;
 
+    public int MaxPossibleHealth => maxPossibleHealth;
     public int MaxHealth => maxHealth;
     public int Health => _currentHealth;
 
