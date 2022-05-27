@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
             Debug.LogWarning("Player not found!");
         
         _enemiesController.SetTarget(_player.BulletTarget);
-        _player.Health.OnPlayerDie += () => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //_player.Health.OnPlayerDie += () => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         _cameraMovementController.Target = _player.BulletTarget;
     }
 }
