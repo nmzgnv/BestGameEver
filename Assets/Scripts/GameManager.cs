@@ -6,7 +6,8 @@ public class GameManager : MonoBehaviour
     private CameraMovementController _cameraMovementController;
     private Player _player;
     private EnemiesController _enemiesController;
-
+    public bool IsPlayerControlled = true; 
+    
     private void SetUpCamera()
     {
         var camera = Camera.main.gameObject;
@@ -25,7 +26,6 @@ public class GameManager : MonoBehaviour
             Debug.LogWarning("Player not found!");
         
         _enemiesController.SetTarget(_player.BulletTarget);
-        //_player.Health.OnPlayerDie += () => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         _cameraMovementController.Target = _player.BulletTarget;
     }
 }

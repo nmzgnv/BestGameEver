@@ -50,7 +50,7 @@ public class PlayerAttack : MonoBehaviour
     public void Attack()
     {
         StartCoroutine(SetAttackState());
-
+        
         OnPlayerAttacks?.Invoke();
         audioSource.pitch = Random.Range(0.9f, 1.1f);
         audioSource.PlayOneShot(hitSound);

@@ -11,10 +11,12 @@ public class PauseController : MonoBehaviour
     [HideInInspector] public bool gameIsPaused = false;
     public GameObject pauseMenu;
     public SceneChanger sceneChanger;
+    private GameManager _gameManager;
     
     void Start()
     {
         pauseMenu.SetActive(false);
+        _gameManager = FindObjectOfType<GameManager>();
     }
 
     void Update()
@@ -32,12 +34,14 @@ public class PauseController : MonoBehaviour
     public void Resume()
     {
         pauseMenu.SetActive(false);
+        _gameManager.IsPlayerControlled = true;
         Time.timeScale = 1f;
     }
 
     private void Pause()
     {
         pauseMenu.SetActive(true);
+        _gameManager.IsPlayerControlled = false;
         Time.timeScale = 0f;
     }
 

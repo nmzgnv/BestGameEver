@@ -77,7 +77,7 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         OnPlayerDie?.Invoke();
-
+        
         var rb = GetComponent<Rigidbody2D>();
         if (rb != null) rb.simulated = false;
 
