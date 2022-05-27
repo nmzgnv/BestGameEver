@@ -320,7 +320,7 @@ MonoBehaviour:
   maxPossibleHealth: 12
   maxHealth: 6
   invulnerableTime: 0.1
-  destroyAfterSecs: 1
+  destroyAfterSecs: 10
 --- !u!70 &1040212315
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

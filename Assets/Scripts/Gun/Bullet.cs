@@ -36,6 +36,7 @@ public class Bullet : MonoBehaviour
 
     public void OnDestroy()
     {
+        if (!gameObject.scene.isLoaded) return;
         Destroy(Instantiate(boom.gameObject, transform.position, transform.rotation), destroyAfterSeconds);
     }
 }
