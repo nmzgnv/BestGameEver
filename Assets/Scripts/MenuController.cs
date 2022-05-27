@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +10,8 @@ public class MenuController : MonoBehaviour
     [SerializeField]
     private string startSceneName = "";
 
+    [SerializeField] private SceneChanger sceneChanger;
+
     public void ChangeSettingsVisibility()
     {
         settingsPanel.SetActive(!settingsPanel.activeInHierarchy);
@@ -16,7 +19,7 @@ public class MenuController : MonoBehaviour
 
     public void OnPlayPress()
     {
-        SceneManager.LoadScene(startSceneName);
+        sceneChanger.ChangeScene(startSceneName);
     }
 
     public void OnExitPress()
