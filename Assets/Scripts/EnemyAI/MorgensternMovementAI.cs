@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Pathfinding;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(PhysicsMovement))]
 public class MorgensternMovementAI : MonoBehaviour
@@ -23,7 +24,6 @@ public class MorgensternMovementAI : MonoBehaviour
     private List<Vector3> _currentPath = new List<Vector3>();
     private int _pathInd = 0;
     public bool CanMove { get; set; } = true;
-
 
     private void Awake()
     {

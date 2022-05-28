@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 public class MorgensternAI : BossAIBase
 {
     [SerializeField]
-    private PlayerAnimator playerAnimator;
+    private MorgensternAnimator playerAnimator;
 
     [SerializeField]
     private MorgensternMovementAI movementAI;
@@ -33,9 +33,26 @@ public class MorgensternAI : BossAIBase
     [SerializeField]
     private int secondsDelayAfterAttack = 2;
 
-    private void MusicAttack()
+    [SerializeField]
+    private AudioSource audioSource;
+
+    [SerializeField]
+    private AudioClip screamSound;
+
+    private float _freezeParticlesSpeed = .1f;
+    private const int NormalParticleSpeed = 1;
+
+
+    private void PlayAttackEffects()
     {
+        audioSource.pitch = Random.Range(0.9f, 1.1f);
+        audioSource.PlayOneShot(screamSound);
         playerAnimator.PlayAttackAnimation();
+    }
+
+    private void AttackMusically()
+    {
+        PlayAttackEffects();
         musicalNotes.Play();
     }
 
@@ -47,25 +64,26 @@ public class MorgensternAI : BossAIBase
 
     private IEnumerator SimpleAttack()
     {
-        MusicAttack();
+        AttackMusically();
         yield return new WaitForSeconds(simpleAttackSeconds);
         StopAttack();
     }
 
     private IEnumerator AttackWithFreeze()
     {
-        MusicAttack();
+        AttackMusically();
         yield return new WaitForSeconds(simpleAttackSeconds);
-        musicalNotes.Pause();
+        musicalNotes.playbackSpeed = _freezeParticlesSpeed;
         movementAI.CanMove = false;
         yield return new WaitForSeconds(freezeAttackSeconds);
+        musicalNotes.playbackSpeed = NormalParticleSpeed;
         movementAI.CanMove = true;
         StartCoroutine(SimpleAttack());
     }
 
     private IEnumerator SpawnEnemiesAttack()
     {
-        playerAnimator.PlayAttackAnimation();
+        PlayAttackEffects();
         foreach (var point in spawnEnemyPoints)
         {
             var randomIndex = Random.Range(0, availableEnemies.Length);
