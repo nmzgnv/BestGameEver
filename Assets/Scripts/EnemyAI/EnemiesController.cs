@@ -49,6 +49,7 @@ public class EnemiesController : MonoBehaviour
         FindEnemies();
 
         _boss = FindObjectOfType<BossAIBase>();
-        _boss.AfterEnemiesSpawn += SetupAllEnemies;
+        if (_boss != null)
+            _boss.AfterEnemiesSpawn += SetupAllEnemies;
     }
 }
