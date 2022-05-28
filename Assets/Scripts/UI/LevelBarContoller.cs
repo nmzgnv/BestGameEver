@@ -6,12 +6,14 @@ using UnityEngine.UI;
 public class LevelBarContoller : MonoBehaviour
 {
     [SerializeField] private Slider levelSlider;
-
+    [SerializeField] private WinZoneController winZone;
     [SerializeField] private EnemiesController enemiesController;
     
     public void RefreshBar()
     {
         --levelSlider.value;
+        if (levelSlider.value <= 0)
+            winZone.gameObject.SetActive(true); 
     }
 
     private void Start()
