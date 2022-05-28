@@ -108,7 +108,7 @@ public class MorgensternAI : BossAIBase
             yield return new WaitForSeconds(secondsDelayAfterAttack);
         }
     }
-
+    
     private void OnDestroy()
     {
         StopAllCoroutines();

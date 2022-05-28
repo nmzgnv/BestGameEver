@@ -35,7 +35,8 @@ public class EnemiesController : MonoBehaviour
     {
         _enemies = FindObjectsOfType<Enemy>().ToList();
         foreach (var enemy in _enemies)
-            enemy.Health.OnPlayerDie += levelBar.RefreshBar;
+            if(levelBar != null)
+                enemy.Health.OnPlayerDie += levelBar.RefreshBar;
     }
 
     private void SetupAllEnemies()

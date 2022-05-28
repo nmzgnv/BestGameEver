@@ -6,7 +6,18 @@ public class PhysicsMovement : MonoBehaviour
     public Vector2 LastMoveDirection { get; set; }
     public Vector2 LastViewDirection { get; private set; }
 
-    public bool CanMove { get; set; } = true;
+    private bool _canMove = true;
+
+    public bool CanMove
+    {
+        get => _canMove;
+        set
+        {
+            _rigidbody.velocity = Vector2.zero;
+            _rigidbody.simulated = value;
+            _canMove = value;
+        }
+    }
 
     [SerializeField]
     private float speed;
