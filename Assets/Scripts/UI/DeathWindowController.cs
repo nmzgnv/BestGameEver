@@ -32,7 +32,7 @@ public class DeathWindowController : MonoBehaviour
 
     public void RestartButtonPress()
     {
-        sceneChanger.ChangeScene("LevelScene");
+        sceneChanger.ChangeScene(SceneManager.GetActiveScene().name);
     }
 
     public void ExitButtonPress()

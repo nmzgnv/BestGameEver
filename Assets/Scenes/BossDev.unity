@@ -784,7 +784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxPossibleHealth: 20
-  maxHealth: 1
+  maxHealth: 20
   invulnerableTime: 0.1
   destroyAfterSecs: 5
 --- !u!1 &385267332
@@ -10887,7 +10887,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -4375510502125869310, guid: 7e975b883564d5e48ba369322f941d7a, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 21243e5415757f64cbe7dc08f690bd4e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 12ca1ca539d8fc241902a1fbfdc2c6aa, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.473
   m_Pitch: 1
@@ -11427,7 +11427,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7189622240297586487, guid: 467eb6dacc81ec143a1e3b769a48c098, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7189622240297586487, guid: 467eb6dacc81ec143a1e3b769a48c098, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

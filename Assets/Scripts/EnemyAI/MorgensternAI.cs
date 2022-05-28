@@ -91,6 +91,11 @@ public class MorgensternAI : BossAIBase
         }
     }
 
+    private void OnDestroy()
+    {
+        StopAllCoroutines();
+    }
+
     private void Start()
     {
         StartCoroutine(Loop());
