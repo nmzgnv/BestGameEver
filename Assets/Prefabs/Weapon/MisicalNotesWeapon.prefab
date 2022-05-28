@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4666251672936604357}
   - component: {fileID: 4666251672936604356}
   - component: {fileID: 4666251672936604359}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: MisicalNotesWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -1481,12 +1481,18 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: -3127448798928283936, guid: d111b47c937992e41a0f75571aa20fa2, type: 3}
-    - sprite: {fileID: -1649669319220892291, guid: d111b47c937992e41a0f75571aa20fa2, type: 3}
-    - sprite: {fileID: 8794293679310905712, guid: d111b47c937992e41a0f75571aa20fa2, type: 3}
-    - sprite: {fileID: 9041627313079446052, guid: d111b47c937992e41a0f75571aa20fa2, type: 3}
-    - sprite: {fileID: -243938744375676594, guid: d111b47c937992e41a0f75571aa20fa2, type: 3}
-    - sprite: {fileID: 2163783347542741529, guid: d111b47c937992e41a0f75571aa20fa2, type: 3}
+    - sprite: {fileID: -3127448798928283936, guid: d111b47c937992e41a0f75571aa20fa2,
+        type: 3}
+    - sprite: {fileID: -1649669319220892291, guid: d111b47c937992e41a0f75571aa20fa2,
+        type: 3}
+    - sprite: {fileID: 8794293679310905712, guid: d111b47c937992e41a0f75571aa20fa2,
+        type: 3}
+    - sprite: {fileID: 9041627313079446052, guid: d111b47c937992e41a0f75571aa20fa2,
+        type: 3}
+    - sprite: {fileID: -243938744375676594, guid: d111b47c937992e41a0f75571aa20fa2,
+        type: 3}
+    - sprite: {fileID: 2163783347542741529, guid: d111b47c937992e41a0f75571aa20fa2,
+        type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -3789,7 +3795,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 1975
+      m_Bits: 4294967295
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
