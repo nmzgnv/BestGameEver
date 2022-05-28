@@ -17,15 +17,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1917628253695484068, guid: d792e774855ffe54d879bdbb2e23dc75, type: 3}
       propertyPath: m_Color.b
-      value: 0.735849
+      value: 0.027406693
       objectReference: {fileID: 0}
     - target: {fileID: 1917628253695484068, guid: d792e774855ffe54d879bdbb2e23dc75, type: 3}
       propertyPath: m_Color.g
-      value: 0.2672659
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1917628253695484068, guid: d792e774855ffe54d879bdbb2e23dc75, type: 3}
       propertyPath: m_Color.r
-      value: 0.3886197
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1917628253695484069, guid: d792e774855ffe54d879bdbb2e23dc75, type: 3}
       propertyPath: m_AnchorMax.x
@@ -141,19 +141,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1917628254302487625, guid: d792e774855ffe54d879bdbb2e23dc75, type: 3}
       propertyPath: m_Name
-      value: LevelBar
+      value: BossHealthBar
       objectReference: {fileID: 0}
     - target: {fileID: 1917628255172864196, guid: d792e774855ffe54d879bdbb2e23dc75, type: 3}
       propertyPath: m_Color.b
-      value: 0.1792453
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1917628255172864196, guid: d792e774855ffe54d879bdbb2e23dc75, type: 3}
       propertyPath: m_Color.g
-      value: 0.05326629
+      value: 0.0038130654
       objectReference: {fileID: 0}
     - target: {fileID: 1917628255172864196, guid: d792e774855ffe54d879bdbb2e23dc75, type: 3}
       propertyPath: m_Color.r
-      value: 0.08581085
+      value: 0.18867922
       objectReference: {fileID: 0}
     - target: {fileID: 7603164842298239680, guid: d792e774855ffe54d879bdbb2e23dc75, type: 3}
       propertyPath: m_Sprite

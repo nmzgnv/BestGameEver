@@ -41,7 +41,7 @@ public class EnemyAI : MonoBehaviour
     private void Start()
     {
         startingPosition = transform.position;
-        currentPath = new List<Vector3>() { startingPosition };
+        currentPath = new List<Vector3>() {startingPosition};
         currentWaypoint = 0;
         reachedEndOfPath = true;
         lastMoveTime = Time.realtimeSinceStartup;
@@ -49,7 +49,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
-        if (target == null) 
+        if (target == null)
             return;
 
         UpdatePath();
@@ -69,27 +69,29 @@ public class EnemyAI : MonoBehaviour
             seeker.StartPath(transform.position, transform.position + vectorToTarget, OnPathComplete);
         }
         else if (reachedEndOfPath)
-        { 
+        {
             seeker.StartPath(transform.position, GetRoamingPosition(), OnPathComplete);
         }
     }
 
     private void MoveByPath()
     {
-        if (currentPath == null || reachedEndOfPath) 
+        if (currentPath == null || reachedEndOfPath)
             return;
 
-        while (currentWaypoint < currentPath.Count 
-            && Vector3.Distance(transform.position, currentPath[currentWaypoint]) < reachedPositionDistance)
+        while (currentWaypoint < currentPath.Count
+               && Vector3.Distance(transform.position, currentPath[currentWaypoint]) < reachedPositionDistance)
         {
             currentWaypoint++;
             lastMoveTime = Time.realtimeSinceStartup;
         }
+
         if (currentWaypoint >= currentPath.Count)
         {
             reachedEndOfPath = true;
             return;
         }
+
         Debug.DrawLine(transform.position, currentPath[currentWaypoint], Color.magenta);
 
         physicsMovement.Move(currentPath[currentWaypoint] - transform.position);
@@ -107,7 +109,7 @@ public class EnemyAI : MonoBehaviour
         var hitFrom = transform.position;
         var hit = Physics2D.Raycast(hitFrom, vectorToTarget);
         Debug.DrawLine(hitFrom, hitFrom + vectorToTarget * (sightRange / vectorToTarget.magnitude), Color.yellow);
-        var isPlayerVisible = hit.collider.GetComponent<Player>() != null;
+        var isPlayerVisible = (hit.collider != null ? hit.collider.GetComponent<Player>() : null) != null;
         return vectorToTarget.magnitude < sightRange && isPlayerVisible;
     }
 
