@@ -10,6 +10,9 @@ public class MorgensternAI : BossAIBase
     private MorgensternAnimator playerAnimator;
 
     [SerializeField]
+    private PlayerHealth _playerHealth;
+
+    [SerializeField]
     private MorgensternMovementAI movementAI;
 
     [SerializeField]
@@ -108,14 +111,10 @@ public class MorgensternAI : BossAIBase
             yield return new WaitForSeconds(secondsDelayAfterAttack);
         }
     }
-    
-    private void OnDestroy()
-    {
-        StopAllCoroutines();
-    }
 
     private void Start()
     {
+        _playerHealth.OnPlayerDie += StopAllCoroutines;
         StartCoroutine(Loop());
     }
 }

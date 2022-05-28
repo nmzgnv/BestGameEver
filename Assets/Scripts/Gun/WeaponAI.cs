@@ -50,7 +50,7 @@ public class WeaponAI : MonoBehaviour
 
         Debug.DrawLine(startPosition, hitFrom, Color.red); // ignored ray
         Debug.DrawLine(hitFrom, targetPosition, Color.blue);
-
+        
         var isPlayerVisible = hit.collider.GetComponent<PlayerAttack>() != null; // TODO change condition 
 
         if (!isPlayerVisible)

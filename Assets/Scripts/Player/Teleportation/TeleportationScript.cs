@@ -82,7 +82,8 @@ public class TeleportationScript : MonoBehaviour
 
     private bool InRadius(Vector3 position)
     {
-        return (teleportRadiusCenter.position - position).magnitude < radius;
+        return teleportRadiusCenter != null &&
+               (teleportRadiusCenter.position - position).magnitude < radius;
     }
 
     private bool IsFree(Vector2 position)

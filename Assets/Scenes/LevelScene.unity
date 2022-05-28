@@ -467,10 +467,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1945329041}
     m_Modifications:
-    - target: {fileID: 9057049450684472210, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
-      propertyPath: thingDropProbability
-      value: 0.9
-      objectReference: {fileID: 0}
     - target: {fileID: 9057049450684472211, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
       propertyPath: m_Name
       value: LootBox (7)
@@ -6259,7 +6255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1945329041
 Transform:
   m_ObjectHideFlags: 0
@@ -12016,38 +12012,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2045833671882388284, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2045833672259659681, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2045833672259659681, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.459
-      objectReference: {fileID: 0}
-    - target: {fileID: 2045833672259659682, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2045833673137278369, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: attackRange
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2045833673137278369, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: movementFreezeTime
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2045833673137278369, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: secsDelayBetweenAttack
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2045833673137278370, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: teleportCost
-      value: 300
-      objectReference: {fileID: 0}
     - target: {fileID: 2045833673137278374, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -12092,37 +12056,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2045833673137278383, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: maxHealth
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2045833673137278392, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2045833673137278395, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2045833673137278395, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2638844964888767317, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2806967178968100623, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3217972911029347535, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: manaByFixedUpdate
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3268815144541850805, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
