@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2045833671882388283}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: bulletTarget
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2045833672259659681}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: attackRadiusCenter
   m_TagString: Untagged
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 1040212315}
   - component: {fileID: -4561939699064562268}
   - component: {fileID: 7359161395163832416}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,8 +334,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008736134, y: 0.48302376}
-  m_Size: {x: 0.70210934, y: 0.9117744}
+  m_Offset: {x: -0.008736134, y: 0.56688213}
+  m_Size: {x: 0.70210934, y: 1.0412443}
   m_Direction: 0
 --- !u!114 &-4561939699064562268
 MonoBehaviour:
@@ -457,7 +457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4067469785652189634}
   - component: {fileID: 6940375622485846727}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Audio Source
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,7 +584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6151342134973298577}
   - component: {fileID: 1893684347270383921}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TeleportRadius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -668,7 +668,7 @@ GameObject:
   - component: {fileID: 1904146565471040052}
   - component: {fileID: 4028235692414708072}
   - component: {fileID: 8099036395501976922}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TeleportParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
