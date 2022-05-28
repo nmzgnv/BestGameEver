@@ -93,6 +93,7 @@ public class TeleportationScript : MonoBehaviour
     private void OnDrawGizmos()
     {
 #if UNITY_EDITOR
+        if (teleportRadiusCenter == null) return;
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(teleportRadiusCenter.position, radius);
 #endif
