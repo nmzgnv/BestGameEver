@@ -27,7 +27,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9057049450684472211}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -128,6 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac681aac268ffbd42a9e294571bc3733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxPossibleHealth: 6
   maxHealth: 1
   invulnerableTime: 0
   destroyAfterSecs: 0.31
@@ -148,4 +149,5 @@ MonoBehaviour:
   - {fileID: 3500885809086755026, guid: ee6bf978275f1f341883479ddeba8807, type: 3}
   - {fileID: 7358321870197447332, guid: 3103a7cfa4ef56c4db9d4582df7941d6, type: 3}
   - {fileID: 4129689606495042747, guid: ea457497552f8f64cadd8385f1dc7e84, type: 3}
-  thingDropProbability: 0.2
+  thingDropProbability: 0.9
+  playerHealth: {fileID: 9057049450684472220}

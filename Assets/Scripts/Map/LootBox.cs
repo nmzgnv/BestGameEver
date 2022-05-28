@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -11,7 +10,15 @@ public class LootBox : MonoBehaviour
     [SerializeField]
     private float thingDropProbability;
 
-    private void OnDestroy()
+    [SerializeField]
+    private PlayerHealth playerHealth;
+
+    private void Start()
+    {
+        playerHealth.OnPlayerDie += TrySpawnRandomThing;
+    }
+
+    private void TrySpawnRandomThing()
     {
         float value = Random.Range(0f, 1f);
         if (value <= thingDropProbability && lootList.Count > 0)
