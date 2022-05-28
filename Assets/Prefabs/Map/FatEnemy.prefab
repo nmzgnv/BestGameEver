@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fb2c175522f4a74983c99a7afdf47e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.02
+  speed: 0.01
 --- !u!114 &1163200265232194784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxPossibleHealth: 6
-  maxHealth: 1
+  maxHealth: 2
   invulnerableTime: 0.1
   destroyAfterSecs: 1
 --- !u!114 &1556440318957538233
@@ -287,6 +287,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1163200265232194790}
     m_Modifications:
+    - target: {fileID: 4373869899415272354, guid: 8e8dc7d2091587b4c8ef985e1f297384, type: 3}
+      propertyPath: aimSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4791170097684291810, guid: 8e8dc7d2091587b4c8ef985e1f297384, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -337,7 +341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7267541024237381852, guid: 8e8dc7d2091587b4c8ef985e1f297384, type: 3}
       propertyPath: shotsPerSecond
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e8dc7d2091587b4c8ef985e1f297384, type: 3}

@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045833672259659682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.199, y: 0.491, z: 0}
+  m_LocalPosition: {x: 0, y: 0.459, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2045833673137278374}
@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxManaPoints: 1000
-  manaByFixedUpdate: 1
+  manaByFixedUpdate: 2
 --- !u!114 &2045833673137278370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 4
   cooldownToNextTeleport: 15
-  teleportCost: 500
+  teleportCost: 300
   radiusToColliders: 0.15
   teleportRadiusCenter: {fileID: 6151342134973298577}
 --- !u!114 &2045833673137278369
@@ -276,7 +276,8 @@ MonoBehaviour:
   attackRadiusCenter: {fileID: 2045833672259659681}
   audioSource: {fileID: 6940375622485846727}
   hitSound: {fileID: 8300000, guid: dd17d6e5c7ba1fc46a43adaff94a9b52, type: 3}
-  movementFreezeTime: 0.5
+  movementFreezeTime: 0.6
+  secsDelayBetweenAttack: 0.3
 --- !u!114 &2045833673137278371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,7 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxPossibleHealth: 12
-  maxHealth: 6
+  maxHealth: 12
   invulnerableTime: 0.1
   destroyAfterSecs: 10
 --- !u!70 &1040212315
