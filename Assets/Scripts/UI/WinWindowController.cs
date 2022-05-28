@@ -24,7 +24,7 @@ public class WinWindowController : MonoBehaviour
 
     public void NextLevelButtonPress()
     {
-        sceneChanger.ChangeScene("LevelScene");
+        sceneChanger.ChangeScene("BossDev");
     }
 
     public void ExitButtonPress()
