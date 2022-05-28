@@ -8,8 +8,9 @@ public class PlayerHealth : MonoBehaviour
     public event Action OnPlayerApplyHeal;
     public event Action OnPlayerDie;
 
-    [SerializeField] private int maxPossibleHealth = 6;
-    
+    [SerializeField]
+    private int maxPossibleHealth = 6;
+
     [SerializeField]
     private int maxHealth = 3;
 
@@ -39,12 +40,12 @@ public class PlayerHealth : MonoBehaviour
         _lastDamageTime = Time.realtimeSinceStartup;
     }
 
-    public void ReceiveDamage()
+    public void ReceiveDamage(int damage = 1)
     {
         if (IsInvulnerable)
             return;
 
-        _currentHealth--;
+        _currentHealth -= damage;
         _lastDamageTime = Time.realtimeSinceStartup;
         OnPlayerTakesDamage?.Invoke();
 
@@ -77,7 +78,7 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         OnPlayerDie?.Invoke();
-        
+
         var rb = GetComponent<Rigidbody2D>();
         if (rb != null) rb.simulated = false;
 
@@ -87,10 +88,20 @@ public class PlayerHealth : MonoBehaviour
         StartCoroutine(DestroyAfterDelay(destroyAfterSecs));
     }
 
+    private void ReceiveDamageIfBullet(GameObject other)
+    {
+        var bullet = other.GetComponent<BulletBase>();
+        if (bullet)
+            ReceiveDamage(bullet.Damage);
+    }
+
     public void OnCollisionEnter2D(Collision2D other)
     {
-        var bullet = other.gameObject.GetComponent<Bullet>();
-        if (bullet)
-            ReceiveDamage();
+        ReceiveDamageIfBullet(other.gameObject);
+    }
+
+    public void OnParticleCollision(GameObject other)
+    {
+        ReceiveDamageIfBullet(other);
     }
 }
