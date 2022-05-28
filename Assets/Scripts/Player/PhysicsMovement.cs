@@ -31,4 +31,9 @@ public class PhysicsMovement : MonoBehaviour
         if (direction.magnitude > 0.1)
             LastViewDirection = direction.normalized;
     }
+
+    public void View(Vector2 direction)
+    {
+        LastViewDirection = direction.normalized;
+    }
 }

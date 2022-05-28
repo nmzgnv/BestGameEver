@@ -26,18 +26,12 @@ public class PlayerAttack : MonoBehaviour
     public event Action OnPlayerAttacks;
     
     private PhysicsMovement _physicsMovement;
-
+    private Camera _mainCamera;
+    
     public void Start()
     {
         _physicsMovement = GetComponent<PhysicsMovement>();
-    }
-
-    public void OnDrawGizmosSelected()
-    {
-#if UNITY_EDITOR
-        Gizmos.color = Color.white;
-        Gizmos.DrawWireSphere(attackRadiusCenter.position, attackRange);
-#endif
+        _mainCamera = FindObjectOfType<Camera>();
     }
 
     private IEnumerator SetAttackState()
@@ -55,9 +49,15 @@ public class PlayerAttack : MonoBehaviour
         audioSource.pitch = Random.Range(0.9f, 1.1f);
         audioSource.PlayOneShot(hitSound);
 
+        
+        var viewVector = _mainCamera.ScreenToWorldPoint(Input.mousePosition) - attackRadiusCenter.position;
+        _physicsMovement.View(viewVector);
+
         var enemies = Physics2D.OverlapCircleAll(attackRadiusCenter.position, attackRange, damageableLayer);
         foreach (var enemy in enemies)
         {
+            if (Vector2.Dot(enemy.transform.position - attackRadiusCenter.position, viewVector) < 0)
+                continue;
             var enemyHealth = enemy.GetComponent<PlayerHealth>();
             if (enemyHealth != null)
                 enemyHealth.ReceiveDamage();
