@@ -663,7 +663,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.014495492, y: 1.8766999}
@@ -726,6 +726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAnimator: {fileID: 344288292}
+  _playerHealth: {fileID: 344288299}
   movementAI: {fileID: 344288297}
   musicalNotes: {fileID: 2090559863}
   simpleAttackSeconds: 3
@@ -755,7 +756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxPossibleHealth: 20
-  maxHealth: 20
+  maxHealth: 3
   invulnerableTime: 0.1
   destroyAfterSecs: 5
 --- !u!1 &385267332
