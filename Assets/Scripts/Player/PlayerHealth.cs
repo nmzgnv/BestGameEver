@@ -50,7 +50,7 @@ public class PlayerHealth : MonoBehaviour
         OnPlayerTakesDamage?.Invoke();
 
         if (_currentHealth <= 0)
-            Die();
+                Die();
     }
 
     public void ReceiveHeal(int points = 1)

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,12 @@ using Random = UnityEngine.Random;
 
 public class MorgensternAI : BossAIBase
 {
+    [SerializeField]
+    private PlayerAnimator playerAnimator;
+
+    [SerializeField]
+    private MorgensternMovementAI movementAI;
+
     [SerializeField]
     private ParticleSystem musicalNotes;
 
@@ -20,13 +27,15 @@ public class MorgensternAI : BossAIBase
     [SerializeField]
     private GameObject[] availableEnemies = new GameObject[0];
 
-    // 1. Атакует нотами какой-то промежуток времени
-    // 2. Атакует нотами какой-то промежуток времени => нотызавис ают на какйо-то промежуток => отвисают на какой-то промежуток
-    // 3. Атакует спавном врагов
+    [SerializeField]
+    private int movementSeconds = 10;
 
+    [SerializeField]
+    private int secondsDelayAfterAttack = 2;
 
-    private void Attack()
+    private void MusicAttack()
     {
+        playerAnimator.PlayAttackAnimation();
         musicalNotes.Play();
     }
 
@@ -38,22 +47,25 @@ public class MorgensternAI : BossAIBase
 
     private IEnumerator SimpleAttack()
     {
-        Attack();
+        MusicAttack();
         yield return new WaitForSeconds(simpleAttackSeconds);
         StopAttack();
     }
 
     private IEnumerator AttackWithFreeze()
     {
-        Attack();
+        MusicAttack();
         yield return new WaitForSeconds(simpleAttackSeconds);
         musicalNotes.Pause();
+        movementAI.CanMove = false;
         yield return new WaitForSeconds(freezeAttackSeconds);
+        movementAI.CanMove = true;
         StartCoroutine(SimpleAttack());
     }
 
-    private void SpawnEnemiesAttack()
+    private IEnumerator SpawnEnemiesAttack()
     {
+        playerAnimator.PlayAttackAnimation();
         foreach (var point in spawnEnemyPoints)
         {
             var randomIndex = Random.Range(0, availableEnemies.Length);
@@ -62,9 +74,25 @@ public class MorgensternAI : BossAIBase
         }
 
         InvokeAfterEnemiesSpawn();
+        yield break;
+    }
+
+    private IEnumerator Loop()
+    {
+        while (true)
+        {
+            movementAI.CanMove = true;
+            yield return new WaitForSeconds(movementSeconds);
+            movementAI.CanMove = false;
+            var possibleAttacks = new Func<IEnumerator>[] {SimpleAttack, AttackWithFreeze, SpawnEnemiesAttack};
+            var randomAttack = possibleAttacks[Random.Range(0, possibleAttacks.Length)];
+            StartCoroutine(randomAttack());
+            yield return new WaitForSeconds(secondsDelayAfterAttack);
+        }
     }
 
     private void Start()
     {
+        StartCoroutine(Loop());
     }
 }
