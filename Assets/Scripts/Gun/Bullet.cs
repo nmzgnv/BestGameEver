@@ -2,24 +2,17 @@ using System;
 using UnityEngine;
 
 [RequireComponent(typeof(PhysicsMovement))]
-public class Bullet : MonoBehaviour
+public class Bullet : BulletBase
 {
     public ParticleSystem boom;
-    [SerializeField]
-    private int damage;
+
     [SerializeField]
     private float destroyAfterSeconds = 2;
-    
-    private PhysicsMovement _physicsMovement;
 
-    public int Damage
-    {
-        get => damage;
-    }
+    private PhysicsMovement _physicsMovement;
 
     private void Start()
     {
-        
         _physicsMovement = GetComponent<PhysicsMovement>();
         Destroy(gameObject, destroyAfterSeconds);
     }
