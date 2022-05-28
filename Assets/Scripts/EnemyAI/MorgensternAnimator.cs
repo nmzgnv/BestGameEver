@@ -8,6 +8,8 @@ public class MorgensternAnimator : MonoBehaviour
     private readonly string runAnimationParameter = "Speed";
     private readonly string horizontalSpeedParameter = "HorizontalSpeed";
     private readonly string verticalSpeedParameter = "VerticalSpeed";
+    private readonly string horizontalViewParameter = "HorizontalView";
+    private readonly string verticalViewParameter = "VerticalView";
     private readonly string attackAnimationParameter = "Attack";
     private readonly string dieParameter = "Die";
 
@@ -52,6 +54,9 @@ public class MorgensternAnimator : MonoBehaviour
             _animator.SetFloat(verticalSpeedParameter, ySpeed);
         }
 
+        _animator.SetFloat(horizontalViewParameter, _physicsMovement.LastViewDirection.x);
+        _animator.SetFloat(verticalViewParameter, _physicsMovement.LastViewDirection.y);
+        
         _animator.SetFloat(runAnimationParameter, _physicsMovement.LastMoveDirection.magnitude);
     }
 
