@@ -1694,6 +1694,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3178892582319317515, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
+      propertyPath: shotsPerSecond
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6758692774851499439, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
       propertyPath: target
       value: 
