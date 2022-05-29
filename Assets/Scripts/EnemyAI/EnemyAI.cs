@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using Pathfinding;
 
@@ -23,6 +22,7 @@ public class EnemyAI : MonoBehaviour
     private List<Vector3> currentPath;
     private int currentWaypoint;
     private bool reachedEndOfPath;
+    private float lastMoveTime;
 
     private Vector3 startingPosition;
 
@@ -44,28 +44,33 @@ public class EnemyAI : MonoBehaviour
         currentPath = new List<Vector3>() {startingPosition};
         currentWaypoint = 0;
         reachedEndOfPath = true;
+        lastMoveTime = Time.realtimeSinceStartup;
     }
 
     private void Update()
     {
+        if (target == null)
+            return;
+
         UpdatePath();
         MoveByPath();
     }
 
     private void UpdatePath()
     {
-        if (target == null)
-            return;
-        if (IsPlayerInSightArea())
+        if (Time.realtimeSinceStartup - lastMoveTime > 1f)
+        {
+            seeker.StartPath(transform.position, GetRoamingPosition(), OnPathComplete);
+        }
+        else if (IsPlayerInSightArea())
         {
             Vector3 vectorToTarget = target.position - transform.position;
             vectorToTarget *= (vectorToTarget.magnitude - attackRange) / vectorToTarget.magnitude;
             seeker.StartPath(transform.position, transform.position + vectorToTarget, OnPathComplete);
         }
-        else
+        else if (reachedEndOfPath)
         {
-            if (currentWaypoint >= currentPath.Count - 1)
-                seeker.StartPath(transform.position, GetRoamingPosition(), OnPathComplete);
+            seeker.StartPath(transform.position, GetRoamingPosition(), OnPathComplete);
         }
     }
 
@@ -74,9 +79,11 @@ public class EnemyAI : MonoBehaviour
         if (currentPath == null || reachedEndOfPath)
             return;
 
-        if (Vector3.Distance(transform.position, currentPath[currentWaypoint]) < reachedPositionDistance)
+        while (currentWaypoint < currentPath.Count
+               && Vector3.Distance(transform.position, currentPath[currentWaypoint]) < reachedPositionDistance)
         {
             currentWaypoint++;
+            lastMoveTime = Time.realtimeSinceStartup;
         }
 
         if (currentWaypoint >= currentPath.Count)
@@ -84,6 +91,8 @@ public class EnemyAI : MonoBehaviour
             reachedEndOfPath = true;
             return;
         }
+
+        Debug.DrawLine(transform.position, currentPath[currentWaypoint], Color.magenta);
 
         physicsMovement.Move(currentPath[currentWaypoint] - transform.position);
     }
@@ -97,10 +106,10 @@ public class EnemyAI : MonoBehaviour
     private bool IsPlayerInSightArea()
     {
         var vectorToTarget = target.position - transform.position;
-        var hitFrom = transform.position + 0.3f * vectorToTarget.normalized;
+        var hitFrom = transform.position;
         var hit = Physics2D.Raycast(hitFrom, vectorToTarget);
-        Debug.DrawLine(hitFrom, hitFrom + vectorToTarget * (sightRange / vectorToTarget.magnitude), Color.green);
-        var isPlayerVisible = hit.collider.GetComponent<Player>() != null;
+        Debug.DrawLine(hitFrom, hitFrom + vectorToTarget * (sightRange / vectorToTarget.magnitude), Color.yellow);
+        var isPlayerVisible = (hit.collider != null ? hit.collider.GetComponent<Player>() : null) != null;
         return vectorToTarget.magnitude < sightRange && isPlayerVisible;
     }
 

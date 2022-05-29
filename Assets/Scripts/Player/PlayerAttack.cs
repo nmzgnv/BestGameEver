@@ -22,20 +22,28 @@ public class PlayerAttack : MonoBehaviour
 
     [SerializeField]
     private float movementFreezeTime;
-    
+
+    [SerializeField]
+    private float secsDelayBetweenAttack;
+
+    private float timer;
+
     public event Action OnPlayerAttacks;
-    
+
     private PhysicsMovement _physicsMovement;
+    private Camera _mainCamera;
 
     public void Start()
     {
         _physicsMovement = GetComponent<PhysicsMovement>();
+        _mainCamera = FindObjectOfType<Camera>();
     }
 
     public void OnDrawGizmosSelected()
     {
 #if UNITY_EDITOR
         Gizmos.color = Color.white;
+        if (attackRadiusCenter == null) return;
         Gizmos.DrawWireSphere(attackRadiusCenter.position, attackRange);
 #endif
     }
@@ -49,18 +57,33 @@ public class PlayerAttack : MonoBehaviour
 
     public void Attack()
     {
-        StartCoroutine(SetAttackState());
+        if (timer < secsDelayBetweenAttack)
+            return;
+
+        timer = 0;
+        StartCoroutine(SetAttackState()); // Не может ходить во время анимации атаки
 
         OnPlayerAttacks?.Invoke();
-        audioSource.pitch = Random.Range(0.9f, 1.1f);
-        audioSource.PlayOneShot(hitSound);
+
+        var viewVector = _mainCamera.ScreenToWorldPoint(Input.mousePosition) - attackRadiusCenter.position;
+        _physicsMovement.View(viewVector);
 
         var enemies = Physics2D.OverlapCircleAll(attackRadiusCenter.position, attackRange, damageableLayer);
         foreach (var enemy in enemies)
         {
+            if (Vector2.Dot(enemy.transform.position - attackRadiusCenter.position, viewVector) < 0)
+                continue;
             var enemyHealth = enemy.GetComponent<PlayerHealth>();
             if (enemyHealth != null)
                 enemyHealth.ReceiveDamage();
         }
+
+        audioSource.pitch = Random.Range(0.9f, 1.1f);
+        audioSource.PlayOneShot(hitSound);
+    }
+
+    private void Update()
+    {
+        timer += Time.deltaTime;
     }
 }

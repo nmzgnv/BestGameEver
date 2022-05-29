@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -5,13 +6,21 @@ using UnityEngine;
 public class EnemiesController : MonoBehaviour
 {
     private List<Enemy> _enemies = new List<Enemy>();
+    private BossAIBase _boss;
+    private Transform _target;
+
+    [SerializeField]
+    private LevelBarContoller levelBar;
 
     public Transform AttackTarget { get; private set; }
 
+    public int EnemiesCount => _enemies.Count;
+
     public void SetTarget(Transform target)
     {
+        if (_target == null)
+            _target = target;
         AttackTarget = target;
-        Debug.Log(_enemies.Count);
         foreach (var enemy in _enemies)
             SetUpEnemy(enemy, AttackTarget);
     }
@@ -20,12 +29,28 @@ public class EnemiesController : MonoBehaviour
     {
         enemy.EnemyAI.Target = target;
         enemy.WeaponAI.Target = target;
-        Debug.Log($"Enemy {enemy.name} set up");
+    }
+
+    private void FindEnemies()
+    {
+        _enemies = FindObjectsOfType<Enemy>().ToList();
+        foreach (var enemy in _enemies)
+            if(levelBar != null)
+                enemy.Health.OnPlayerDie += levelBar.RefreshBar;
+    }
+
+    private void SetupAllEnemies()
+    {
+        FindEnemies();
+        SetTarget(_target);
     }
 
     private void Awake()
     {
-        _enemies = FindObjectsOfType<Enemy>().ToList();
-        Debug.Log($"enemies count: {_enemies.Count}");
+        FindEnemies();
+
+        _boss = FindObjectOfType<BossAIBase>();
+        if (_boss != null)
+            _boss.AfterEnemiesSpawn += SetupAllEnemies;
     }
 }

@@ -34,6 +34,7 @@ public class Weapon : MonoBehaviour
 
     private void Update()
     {
+        if (!gameObject.scene.isLoaded) return;
         _elapsed += Time.deltaTime;
 
         if (_elapsed >= _rateOfFire && CanShoot)

@@ -82,7 +82,8 @@ public class TeleportationScript : MonoBehaviour
 
     private bool InRadius(Vector3 position)
     {
-        return (teleportRadiusCenter.position - position).magnitude < radius;
+        return teleportRadiusCenter != null &&
+               (teleportRadiusCenter.position - position).magnitude < radius;
     }
 
     private bool IsFree(Vector2 position)
@@ -93,6 +94,7 @@ public class TeleportationScript : MonoBehaviour
     private void OnDrawGizmos()
     {
 #if UNITY_EDITOR
+        if (teleportRadiusCenter == null) return;
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(teleportRadiusCenter.position, radius);
 #endif

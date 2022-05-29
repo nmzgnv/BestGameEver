@@ -3,10 +3,21 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PhysicsMovement : MonoBehaviour
 {
-    public Vector2 LastMoveDirection { get; private set; }
+    public Vector2 LastMoveDirection { get; set; }
     public Vector2 LastViewDirection { get; private set; }
-    
-    public bool CanMove { get; set; } = true;
+
+    private bool _canMove = true;
+
+    public bool CanMove
+    {
+        get => _canMove;
+        set
+        {
+            _rigidbody.velocity = Vector2.zero;
+            _rigidbody.simulated = value;
+            _canMove = value;
+        }
+    }
 
     [SerializeField]
     private float speed;
@@ -20,10 +31,20 @@ public class PhysicsMovement : MonoBehaviour
 
     public void Move(Vector2 direction)
     {
-        if (!CanMove) return;
+        if (!CanMove)
+        {
+            LastMoveDirection = Vector2.zero;
+            return;
+        }
+
         _rigidbody.MovePosition(_rigidbody.position + direction.normalized * speed);
         LastMoveDirection = direction;
-        if(direction.magnitude > 0.1)
+        if (direction.magnitude > 0.1)
             LastViewDirection = direction.normalized;
+    }
+
+    public void View(Vector2 direction)
+    {
+        LastViewDirection = direction.normalized;
     }
 }

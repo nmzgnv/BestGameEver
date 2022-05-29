@@ -57,7 +57,7 @@ public class PlayerAnimator : MonoBehaviour
         _animator.SetFloat(runAnimationParameter, _physicsMovement.LastMoveDirection.magnitude);
     }
 
-    private void PlayAttackAnimation()
+    public void PlayAttackAnimation()
     {
         _animator.SetTrigger(attackAnimationParameter);
     }
