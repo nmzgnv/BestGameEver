@@ -159,9 +159,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6496498055ebf844b608a68f4a482e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boom: {fileID: 2827015797983614811, guid: 51e035b31c79f5445b6a53ebb5c619c4, type: 3}
   damage: 1
-  destroyAfterSeconds: 15
+  boom: {fileID: 2827015797983614811, guid: 51e035b31c79f5445b6a53ebb5c619c4, type: 3}
+  destroyAfterSeconds: 3
 --- !u!1 &8472722112196017151
 GameObject:
   m_ObjectHideFlags: 0
