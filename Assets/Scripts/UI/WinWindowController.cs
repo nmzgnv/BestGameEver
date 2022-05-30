@@ -6,6 +6,7 @@ public class WinWindowController : MonoBehaviour
 {
     [SerializeField] private GameObject winWindow;
     [SerializeField] private SceneChanger sceneChanger;
+    [SerializeField] private string nextSceneName;
     private GameManager _gameManager;
 
     void Start()
@@ -24,7 +25,7 @@ public class WinWindowController : MonoBehaviour
 
     public void NextLevelButtonPress()
     {
-        sceneChanger.ChangeScene("BossDev");
+        sceneChanger.ChangeScene(nextSceneName);
     }
 
     public void ExitButtonPress()

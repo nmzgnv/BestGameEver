@@ -15,10 +15,19 @@ public class LevelBarContoller : MonoBehaviour
         if (levelSlider.value <= 0)
             winZone.gameObject.SetActive(true); 
     }
+    
+    public void RefreshBar(int value)
+    {
+        levelSlider.value -= value;
+        if (levelSlider.value <= 0)
+            winZone.gameObject.SetActive(true); 
+    }
 
     private void Start()
     {
         levelSlider.maxValue = enemiesController.EnemiesCount;
         levelSlider.value = levelSlider.maxValue;
+        
+        RefreshBar(0);
     }
 }
