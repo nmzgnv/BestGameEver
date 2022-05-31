@@ -80,7 +80,8 @@ public class PlayerAttack : MonoBehaviour
             if (enemyHealth != null)
             {
                 enemyHealth.ReceiveDamage();
-                Instantiate(blood, enemyHealth.transform.position, Random.rotation);
+                var randomRotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
+                Instantiate(blood, enemyHealth.transform.position, randomRotation);
             }
         }
 
