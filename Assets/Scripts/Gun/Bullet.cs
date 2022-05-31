@@ -4,13 +4,15 @@ using UnityEngine;
 [RequireComponent(typeof(PhysicsMovement))]
 public class Bullet : BulletBase
 {
+    public Color DamageColor;
     public ParticleSystem boom;
-
+    public ParticleSystem blood;
+    
     [SerializeField]
     private float destroyAfterSeconds = 2;
 
     private PhysicsMovement _physicsMovement;
-
+    private bool isDamageable = false;
     private void Start()
     {
         _physicsMovement = GetComponent<PhysicsMovement>();
@@ -24,12 +26,22 @@ public class Bullet : BulletBase
 
     public void OnCollisionEnter2D(Collision2D other)
     {
+        if (other.gameObject.layer == 7) // If is ignoreBullet object
+            return;
         Destroy(gameObject);
+        if (other.gameObject.layer == 10) // If player collision
+            isDamageable = true;
     }
 
     public void OnDestroy()
     {
         if (!gameObject.scene.isLoaded) return;
-        Destroy(Instantiate(boom.gameObject, transform.position, transform.rotation), destroyAfterSeconds);
+
+        if(!isDamageable) Instantiate(boom.gameObject, transform.position, transform.rotation);
+        if (isDamageable)
+        {
+            //boomObj.GetComponent<ParticleSystem>().startColor = DamageColor;
+            Instantiate(blood.gameObject, transform.position, transform.rotation);
+        }
     }
 }

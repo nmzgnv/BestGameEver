@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Pathfinding;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -10,7 +11,7 @@ public class PlayerAttack : MonoBehaviour
 
     [SerializeField]
     private LayerMask damageableLayer;
-
+    
     [SerializeField]
     private Transform attackRadiusCenter;
 
@@ -26,6 +27,8 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField]
     private float secsDelayBetweenAttack;
 
+    [SerializeField] private ParticleSystem blood;
+    
     private float timer;
 
     public event Action OnPlayerAttacks;
@@ -75,7 +78,11 @@ public class PlayerAttack : MonoBehaviour
                 continue;
             var enemyHealth = enemy.GetComponent<PlayerHealth>();
             if (enemyHealth != null)
+            {
                 enemyHealth.ReceiveDamage();
+                var randomRotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
+                Instantiate(blood, enemyHealth.transform.position, randomRotation);
+            }
         }
 
         audioSource.pitch = Random.Range(0.9f, 1.1f);
