@@ -278,6 +278,7 @@ MonoBehaviour:
   hitSound: {fileID: 8300000, guid: dd17d6e5c7ba1fc46a43adaff94a9b52, type: 3}
   movementFreezeTime: 0.6
   secsDelayBetweenAttack: 0.3
+  blood: {fileID: 1558055765313087137, guid: c4e70a731b8146c449736adb373466bd, type: 3}
 --- !u!114 &2045833673137278371
 MonoBehaviour:
   m_ObjectHideFlags: 0
