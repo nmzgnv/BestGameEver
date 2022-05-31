@@ -5939,12 +5939,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 100
-    m_FontStyle: 3
+    m_Font: {fileID: 12800000, guid: 5fb1142a4f5b1cd42923b95bdefd8dac, type: 3}
+    m_FontSize: 105
+    m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 100
+    m_MaxSize: 105
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -11125,7 +11125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1788040420173637133, guid: 3350253864e98fe4e914bd5c908c500e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1788040420456615368, guid: 3350253864e98fe4e914bd5c908c500e, type: 3}
       propertyPath: m_Text
