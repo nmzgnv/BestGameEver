@@ -6,7 +6,8 @@ public class Bullet : BulletBase
 {
     public Color DamageColor;
     public ParticleSystem boom;
-
+    public ParticleSystem blood;
+    
     [SerializeField]
     private float destroyAfterSeconds = 2;
 
@@ -25,6 +26,8 @@ public class Bullet : BulletBase
 
     public void OnCollisionEnter2D(Collision2D other)
     {
+        if (other.gameObject.layer == 7) // If is ignoreBullet object
+            return;
         Destroy(gameObject);
         if (other.gameObject.layer == 10) // If player collision
             isDamageable = true;
@@ -34,10 +37,11 @@ public class Bullet : BulletBase
     {
         if (!gameObject.scene.isLoaded) return;
 
-        var boomObj = Instantiate(boom.gameObject, transform.position, transform.rotation);
+        if(!isDamageable) Instantiate(boom.gameObject, transform.position, transform.rotation);
         if (isDamageable)
-            boomObj.GetComponent<ParticleSystem>().startColor = DamageColor;
-
-        Destroy(boomObj, destroyAfterSeconds);
+        {
+            //boomObj.GetComponent<ParticleSystem>().startColor = DamageColor;
+            Instantiate(blood.gameObject, transform.position, transform.rotation);
+        }
     }
 }
