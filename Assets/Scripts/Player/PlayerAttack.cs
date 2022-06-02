@@ -77,11 +77,15 @@ public class PlayerAttack : MonoBehaviour
             if (Vector2.Dot(enemy.transform.position - attackRadiusCenter.position, viewVector) < 0)
                 continue;
             var enemyHealth = enemy.GetComponent<PlayerHealth>();
+            var lootbox = enemy.GetComponent<LootBox>();
             if (enemyHealth != null)
             {
                 enemyHealth.ReceiveDamage();
-                var randomRotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
-                Instantiate(blood, enemyHealth.transform.position, randomRotation);
+                if (lootbox == null)
+                {
+                    var randomRotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
+                    Instantiate(blood, enemyHealth.transform.position, randomRotation);
+                }
             }
         }
 
