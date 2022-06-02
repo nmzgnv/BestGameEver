@@ -13,7 +13,7 @@ public class CameraMovementController : MonoBehaviour
     private float smooth = 5;
 
     [SerializeField]
-    private float shakeMagnitude = 0.001f;
+    private float shakeMagnitude = 0.7f;
 
     [SerializeField]
     private float shakeDuration = .1f;
@@ -32,8 +32,8 @@ public class CameraMovementController : MonoBehaviour
         if (_player != null)
             _player.Attack.OnPlayerAttacks += () =>
             {
-                var magnitude = (1 / (_player.PhysicsMovement.Speed + 0.001f)) * shakeMagnitude;
-                StartCoroutine(Shake(shakeDuration, magnitude));
+                StartCoroutine(
+                    Shake(shakeDuration, _player.PhysicsMovement.LastViewDirection * shakeMagnitude));
             };
     }
 
@@ -42,21 +42,19 @@ public class CameraMovementController : MonoBehaviour
         return Random.Range(-1f, 1f) * magnitude;
     }
 
-    private IEnumerator Shake(float secondsDuration, float magnitude)
+    private IEnumerator Shake(float secondsDuration, Vector2 force)
     {
-        var originalPos = transform.position;
         var elapsedTime = 0f;
         while (elapsedTime < secondsDuration)
         {
-            var x = GetRandomMagnitude(magnitude);
-            var y = GetRandomMagnitude(magnitude);
+            var originalPos = transform.position;
+            var newPosition = transform.position + new Vector3(force.x, force.y, originalPos.z);
+            var lerpedPosition = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * smooth);
+            transform.position = lerpedPosition;
 
-            transform.localPosition += new Vector3(x, y, originalPos.z);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
-
-        transform.position = originalPos;
     }
 
     public void Update()
