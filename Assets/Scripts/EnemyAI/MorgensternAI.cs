@@ -13,7 +13,7 @@ public class MorgensternAI : BossAIBase
     private PlayerHealth _playerHealth;
 
     [SerializeField]
-    private MorgensternMovementAI movementAI;
+    private BossRectangleWalking movementAI;
 
     [SerializeField]
     private ParticleSystem musicalNotes;

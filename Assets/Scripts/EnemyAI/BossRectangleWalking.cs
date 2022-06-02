@@ -12,7 +12,7 @@ public class BossRectangleWalking : MonoBehaviour
     [SerializeField]
     private Transform center;
 
-    // [SerializeField]
+    [SerializeField]
     private List<Transform> targets;
 
     [SerializeField]
@@ -23,14 +23,16 @@ public class BossRectangleWalking : MonoBehaviour
 
     private List<Vector3> _currentPath = new List<Vector3>();
     private Transform _curTarget;
+    private int _curIndex;
     private int _pathInd = 0;
     public bool CanMove { get; set; } = true;
 
     private void Awake()
     {
         _physicsMovement = GetComponent<PhysicsMovement>();
-        targets = GameObject.FindGameObjectsWithTag("BossTarget").Select(x => x.transform).ToList();
+        //targets = GameObject.FindGameObjectsWithTag("BossTarget").Select(x => x.transform).ToList();
         _curTarget = targets[0];
+        _curIndex = 0;
     }
 
     private void OnPathCalculated(Path path)
@@ -41,15 +43,17 @@ public class BossRectangleWalking : MonoBehaviour
 
     private void CalculatePath()
     {
-        if ((_curTarget.position - center.position).magnitude < 1)
+        if ((_curTarget.position - center.position).magnitude < 0.5)
         {
-            var index = _random.Next(targets.Count);
-            if (_curTarget == targets[index])
-                index = (index + 1) % targets.Count;
-
-            _curTarget = targets[index];
+            // var index = _random.Next(targets.Count);
+            // if (_curTarget == targets[index])
+            //     index = (index + 1) % targets.Count;
+            //
+            // _curTarget = targets[index];
+            _curIndex = (_curIndex + 1) % targets.Count;
+            _curTarget = targets[_curIndex];
         }
-        
+
         _seeker.StartPath(center.position, _curTarget.position, OnPathCalculated);
     }
 
