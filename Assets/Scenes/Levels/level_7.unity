@@ -27207,6 +27207,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1564993793}
     m_Modifications:
+    - target: {fileID: 9057049450684472210, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
+      propertyPath: thingDropProbability
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 9057049450684472211, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
       propertyPath: m_Name
       value: LootBox
@@ -28066,6 +28070,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1564993793}
     m_Modifications:
+    - target: {fileID: 9057049450684472210, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
+      propertyPath: thingDropProbability
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 9057049450684472211, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
       propertyPath: m_Name
       value: LootBox
@@ -28163,6 +28171,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1564993793}
     m_Modifications:
+    - target: {fileID: 9057049450684472210, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
+      propertyPath: thingDropProbability
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 9057049450684472211, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
       propertyPath: m_Name
       value: LootBox
@@ -28362,6 +28374,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1564993793}
     m_Modifications:
+    - target: {fileID: 9057049450684472210, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
+      propertyPath: thingDropProbability
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 9057049450684472211, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
       propertyPath: m_Name
       value: LootBox
@@ -29031,6 +29047,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1564993793}
     m_Modifications:
+    - target: {fileID: 9057049450684472210, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
+      propertyPath: thingDropProbability
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 9057049450684472211, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
       propertyPath: m_Name
       value: LootBox
@@ -29128,6 +29148,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1564993793}
     m_Modifications:
+    - target: {fileID: 9057049450684472210, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
+      propertyPath: thingDropProbability
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 9057049450684472211, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
       propertyPath: m_Name
       value: LootBox
@@ -29954,6 +29978,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1564993793}
     m_Modifications:
+    - target: {fileID: 9057049450684472210, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
+      propertyPath: thingDropProbability
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 9057049450684472211, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
       propertyPath: m_Name
       value: LootBox
@@ -30051,6 +30079,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1564993793}
     m_Modifications:
+    - target: {fileID: 9057049450684472210, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
+      propertyPath: thingDropProbability
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 9057049450684472211, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
       propertyPath: m_Name
       value: LootBox
@@ -32322,6 +32354,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1564993793}
     m_Modifications:
+    - target: {fileID: 9057049450684472210, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
+      propertyPath: thingDropProbability
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 9057049450684472211, guid: a46bb3c934be22b41ae2865555ccaa70, type: 3}
       propertyPath: m_Name
       value: LootBox
@@ -37016,133 +37052,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1163200265232194790, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
   m_PrefabInstance: {fileID: 2049051349}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1671693556
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1671693558}
-  - component: {fileID: 1671693557}
-  m_Layer: 0
-  m_Name: Background Music
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &1671693557
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1671693556}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -4375510502125869310, guid: 7e975b883564d5e48ba369322f941d7a, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 21243e5415757f64cbe7dc08f690bd4e, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.473
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &1671693558
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1671693556}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1009.8656, y: 609.7761, z: -2640.3955}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1682384875 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6863926779850611270, guid: 467eb6dacc81ec143a1e3b769a48c098, type: 3}
@@ -37502,7 +37411,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1889580657 stripped
 RectTransform:
@@ -48202,6 +48111,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2045833673137278383, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
+      propertyPath: maxHealth
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2045833673137278395, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
       propertyPath: m_Name
       value: Player
@@ -48521,7 +48434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7300682056043052040, guid: 933744fb3246cb24dbe93f5ef3ab5c70, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7300682056043052040, guid: 933744fb3246cb24dbe93f5ef3ab5c70, type: 3}
       propertyPath: m_LocalPosition.x
