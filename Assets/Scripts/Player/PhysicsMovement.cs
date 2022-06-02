@@ -24,6 +24,11 @@ public class PhysicsMovement : MonoBehaviour
 
     private Rigidbody2D _rigidbody;
 
+    public float Speed
+    {
+        get => speed;
+    }
+
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();

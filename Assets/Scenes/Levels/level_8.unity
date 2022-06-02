@@ -9565,6 +9565,8 @@ MonoBehaviour:
   target: {fileID: 1488518531}
   offset: {x: 0, y: 0, z: -10}
   smooth: 5
+  shakeMagnitude: 0.001
+  shakeDuration: 0.1
 --- !u!81 &1500874433
 AudioListener:
   m_ObjectHideFlags: 0
