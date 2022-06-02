@@ -964,7 +964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 942326753864226896, guid: 10a3eff7fa08cf84b98c378669342777, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14
+      value: 12.43
       objectReference: {fileID: 0}
     - target: {fileID: 942326753864226896, guid: 10a3eff7fa08cf84b98c378669342777, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7541,7 +7541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 942326753864226896, guid: 10a3eff7fa08cf84b98c378669342777, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.75
+      value: 12.18
       objectReference: {fileID: 0}
     - target: {fileID: 942326753864226896, guid: 10a3eff7fa08cf84b98c378669342777, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11020,6 +11020,8 @@ MonoBehaviour:
   target: {fileID: 1488518531}
   offset: {x: 0, y: 0, z: -10}
   smooth: 5
+  shakeMagnitude: 0.7
+  shakeDuration: 0.1
 --- !u!81 &1500874433
 AudioListener:
   m_ObjectHideFlags: 0
@@ -12315,7 +12317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1083671997911944724, guid: 19c7716ec2df10840baa5baa30454f3a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 7.91
       objectReference: {fileID: 0}
     - target: {fileID: 1083671997911944724, guid: 19c7716ec2df10840baa5baa30454f3a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12363,11 +12365,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1083671997911944734, guid: 19c7716ec2df10840baa5baa30454f3a, type: 3}
       propertyPath: maxHealth
-      value: 80
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 1083671997911944734, guid: 19c7716ec2df10840baa5baa30454f3a, type: 3}
       propertyPath: maxPossibleHealth
-      value: 80
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 1083671997911944735, guid: 19c7716ec2df10840baa5baa30454f3a, type: 3}
       propertyPath: movementAI
