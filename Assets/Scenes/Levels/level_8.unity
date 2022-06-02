@@ -726,6 +726,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WinZone
       objectReference: {fileID: 0}
+    - target: {fileID: 7300682056043052045, guid: 933744fb3246cb24dbe93f5ef3ab5c70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7300682056043052046, guid: 933744fb3246cb24dbe93f5ef3ab5c70, type: 3}
       propertyPath: winWindow
       value: 
@@ -7205,6 +7209,7 @@ GameObject:
   - component: {fileID: 1078248109}
   - component: {fileID: 1078248115}
   - component: {fileID: 1078248116}
+  - component: {fileID: 1078248117}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -7356,6 +7361,20 @@ MonoBehaviour:
   winWindow: {fileID: 821799257}
   sceneChanger: {fileID: 2011869812}
   nextSceneName: 
+--- !u!114 &1078248117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078248108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bdb0dde3d460594f99ab63e4872a7a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossHealth: {fileID: 344288299}
+  winZone: {fileID: 1812073406}
 --- !u!1 &1086352458
 GameObject:
   m_ObjectHideFlags: 0
@@ -10635,6 +10654,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 467eb6dacc81ec143a1e3b769a48c098, type: 3}
+--- !u!114 &1812073406 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7300682056043052046, guid: 933744fb3246cb24dbe93f5ef3ab5c70, type: 3}
+  m_PrefabInstance: {fileID: 301867272}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40022a7f0c4df04591b3d3a2a9c5655, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1833625628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11106,7 +11136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1083671997911944734, guid: 19c7716ec2df10840baa5baa30454f3a, type: 3}
       propertyPath: maxHealth
-      value: 80
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1083671997911944734, guid: 19c7716ec2df10840baa5baa30454f3a, type: 3}
       propertyPath: maxPossibleHealth
