@@ -13,10 +13,10 @@ public class CameraMovementController : MonoBehaviour
     private float smooth = 5;
 
     [SerializeField]
-    private float shakeMagnitude = 0.02f;
+    private float shakeMagnitude = 0.001f;
 
     [SerializeField]
-    private float shakeDuration = .3f;
+    private float shakeDuration = .1f;
 
     private Player _player;
 
