@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1917628254302487625, guid: d792e774855ffe54d879bdbb2e23dc75, type: 3}
       propertyPath: m_Name
-      value: BossHealthBar
+      value: LevelBar Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1917628255172864196, guid: d792e774855ffe54d879bdbb2e23dc75, type: 3}
       propertyPath: m_Color.b

@@ -27,8 +27,29 @@ TextureImporter:
       213: -2926215790336456743
     second: Decor_sprites_7
   - first:
-      213: -3439775941207997154
-    second: Decor_sprites_8
+      213: 7108535374481834757
+    second: Decor_sprites_9
+  - first:
+      213: 373419468080548524
+    second: Decor_sprites_10
+  - first:
+      213: 8914648160542433163
+    second: Decor_sprites_11
+  - first:
+      213: -8541332175543329215
+    second: Decor_sprites_15
+  - first:
+      213: 8809473278085516786
+    second: Decor_sprites_16
+  - first:
+      213: -460623501312543659
+    second: Decor_sprites_17
+  - first:
+      213: 6224870466040044245
+    second: Decor_sprites_18
+  - first:
+      213: 1267897053446640349
+    second: Decor_sprites_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -73,7 +94,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -122,7 +143,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 288
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -143,7 +164,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 288
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -164,7 +185,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 288
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -185,7 +206,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 288
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -206,7 +227,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 288
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -227,7 +248,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 288
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -248,7 +269,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 288
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -269,8 +290,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 288
-        width: 32
+        y: 64
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -286,11 +307,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Decor_sprites_8
+      name: Decor_sprites_9
       rect:
         serializedVersion: 2
-        x: 256
-        y: 288
+        x: 288
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -300,8 +321,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e15cc5591067340d0800000000000000
-      internalID: -3439775941207997154
+      spriteID: 503c94da24796a260800000000000000
+      internalID: 7108535374481834757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decor_sprites_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa082b1707ae2500800000000000000
+      internalID: 373419468080548524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decor_sprites_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f98ba254137bb70800000000000000
+      internalID: 8914648160542433163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decor_sprites_15
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e1028e3a7177980800000000000000
+      internalID: -8541332175543329215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decor_sprites_16
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd45969549814a70800000000000000
+      internalID: 8809473278085516786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decor_sprites_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554b115bd598b99f0800000000000000
+      internalID: -460623501312543659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decor_sprites_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da132545be236650800000000000000
+      internalID: 6224870466040044245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decor_sprites_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2937a07a9789110800000000000000
+      internalID: 1267897053446640349
       vertices: []
       indices: 
       edges: []
