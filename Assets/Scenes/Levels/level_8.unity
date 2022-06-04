@@ -744,7 +744,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7300682056043052045, guid: 933744fb3246cb24dbe93f5ef3ab5c70, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7300682056043052046, guid: 933744fb3246cb24dbe93f5ef3ab5c70, type: 3}
       propertyPath: winWindow
@@ -9820,7 +9820,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df75e8e345c87224d96b2c1dcc183736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelBar: {fileID: 0}
 --- !u!4 &1286037508
 Transform:
   m_ObjectHideFlags: 0

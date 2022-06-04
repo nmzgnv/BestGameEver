@@ -5,13 +5,13 @@ using UnityEngine;
 public class BloodEffect : MonoBehaviour
 {
     private ParticleSystem bloodDrops;
-    public SpriteRenderer[] bloodSpots;
+    public GameObject[] bloodSpots;
 
     private IEnumerator SetBloodSpot()
     {
         yield return new WaitForSeconds(bloodDrops.main.startLifetime.constant);
         int spotIndex = Random.Range(0, bloodSpots.Length);
-        Instantiate(bloodSpots[spotIndex].gameObject, transform.position, transform.rotation);
+        Instantiate(bloodSpots[spotIndex].gameObject, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
     
