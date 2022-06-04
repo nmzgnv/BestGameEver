@@ -4818,7 +4818,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodSpots:
-  - {fileID: 7002584921218717226, guid: fc23df0a17df4064b83ad5c14dd2693b, type: 3}
-  - {fileID: 3851031709871972650, guid: 7a697081d22f54346b35199521b85d5b, type: 3}
-  - {fileID: 8711046430027901199, guid: bb73f15ba7e756348a904ee2b4e7f2ae, type: 3}
-  - {fileID: 8993697461689046917, guid: 4623e92cc90e5b64eb9b41e7179f43af, type: 3}
+  - {fileID: 3588358800631870976, guid: fc23df0a17df4064b83ad5c14dd2693b, type: 3}
+  - {fileID: 3588358800631870976, guid: 4f831ff717bf85d4989b9b706590d8f8, type: 3}
