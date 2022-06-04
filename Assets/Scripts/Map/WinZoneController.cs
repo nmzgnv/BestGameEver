@@ -5,14 +5,23 @@ using UnityEngine;
 
 public class WinZoneController : MonoBehaviour
 {
-    [SerializeField]
-    private WinWindowController winWindow;
+    private WinWindowController _winWindow;
+    private GameObject _zoneImage;
     
+    private void Awake()
+    {
+        _winWindow = FindObjectOfType<WinWindowController>();
+        _zoneImage = transform.GetChild(0).gameObject;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.layer == 10)
-        {
-            winWindow.ShowWindow();
-        }
+        if (_zoneImage.activeSelf && other.gameObject.layer == 10)
+            _winWindow.ShowWindow();
+    }
+
+    public void ShowPortal()
+    {
+        _zoneImage.SetActive(true);
     }
 }
