@@ -4,11 +4,8 @@ using UnityEngine.UI;
 
 public class PlayerUI : MonoBehaviour
 {
-    [SerializeField]
-    private PlayerHealth playerHealth;
-
-    [SerializeField]
-    private ManaController manaController;
+    private PlayerHealth _playerHealth;
+    private ManaController _manaController;
 
     [SerializeField]
     private Slider healthSlider;
@@ -18,25 +15,29 @@ public class PlayerUI : MonoBehaviour
 
     private void RefreshHealth()
     {
-        healthSlider.value = playerHealth.Health;
+        healthSlider.value = _playerHealth.Health;
     }
 
     private void RefreshMana()
     {
-        manaSlider.maxValue = manaController.MaxManaPoint;
-        manaSlider.value = manaController.Mana;
+        manaSlider.maxValue = _manaController.MaxManaPoint;
+        manaSlider.value = _manaController.Mana;
     }
 
     private void Awake()
     {
-        playerHealth.OnPlayerApplyHeal += RefreshHealth;
-        playerHealth.OnPlayerTakesDamage += RefreshHealth;
-        manaController.OnManaPointsChanged += RefreshMana;
+        var player = FindObjectOfType<Player>();
+        _playerHealth = player.GetComponent<PlayerHealth>();
+        _manaController = player.GetComponent<ManaController>();
+        
+        _playerHealth.OnPlayerApplyHeal += RefreshHealth;
+        _playerHealth.OnPlayerTakesDamage += RefreshHealth;
+        _manaController.OnManaPointsChanged += RefreshMana;
     }
 
     private void Start()
     {
-        healthSlider.maxValue = playerHealth.MaxPossibleHealth;
+        healthSlider.maxValue = _playerHealth.MaxPossibleHealth;
         RefreshHealth();
         RefreshMana();
     }

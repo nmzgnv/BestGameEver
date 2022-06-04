@@ -7,7 +7,8 @@ public class PlayerHealth : MonoBehaviour
     public event Action OnPlayerTakesDamage;
     public event Action OnPlayerApplyHeal;
     public event Action OnPlayerDie;
-
+    [HideInInspector] public bool IsDead;
+    
     [SerializeField]
     private int maxPossibleHealth = 6;
 
@@ -50,7 +51,7 @@ public class PlayerHealth : MonoBehaviour
         OnPlayerTakesDamage?.Invoke();
 
         if (_currentHealth <= 0)
-                Die();
+            Die();
     }
 
     public void ReceiveHeal(int points = 1)
@@ -77,6 +78,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
+        IsDead = true;
         OnPlayerDie?.Invoke();
 
         var rb = GetComponent<Rigidbody2D>();

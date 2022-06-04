@@ -9,12 +9,9 @@ public class EnemiesController : MonoBehaviour
     private BossAIBase _boss;
     private Transform _target;
 
-    [SerializeField]
-    private LevelBarContoller levelBar;
-
     public Transform AttackTarget { get; private set; }
 
-    public int EnemiesCount => _enemies.Count;
+    public List<Enemy> Enemies => _enemies;
 
     public void SetTarget(Transform target)
     {
@@ -35,20 +32,25 @@ public class EnemiesController : MonoBehaviour
     {
         _enemies = FindObjectsOfType<Enemy>().ToList();
         foreach (var enemy in _enemies)
-            if(levelBar != null)
-                enemy.Health.OnPlayerDie += levelBar.RefreshBar;
+            enemy.Health.OnPlayerDie += UpdateEnemyList;
     }
 
+    private void UpdateEnemyList()
+    {
+        _enemies.RemoveAll(item => item.Health.IsDead);
+    }
+    
+    
     private void SetupAllEnemies()
     {
         FindEnemies();
         SetTarget(_target);
     }
-
+    
     private void Awake()
     {
         FindEnemies();
-
+        
         _boss = FindObjectOfType<BossAIBase>();
         if (_boss != null)
             _boss.AfterEnemiesSpawn += SetupAllEnemies;
