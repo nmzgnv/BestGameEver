@@ -1013,6 +1013,8 @@ MonoBehaviour:
   target: {fileID: 1459847153}
   offset: {x: 0, y: 0, z: -10}
   smooth: 5
+  shakeMagnitude: 0.7
+  shakeDuration: 0.1
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -5570,7 +5572,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df75e8e345c87224d96b2c1dcc183736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelBar: {fileID: 1923213363}
 --- !u!4 &1884626673
 Transform:
   m_ObjectHideFlags: 0
@@ -5590,17 +5591,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1163200265232194790, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
   m_PrefabInstance: {fileID: 1217573331}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1923213363 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1837919801182056770, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
-  m_PrefabInstance: {fileID: 1837919800890562929}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94dfa96ae996702408ab4a1361809131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1923213364 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1837919801182056773, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
@@ -11899,7 +11889,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7300682056043052045, guid: 933744fb3246cb24dbe93f5ef3ab5c70, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7300682056043052046, guid: 933744fb3246cb24dbe93f5ef3ab5c70, type: 3}
       propertyPath: winWindow
