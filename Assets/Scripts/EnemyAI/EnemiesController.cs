@@ -24,8 +24,10 @@ public class EnemiesController : MonoBehaviour
 
     private void SetUpEnemy(Enemy enemy, Transform target)
     {
-        enemy.EnemyAI.Target = target;
-        enemy.WeaponAI.Target = target;
+        if (enemy.EnemyAI != null)
+            enemy.EnemyAI.Target = target;
+        if (enemy.WeaponAI != null)
+            enemy.WeaponAI.Target = target;
     }
 
     private void FindEnemies()
@@ -39,18 +41,18 @@ public class EnemiesController : MonoBehaviour
     {
         _enemies.RemoveAll(item => item.Health.IsDead);
     }
-    
-    
+
+
     private void SetupAllEnemies()
     {
         FindEnemies();
         SetTarget(_target);
     }
-    
+
     private void Awake()
     {
         FindEnemies();
-        
+
         _boss = FindObjectOfType<BossAIBase>();
         if (_boss != null)
             _boss.AfterEnemiesSpawn += SetupAllEnemies;
