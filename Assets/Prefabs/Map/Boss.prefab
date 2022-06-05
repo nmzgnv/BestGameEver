@@ -174,6 +174,7 @@ GameObject:
   - component: {fileID: 1083671997911944734}
   - component: {fileID: 1083671997911944722}
   - component: {fileID: 1083671997911944721}
+  - component: {fileID: 220686938}
   m_Layer: 6
   m_Name: Boss
   m_TagString: Untagged
@@ -316,10 +317,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerAnimator: {fileID: 1083671997911944721}
   _playerHealth: {fileID: 1083671997911944734}
-  movementAI: {fileID: 1083671997911944732}
+  movementAI: {fileID: 5647049308525650081}
   musicalNotes: {fileID: 5748883256208468357}
-  simpleAttackSeconds: 3
-  freezeAttackSeconds: 4
+  simpleAttackSeconds: 2.5
+  freezeAttackSeconds: 2
   spawnEnemyPoints:
   - {fileID: 1083671997241211645}
   - {fileID: 1083671997950956720}
@@ -328,8 +329,8 @@ MonoBehaviour:
   availableEnemies:
   - {fileID: 1163200265232194797, guid: cc51cd32955f4ea4992a2b8ac8427522, type: 3}
   - {fileID: 1163200265232194797, guid: 5989405232d31de4b80c640e82e5f704, type: 3}
-  movementSeconds: 10
-  secondsDelayAfterAttack: 2
+  movementSeconds: 8
+  secondsDelayAfterAttack: 3
   audioSource: {fileID: 0}
   screamSound: {fileID: 8300000, guid: 83fe5beae92c5a4449c3e21217569678, type: 3}
 --- !u!114 &5647049308525650081
@@ -345,9 +346,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   center: {fileID: 1083671997441409016}
-  targets: []
+  targets:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _seeker: {fileID: 1083671997911944733}
-  minimalMoveVectorLength: 1
+  minimalMoveVectorLength: 0.3
 --- !u!114 &1083671997911944732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,8 +420,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac681aac268ffbd42a9e294571bc3733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPossibleHealth: 20
-  maxHealth: 3
+  IsDead: 0
+  maxPossibleHealth: 65
+  maxHealth: 65
   invulnerableTime: 0.1
   destroyAfterSecs: 5
 --- !u!70 &1083671997911944722
@@ -421,8 +438,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.014495492, y: 1.8766999}
-  m_Size: {x: 2.100931, y: 3.3475304}
+  m_Offset: {x: -0.014495492, y: 1.78}
+  m_Size: {x: 1.9, y: 3.13}
   m_Direction: 0
 --- !u!114 &1083671997911944721
 MonoBehaviour:
@@ -437,6 +454,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1083671997911944734}
+--- !u!114 &220686938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083671997911944725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172f0d29405dd7849ad316e19e951041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 1083671997911944734}
+  enemyAI: {fileID: 0}
+  weaponAI: {fileID: 0}
 --- !u!1 &1083671997950956721
 GameObject:
   m_ObjectHideFlags: 0
