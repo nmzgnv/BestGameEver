@@ -4820,3 +4820,5 @@ MonoBehaviour:
   bloodSpots:
   - {fileID: 3588358800631870976, guid: fc23df0a17df4064b83ad5c14dd2693b, type: 3}
   - {fileID: 3588358800631870976, guid: 4f831ff717bf85d4989b9b706590d8f8, type: 3}
+  - {fileID: 3588358800631870976, guid: eb5df44dd2a292c468a82a9a8143fe24, type: 3}
+  - {fileID: 3588358800631870976, guid: 9aed12977d6800748be42f630b55e378, type: 3}
