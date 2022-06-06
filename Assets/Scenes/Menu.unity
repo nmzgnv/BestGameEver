@@ -6044,7 +6044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 906825107}
-  startSceneName: level_1
+  startSceneName: CutScene1
   sceneChanger: {fileID: 3397070712093345329}
   continueButton: {fileID: 1782370553}
 --- !u!224 &1378031895 stripped

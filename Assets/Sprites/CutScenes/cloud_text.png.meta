@@ -1,25 +1,16 @@
 fileFormatVersion: 2
-guid: 5be4417f527a31e46ae55144c2737784
+guid: 7cf5a97da6a3daf4e94bc80f682a3117
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3083036838099942475
-    second: roll_0
+      213: -6894854654244345245
+    second: cloud_text_0
   - first:
-      213: 7020422449882287015
-    second: roll_1
+      213: 7180587825141723592
+    second: cloud_text_1
   - first:
-      213: 4904745224428211008
-    second: roll_2
-  - first:
-      213: -8883362746367683638
-    second: roll_3
-  - first:
-      213: 3368263156373419212
-    second: roll_4
-  - first:
-      213: 8601325017491710851
-    second: roll_5
+      213: -2991429420905826977
+    second: cloud_text_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,127 +100,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: roll_0
+      name: cloud_text_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4cf36c6ba529ca20800000000000000
-      internalID: 3083036838099942475
+      spriteID: 36a21d3f83e8050a0800000000000000
+      internalID: -6894854654244345245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roll_1
+      name: cloud_text_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 40
         y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ab496ab50d8d6160800000000000000
-      internalID: 7020422449882287015
+      spriteID: 8c13114259296a360800000000000000
+      internalID: 7180587825141723592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roll_2
+      name: cloud_text_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 80
         y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04b46df8bc7211440800000000000000
-      internalID: 4904745224428211008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: roll_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac3d0d3f5a4f7b480800000000000000
-      internalID: -8883362746367683638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: roll_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc47ca1be797ebe20800000000000000
-      internalID: 3368263156373419212
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: roll_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3832649188b0e5770800000000000000
-      internalID: 8601325017491710851
+      spriteID: f55714c7ace4c76d0800000000000000
+      internalID: -2991429420905826977
       vertices: []
       indices: 
       edges: []
