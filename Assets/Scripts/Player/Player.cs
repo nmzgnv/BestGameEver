@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Player : MonoBehaviour
 {
@@ -7,6 +9,9 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     private Transform _bulletTarget;
+
+    [SerializeField]
+    private AudioClip _takeDamageSound;
 
     private PlayerHealth _playerHealth;
     private PlayerAttack _playerAttack;
@@ -21,6 +26,16 @@ public class Player : MonoBehaviour
         _manaController = GetComponent<ManaController>();
         _audioSource = GetComponent<AudioSource>();
         _physicsMovement = GetComponent<PhysicsMovement>();
+    }
+
+    private void Start()
+    {
+        if (_playerHealth != null)
+            _playerHealth.OnPlayerTakesDamage += () =>
+            {
+                _audioSource.pitch = Random.Range(0.8f, 1.2f);
+                _audioSource.PlayOneShot(_takeDamageSound, 0.5f);
+            };
     }
 
     public AudioSource AudioSource => _audioSource;

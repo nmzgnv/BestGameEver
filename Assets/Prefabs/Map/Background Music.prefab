@@ -140,4 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa8261f45a9bc234ebde4547b5831637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossLevelName: level_8
+  mutedSceneNamesList:
+  - CutScene1
+  - CutScene2
+  - level_8
