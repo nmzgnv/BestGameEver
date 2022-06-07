@@ -1,0 +1,1164 @@
+fileFormatVersion: 2
+guid: b0545f49ebbd0dc4aa3d1aa942e016fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3100363435244710604
+    second: LaboratoryPeople_sheet_0
+  - first:
+      213: -649566407522736972
+    second: LaboratoryPeople_sheet_1
+  - first:
+      213: 6188494414176448401
+    second: LaboratoryPeople_sheet_2
+  - first:
+      213: 7977344057603988452
+    second: LaboratoryPeople_sheet_3
+  - first:
+      213: -6856434019433447186
+    second: LaboratoryPeople_sheet_4
+  - first:
+      213: -3959674674646547893
+    second: LaboratoryPeople_sheet_5
+  - first:
+      213: 4150527564822293885
+    second: LaboratoryPeople_sheet_6
+  - first:
+      213: -4648330927985042475
+    second: LaboratoryPeople_sheet_7
+  - first:
+      213: -4444470165232917949
+    second: LaboratoryPeople_sheet_8
+  - first:
+      213: -7028600591815157092
+    second: LaboratoryPeople_sheet_9
+  - first:
+      213: -758428024282080809
+    second: LaboratoryPeople_sheet_10
+  - first:
+      213: 1511700048685160154
+    second: LaboratoryPeople_sheet_11
+  - first:
+      213: -6208038350093349561
+    second: LaboratoryPeople_sheet_12
+  - first:
+      213: 7494543974006452197
+    second: LaboratoryPeople_sheet_13
+  - first:
+      213: 7023090364348875163
+    second: LaboratoryPeople_sheet_14
+  - first:
+      213: 4697066870128676052
+    second: LaboratoryPeople_sheet_15
+  - first:
+      213: 4673402848923482621
+    second: LaboratoryPeople_sheet_16
+  - first:
+      213: 368546368412254153
+    second: LaboratoryPeople_sheet_17
+  - first:
+      213: 2233643825336252744
+    second: LaboratoryPeople_sheet_18
+  - first:
+      213: -2995020907211504802
+    second: LaboratoryPeople_sheet_19
+  - first:
+      213: -4442184758619065568
+    second: LaboratoryPeople_sheet_20
+  - first:
+      213: -324538871290781075
+    second: LaboratoryPeople_sheet_21
+  - first:
+      213: -4636065378295581217
+    second: LaboratoryPeople_sheet_22
+  - first:
+      213: 9123086658335115634
+    second: LaboratoryPeople_sheet_23
+  - first:
+      213: 8718105218822023623
+    second: LaboratoryPeople_sheet_24
+  - first:
+      213: 9130066208216840017
+    second: LaboratoryPeople_sheet_25
+  - first:
+      213: 1829809635110259960
+    second: LaboratoryPeople_sheet_26
+  - first:
+      213: -2455761382868764717
+    second: LaboratoryPeople_sheet_27
+  - first:
+      213: -7266454247168279109
+    second: LaboratoryPeople_sheet_28
+  - first:
+      213: 3385226480629385549
+    second: LaboratoryPeople_sheet_29
+  - first:
+      213: -8288697471929630311
+    second: LaboratoryPeople_sheet_30
+  - first:
+      213: 5301807507609251871
+    second: LaboratoryPeople_sheet_31
+  - first:
+      213: 3870609863116322302
+    second: LaboratoryPeople_sheet_32
+  - first:
+      213: 8811259721997999359
+    second: LaboratoryPeople_sheet_33
+  - first:
+      213: -9155941424309511543
+    second: LaboratoryPeople_sheet_34
+  - first:
+      213: -1195127341376043982
+    second: LaboratoryPeople_sheet_35
+  - first:
+      213: 2160593010173018444
+    second: LaboratoryPeople_sheet_36
+  - first:
+      213: -2390736705285082739
+    second: LaboratoryPeople_sheet_37
+  - first:
+      213: 2874490818243180198
+    second: LaboratoryPeople_sheet_38
+  - first:
+      213: 4136560816601236464
+    second: LaboratoryPeople_sheet_39
+  - first:
+      213: -8699757226005538567
+    second: LaboratoryPeople_sheet_40
+  - first:
+      213: 3013669872240466545
+    second: LaboratoryPeople_sheet_41
+  - first:
+      213: 8845498634794631336
+    second: LaboratoryPeople_sheet_42
+  - first:
+      213: -238434081534328012
+    second: LaboratoryPeople_sheet_43
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 245
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43511afc1eb49f4d0800000000000000
+      internalID: -3100363435244710604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 245
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4a49d3bc64cf6f0800000000000000
+      internalID: -649566407522736972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 245
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fe973b1e2f1e550800000000000000
+      internalID: 6188494414176448401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 245
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb1f84972835be60800000000000000
+      internalID: 7977344057603988452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 245
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee004c5169d09d0a0800000000000000
+      internalID: -6856434019433447186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 245
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b420597dcd86c09c0800000000000000
+      internalID: -3959674674646547893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d23bb64d2a99930800000000000000
+      internalID: 4150527564822293885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 210
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db5dfe16afcd7fb0800000000000000
+      internalID: -4648330927985042475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 210
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342687abee11252c0800000000000000
+      internalID: -4444470165232917949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 210
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ad1c83005657e90800000000000000
+      internalID: -7028600591815157092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 210
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d917f0fab58975f0800000000000000
+      internalID: -758428024282080809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 210
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6d1d85f23aaf410800000000000000
+      internalID: 1511700048685160154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 175
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d0fae130e98d9a0800000000000000
+      internalID: -6208038350093349561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 175
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5efe23c5908f10860800000000000000
+      internalID: 7494543974006452197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 175
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91cb78f977077160800000000000000
+      internalID: 7023090364348875163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 175
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc8648ae655f2140800000000000000
+      internalID: 4697066870128676052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9f16e51234bd040800000000000000
+      internalID: 4673402848923482621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 140
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cff87c28f65d1500800000000000000
+      internalID: 368546368412254153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 140
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84979eb893f7ffe10800000000000000
+      internalID: 2233643825336252744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 140
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e534aca6a5c8f66d0800000000000000
+      internalID: -2995020907211504802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 140
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0233bdb6f703a52c0800000000000000
+      internalID: -4442184758619065568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 140
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6228e4bd910f7bf0800000000000000
+      internalID: -324538871290781075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd57433f91369afb0800000000000000
+      internalID: -4636065378295581217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 105
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2798b25caf6bb9e70800000000000000
+      internalID: 9123086658335115634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 105
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9ad5a818eecf870800000000000000
+      internalID: 8718105218822023623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 105
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157ff8cd7d284be70800000000000000
+      internalID: 9130066208216840017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 105
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc855b1b2ac46910800000000000000
+      internalID: 1829809635110259960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 105
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d73cf098026bedd0800000000000000
+      internalID: -2455761382868764717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbdf7ec8c5e582b90800000000000000
+      internalID: -7266454247168279109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 70
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4909266c8dbafe20800000000000000
+      internalID: 3385226480629385549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 70
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991c4fe8091a8fc80800000000000000
+      internalID: -8288697471929630311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 70
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f107c8686ddc39940800000000000000
+      internalID: 5301807507609251871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 70
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5fb23c92b27b530800000000000000
+      internalID: 3870609863116322302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 70
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffcd5697802e74a70800000000000000
+      internalID: 8811259721997999359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 35
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a5fbbe8cf8fe080800000000000000
+      internalID: -9155941424309511543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 35
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2348cebd30e0a6fe0800000000000000
+      internalID: -1195127341376043982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_36
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 35
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c410e8b35e7fbfd10800000000000000
+      internalID: 2160593010173018444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_37
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 35
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81bef912a562ded0800000000000000
+      internalID: -2390736705285082739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6b1836b2e34e720800000000000000
+      internalID: 2874490818243180198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f301517524086930800000000000000
+      internalID: 4136560816601236464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 0
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f85dcf65e0444780800000000000000
+      internalID: -8699757226005538567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_41
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 0
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a903d18c4b2d920800000000000000
+      internalID: 3013669872240466545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_42
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 0
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a00324942681ca70800000000000000
+      internalID: 8845498634794631336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaboratoryPeople_sheet_43
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 0
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 433ccc35779e0bcf0800000000000000
+      internalID: -238434081534328012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

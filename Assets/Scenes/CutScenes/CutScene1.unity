@@ -411,7 +411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7bfb531d64073248bc4fd01d33ebe92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: level_1
+  nextSceneName: CutScene2
 --- !u!1 &819305928 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1308911548761686813, guid: 6d21ab7e28bdb9f40b1c58a35441caf0, type: 3}
