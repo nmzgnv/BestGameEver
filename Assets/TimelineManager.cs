@@ -9,7 +9,11 @@ public class TimelineManager : MonoBehaviour
 {
     [SerializeField]
     private string nextSceneName;
+    [SerializeField]
+    private string gameScene;
 
+    [SerializeField] private SceneChanger sceneChanger;
+    
     private PlayableDirector _director;
     void Start()
     {
@@ -20,5 +24,9 @@ public class TimelineManager : MonoBehaviour
     {
         if (_director.state == PlayState.Playing) return;
         SceneManager.LoadScene(nextSceneName);
+    }
+    
+    public void ChangeToGameScene(){
+        sceneChanger.ChangeScene(gameScene);
     }
 }
