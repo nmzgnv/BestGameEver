@@ -103,6 +103,9 @@ MonoBehaviour:
   smooth: 5
   shakeMagnitude: 0.7
   shakeDuration: 0.1
+  damageVignetteIntensity: 0.513
+  damageVignetteSmoothness: 0.361
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &7886585220487580644
 MonoBehaviour:
   m_ObjectHideFlags: 0
