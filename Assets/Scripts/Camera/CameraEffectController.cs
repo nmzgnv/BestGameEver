@@ -1,20 +1,12 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
-using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(PostProcessVolume))]
-public class CameraMovementController : MonoBehaviour
+public class CameraEffectController : MonoBehaviour
 {
     [SerializeField]
-    private Transform target;
-
-    [SerializeField]
-    private Vector3 offset = new Vector3(0, 0, -10);
-
-    [SerializeField]
-    private float smooth = 5;
+    private float shakeSmooth = 5;
 
     [SerializeField]
     private float shakeMagnitude = 0.7f;
@@ -36,12 +28,6 @@ public class CameraMovementController : MonoBehaviour
     private Color _defaultVignetteColor;
     private float _defaultDamageVignetteIntensity;
     private float _defaultDamageVignetteSmoothness;
-
-    public Transform Target
-    {
-        get => target;
-        set => target = value;
-    }
 
     private void Awake()
     {
@@ -83,11 +69,6 @@ public class CameraMovementController : MonoBehaviour
         _vignetteEffect.smoothness.value = _defaultDamageVignetteSmoothness;
     }
 
-    private float GetRandomMagnitude(float magnitude)
-    {
-        return Random.Range(-1f, 1f) * magnitude;
-    }
-
     private IEnumerator Shake(float secondsDuration, Vector2 force)
     {
         var elapsedTime = 0f;
@@ -95,19 +76,11 @@ public class CameraMovementController : MonoBehaviour
         {
             var originalPos = transform.position;
             var newPosition = transform.position + new Vector3(force.x, force.y, originalPos.z);
-            var lerpedPosition = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * smooth);
-            transform.position = lerpedPosition;
+            var lerpPosition = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * shakeSmooth);
+            transform.position = lerpPosition;
 
             elapsedTime += Time.deltaTime;
             yield return null;
         }
-    }
-
-    public void Update()
-    {
-        if (target == null)
-            return;
-        var newPosition = Vector3.Lerp(transform.position, target.position + offset, Time.deltaTime * smooth);
-        transform.position = newPosition;
     }
 }

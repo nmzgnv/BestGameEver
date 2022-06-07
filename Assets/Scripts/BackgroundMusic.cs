@@ -12,9 +12,13 @@ public class BackgroundMusic : MonoBehaviour
 
     private HashSet<string> _mutedSceneNames = new HashSet<string>();
 
-    private void Start()
+    private void Awake()
     {
         _mutedSceneNames = new HashSet<string>(mutedSceneNamesList);
+    }
+
+    private void Start()
+    {
         if (s_instance == null)
             s_instance = this;
         else
@@ -33,6 +37,7 @@ public class BackgroundMusic : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        Debug.Log($"{scene.name} {_mutedSceneNames.Contains(scene.name)}");
         gameObject.SetActive(!_mutedSceneNames.Contains(scene.name));
     }
 
