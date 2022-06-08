@@ -173,8 +173,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 100
+  m_AngularDrag: 100
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 1
@@ -258,6 +258,7 @@ MonoBehaviour:
   teleportCost: 300
   radiusToColliders: 0.15
   teleportRadiusCenter: {fileID: 6151342134973298577}
+  teleportTargetDownDelta: 0.4
 --- !u!114 &2045833673137278369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -466,6 +467,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 7359161395163832416}
   teleportDown: {fileID: 8300000, guid: e023f3ad1ef13dc428c5b20fcd46729a, type: 3}
+  teleportFailedSound: {fileID: 8300000, guid: 9889b6f9dd2b4f14c9ecd1ffc022b5a9, type: 3}
   teleportation: {fileID: 2045833673137278370}
 --- !u!1 &2638844964888767317
 GameObject:

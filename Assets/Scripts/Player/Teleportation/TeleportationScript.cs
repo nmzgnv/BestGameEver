@@ -29,8 +29,12 @@ public class TeleportationScript : MonoBehaviour
     [SerializeField]
     private Transform teleportRadiusCenter;
 
+    [SerializeField]
+    private float teleportDownDelta = 0;
+
     public event Action OnTeleportDown;
     public event Action OnTeleportUp;
+    public event Action OnTeleportFailed;
 
     // Не бейте, понятия не имею как без этих костылей делать... а так работает, а работает - не трогай
     // При телепорте запоминаем позицию куда хотели попасть, запускаем анимацию ухода
@@ -52,11 +56,14 @@ public class TeleportationScript : MonoBehaviour
         {
             var targetPos = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
             targetPos.z = transform.position.z;
+            targetPos.y -= teleportDownDelta;
+            if (!IsFree(targetPos, .25f))
+                targetPos.y += teleportDownDelta / 2;
 
             if (TryToTeleport(targetPos))
-            {
                 _teleportationDelay = cooldownToNextTeleport;
-            }
+            else
+                OnTeleportFailed?.Invoke();
         }
     }
 
@@ -86,9 +93,11 @@ public class TeleportationScript : MonoBehaviour
                (teleportRadiusCenter.position - position).magnitude < radius;
     }
 
-    private bool IsFree(Vector2 position)
+    private bool IsFree(Vector2 position, float radius = -1)
     {
-        return Physics2D.OverlapCircle(position, radiusToColliders) == null;
+        if (radius < 0)
+            radius = radiusToColliders;
+        return Physics2D.OverlapCircle(position, radius) == null;
     }
 
     private void OnDrawGizmos()
