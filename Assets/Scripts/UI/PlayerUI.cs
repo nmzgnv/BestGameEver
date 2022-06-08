@@ -13,9 +13,13 @@ public class PlayerUI : MonoBehaviour
     [SerializeField]
     private Slider manaSlider;
 
+    [SerializeField]
+    private Slider maxVisibleHealthSlider;
+
     private void RefreshHealth()
     {
         healthSlider.value = _playerHealth.Health;
+        maxVisibleHealthSlider.value = _playerHealth.MaxHealth;
     }
 
     private void RefreshMana()
@@ -29,7 +33,10 @@ public class PlayerUI : MonoBehaviour
         var player = FindObjectOfType<Player>();
         _playerHealth = player.GetComponent<PlayerHealth>();
         _manaController = player.GetComponent<ManaController>();
-        
+
+        maxVisibleHealthSlider.value = _playerHealth.MaxHealth;
+        healthSlider.value = healthSlider.value;
+
         _playerHealth.OnPlayerApplyHeal += RefreshHealth;
         _playerHealth.OnPlayerTakesDamage += RefreshHealth;
         _manaController.OnManaPointsChanged += RefreshMana;

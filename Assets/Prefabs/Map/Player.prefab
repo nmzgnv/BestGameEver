@@ -258,7 +258,7 @@ MonoBehaviour:
   teleportCost: 300
   radiusToColliders: 0.15
   teleportRadiusCenter: {fileID: 6151342134973298577}
-  teleportTargetDownDelta: 0.4
+  teleportDownDelta: 0.4
 --- !u!114 &2045833673137278369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,8 +322,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDead: 0
-  maxPossibleHealth: 12
-  maxHealth: 12
+  maxPossibleHealth: 6
+  maxHealth: 6
   invulnerableTime: 0.1
   destroyAfterSecs: 10
 --- !u!70 &1040212315

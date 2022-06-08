@@ -1900,6 +1900,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayingCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4514410575128876085, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514410575128876085, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4890666228525664148, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1915,6 +1923,10 @@ PrefabInstance:
     - target: {fileID: 7300612274488457258, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596479740964884706, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
