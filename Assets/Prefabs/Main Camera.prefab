@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7886585220487580440}
   - component: {fileID: 7886585220487580644}
   - component: {fileID: 7886585220487580647}
+  - component: {fileID: 1650208933}
   m_Layer: 11
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -101,11 +102,6 @@ MonoBehaviour:
   target: {fileID: 0}
   offset: {x: 0, y: 0, z: -10}
   smooth: 5
-  shakeMagnitude: 0.7
-  shakeDuration: 0.1
-  damageVignetteIntensity: 0.513
-  damageVignetteSmoothness: 0.361
-  damageColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &7886585220487580644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,3 +179,21 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   priority: 0
+--- !u!114 &1650208933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7886585220487580442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb2ca66641b53474aa779d7b783bf920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeSmooth: 5
+  shakeMagnitude: 0.7
+  shakeDuration: 0.1
+  damageVignetteIntensity: 0.513
+  damageVignetteSmoothness: 0.361
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
