@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public const int LimitHealth = 12;
     public event Action OnPlayerTakesDamage;
     public event Action OnPlayerApplyHeal;
     public event Action OnPlayerDie;
-    [HideInInspector] public bool IsDead;
-    
+
+    [HideInInspector]
+    public bool IsDead;
+
     [SerializeField]
+    [Range(1, LimitHealth)]
     private int maxPossibleHealth = 6;
 
     [SerializeField]
+    [Range(1, LimitHealth)]
     private int maxHealth = 3;
 
     [SerializeField]
@@ -65,7 +70,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void IncreaseMaxHealthAndHeal(int points = 1)
     {
-        maxHealth += points;
+        maxHealth = Math.Min(maxHealth + points, LimitHealth);
         _currentHealth = maxHealth;
         OnPlayerApplyHeal?.Invoke();
     }

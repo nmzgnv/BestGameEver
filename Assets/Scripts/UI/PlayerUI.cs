@@ -34,9 +34,6 @@ public class PlayerUI : MonoBehaviour
         _playerHealth = player.GetComponent<PlayerHealth>();
         _manaController = player.GetComponent<ManaController>();
 
-        maxVisibleHealthSlider.value = _playerHealth.MaxHealth;
-        healthSlider.value = healthSlider.value;
-
         _playerHealth.OnPlayerApplyHeal += RefreshHealth;
         _playerHealth.OnPlayerTakesDamage += RefreshHealth;
         _manaController.OnManaPointsChanged += RefreshMana;
@@ -44,7 +41,8 @@ public class PlayerUI : MonoBehaviour
 
     private void Start()
     {
-        healthSlider.maxValue = _playerHealth.MaxPossibleHealth;
+        healthSlider.maxValue = PlayerHealth.LimitHealth;
+        maxVisibleHealthSlider.maxValue = PlayerHealth.LimitHealth;
         RefreshHealth();
         RefreshMana();
     }
