@@ -540,7 +540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneName: CutScene2
-  gameScene: level_1
+  gameScene: level_8
   sceneChanger: {fileID: 384077458}
 --- !u!1 &819305928 stripped
 GameObject:

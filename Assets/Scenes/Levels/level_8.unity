@@ -414,7 +414,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossHealthBar
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8264282508856666168, guid: f72252eea4c22aa4fb838b20c9357b14, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f72252eea4c22aa4fb838b20c9357b14, type: 3}
 --- !u!224 &170756815 stripped
 RectTransform:
@@ -7590,6 +7591,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10a3eff7fa08cf84b98c378669342777, type: 3}
+--- !u!1 &891492601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8599090207055423517, guid: f72252eea4c22aa4fb838b20c9357b14, type: 3}
+  m_PrefabInstance: {fileID: 170756814}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &891492602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891492601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bdb0dde3d460594f99ab63e4872a7a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossHealth: {fileID: 344288299}
+  winZone: {fileID: 1812073406}
 --- !u!1001 &927143535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15069,7 +15089,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8599090207055423507, guid: f72252eea4c22aa4fb838b20c9357b14, type: 3}
   m_PrefabInstance: {fileID: 170756814}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 891492601}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
