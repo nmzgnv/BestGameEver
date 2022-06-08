@@ -320,6 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac681aac268ffbd42a9e294571bc3733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsDead: 0
   maxPossibleHealth: 12
   maxHealth: 12
   invulnerableTime: 0.1
@@ -337,8 +338,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008736134, y: 0.39}
-  m_Size: {x: 0.34, y: 0.83}
+  m_Offset: {x: -0.015561432, y: 0.47098047}
+  m_Size: {x: 0.51745874, y: 0.9919609}
   m_Direction: 0
 --- !u!114 &-4561939699064562268
 MonoBehaviour:
@@ -354,6 +355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _attackRadiusCenter: {fileID: 2045833672259659681}
   _bulletTarget: {fileID: 2045833671882388283}
+  _takeDamageSound: {fileID: 8300000, guid: a30d9f26db32c4b45b461f10aab84eb9, type: 3}
 --- !u!82 &7359161395163832416
 AudioSource:
   m_ObjectHideFlags: 0
