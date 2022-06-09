@@ -1225,6 +1225,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayingCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4514410575128876085, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514410575128876085, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890666228058940278, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
+      propertyPath: m_Value
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4890666228525664148, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1232,6 +1244,10 @@ PrefabInstance:
     - target: {fileID: 4890666228525664148, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949149794328813368, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
+      propertyPath: m_Value
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7300612274488457258, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1538,7 +1554,7 @@ Transform:
   m_LocalScale: {x: 1.7983, y: 1.8373, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1068739751
 GameObject:
@@ -14299,7 +14315,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1985180283
 PrefabInstance:
@@ -18332,7 +18348,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1929257957551008460, guid: 8f212702fe2816547b401a68d9ca1594, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1929257957551008460, guid: 8f212702fe2816547b401a68d9ca1594, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18431,6 +18447,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2045833673137278383, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
+      propertyPath: maxHealth
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045833673137278383, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
+      propertyPath: maxPossibleHealth
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2045833673137278395, guid: 4c212b00e8c161f40aaa1ec522110ffa, type: 3}
       propertyPath: m_Name
       value: Player
@@ -18450,7 +18474,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7300682056043052040, guid: 933744fb3246cb24dbe93f5ef3ab5c70, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7300682056043052040, guid: 933744fb3246cb24dbe93f5ef3ab5c70, type: 3}
       propertyPath: m_LocalPosition.x

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
@@ -16,13 +17,21 @@ public class ArrowToEnemy : MonoBehaviour
         _arrowImage = transform.GetChild(0).gameObject;
     }
 
+
+    private void Start()
+    {
+        if (_enemiesController.Enemies.Count == 0)
+            gameObject.SetActive(false);
+    }
+
     void Update()
     {
         var planes = GeometryUtility.CalculateFrustumPlanes(_camera);
 
         Enemy nearestEnemy = null;
         var minimalDistance = Mathf.Infinity;
-        foreach(var enemy in _enemiesController.Enemies)
+
+        foreach (var enemy in _enemiesController.Enemies)
         {
             float distance = (enemy.transform.position - _camera.transform.position).magnitude;
             if (distance < minimalDistance)
@@ -31,8 +40,9 @@ public class ArrowToEnemy : MonoBehaviour
                 nearestEnemy = enemy;
             }
         }
+
         if (nearestEnemy is null) return;
-        
+
         var toEnemy = nearestEnemy.transform.position - _camera.transform.position;
         toEnemy.z = 0;
         var ray = new Ray(_camera.transform.position, toEnemy);

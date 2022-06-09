@@ -11009,13 +11009,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1837919801182056773, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
-      propertyPath: nextSceneName
-      value: level_3
-      objectReference: {fileID: 0}
     - target: {fileID: 1837919801182056797, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
       propertyPath: m_Name
       value: PlayingCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514410575128876085, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514410575128876085, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4890666228525664148, guid: 1313d3fe9cf93764893c7fbacbaf633e, type: 3}
       propertyPath: m_AnchorMax.x
