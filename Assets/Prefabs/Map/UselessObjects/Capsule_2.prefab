@@ -11,7 +11,13 @@ GameObject:
   - component: {fileID: 777282557551833470}
   - component: {fileID: 7666944579410861264}
   - component: {fileID: 711260897101580352}
-  m_Layer: 0
+  - component: {fileID: 2016055590304780962}
+  - component: {fileID: 3867323424622842763}
+  - component: {fileID: 6974787826919202803}
+  - component: {fileID: 7971093231893185473}
+  - component: {fileID: 8437425139521772384}
+  - component: {fileID: 7667370512986592575}
+  m_Layer: 6
   m_Name: Capsule_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,3 +115,105 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.92992485, y: 0.36520386}
   m_EdgeRadius: 0
+--- !u!95 &2016055590304780962
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579216414733327409}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 70da8070201cb814cb2a7119332f2934, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3867323424622842763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579216414733327409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac681aac268ffbd42a9e294571bc3733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toDestroyAfterDeath: 0
+  IsDead: 0
+  maxPossibleHealth: 1
+  maxHealth: 1
+  invulnerableTime: 0
+  destroyAfterSecs: 1
+--- !u!50 &6974787826919202803
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579216414733327409}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &7971093231893185473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579216414733327409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fb2c175522f4a74983c99a7afdf47e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+--- !u!114 &8437425139521772384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579216414733327409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4dbe05f60ea81e40983803e0f0770ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActiveObject: 0
+  playerHealth: {fileID: 3867323424622842763}
+  playerAttack: {fileID: 0}
+  playerTeleport: {fileID: 0}
+--- !u!114 &7667370512986592575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579216414733327409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3945cc20dc662da46828d0e04ab7b70e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lootList: []
+  thingDropProbability: 0
+  playerHealth: {fileID: 3867323424622842763}

@@ -6,8 +6,9 @@ using UnityEngine;
 public class BossLevelController : MonoBehaviour
 {
     [SerializeField] private PlayerHealth bossHealth;
-    [SerializeField] private WinZoneController winZone;
-
+    [SerializeField] private SceneChanger sceneChanger;
+    [SerializeField] private string nextSceneName;
+    
     private void OnBossDied()
     {
         var enemies = FindObjectsOfType<Enemy>();
@@ -15,7 +16,16 @@ public class BossLevelController : MonoBehaviour
         {
             enemy.Health.ReceiveDamage(enemy.Health.Health);
         }
-        winZone.gameObject.SetActive(true);
+
+        if (sceneChanger != null)
+            StartCoroutine(ShowCutScene());
+    }
+
+    private IEnumerator ShowCutScene()
+    {
+        yield return new WaitForSeconds(2);
+        sceneChanger.ChangeScene(nextSceneName);
+        sceneChanger.gameObject.GetComponent<Animator>().speed = 0.1f;
     }
     
     private void Awake()

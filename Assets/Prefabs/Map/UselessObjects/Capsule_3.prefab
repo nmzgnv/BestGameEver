@@ -11,7 +11,13 @@ GameObject:
   - component: {fileID: 8640267672963773215}
   - component: {fileID: 7540028962563054245}
   - component: {fileID: 3552129012415626425}
-  m_Layer: 0
+  - component: {fileID: 1874919450814550669}
+  - component: {fileID: 488913935753962127}
+  - component: {fileID: 1481810909580320665}
+  - component: {fileID: 1736597155874797183}
+  - component: {fileID: 3129298275254872208}
+  - component: {fileID: 3499119324775860405}
+  m_Layer: 6
   m_Name: Capsule_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,3 +115,105 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.92992485, y: 0.36520386}
   m_EdgeRadius: 0
+--- !u!95 &1874919450814550669
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4612077748266664934}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0ae1bc37d534a7e4cba66d94f0537a86, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &488913935753962127
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4612077748266664934}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1481810909580320665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4612077748266664934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fb2c175522f4a74983c99a7afdf47e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+--- !u!114 &1736597155874797183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4612077748266664934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4dbe05f60ea81e40983803e0f0770ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActiveObject: 0
+  playerHealth: {fileID: 3129298275254872208}
+  playerAttack: {fileID: 0}
+  playerTeleport: {fileID: 0}
+--- !u!114 &3129298275254872208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4612077748266664934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac681aac268ffbd42a9e294571bc3733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toDestroyAfterDeath: 0
+  IsDead: 0
+  maxPossibleHealth: 1
+  maxHealth: 1
+  invulnerableTime: 0
+  destroyAfterSecs: 1
+--- !u!114 &3499119324775860405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4612077748266664934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3945cc20dc662da46828d0e04ab7b70e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lootList: []
+  thingDropProbability: 0
+  playerHealth: {fileID: 3129298275254872208}

@@ -15,6 +15,7 @@ public class PlayerAnimator : MonoBehaviour
     private readonly string teleportUpParameter = "TeleportUp";
     private readonly string teleportDownParameter = "TeleportDown";
 
+    public bool isActiveObject = true;
     [SerializeField] private PlayerHealth playerHealth;
     [SerializeField] private PlayerAttack playerAttack;
     [SerializeField] private TeleportationScript playerTeleport;
@@ -50,11 +51,14 @@ public class PlayerAnimator : MonoBehaviour
 
     private void Update()
     {
-        _animator.SetFloat(horizontalSpeedParameter, _physicsMovement.LastMoveDirection.x);
-        _animator.SetFloat(verticalSpeedParameter, _physicsMovement.LastMoveDirection.y);
-        _animator.SetFloat(horizontalViewParameter, _physicsMovement.LastViewDirection.x);
-        _animator.SetFloat(verticalViewParameter, _physicsMovement.LastViewDirection.y);
-        _animator.SetFloat(runAnimationParameter, _physicsMovement.LastMoveDirection.magnitude);
+        if (isActiveObject)
+        {
+            _animator.SetFloat(horizontalSpeedParameter, _physicsMovement.LastMoveDirection.x);
+            _animator.SetFloat(verticalSpeedParameter, _physicsMovement.LastMoveDirection.y);
+            _animator.SetFloat(horizontalViewParameter, _physicsMovement.LastViewDirection.x);
+            _animator.SetFloat(verticalViewParameter, _physicsMovement.LastViewDirection.y);
+            _animator.SetFloat(runAnimationParameter, _physicsMovement.LastMoveDirection.magnitude);
+        }
     }
 
     public void PlayAttackAnimation()

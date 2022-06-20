@@ -308,9 +308,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDead: 0
-  maxPossibleHealth: 6
+  maxPossibleHealth: 12
   maxHealth: 12
-  invulnerableTime: 10000
+  invulnerableTime: 0.1
   destroyAfterSecs: 10
 --- !u!114 &-4561939699064562268
 MonoBehaviour:
