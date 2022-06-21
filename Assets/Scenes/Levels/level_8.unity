@@ -2699,7 +2699,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 4
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2719,7 +2719,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 4
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2739,7 +2739,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 6
-      m_TileSpriteIndex: 6
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2879,7 +2879,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 2
-      m_TileSpriteIndex: 7
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3019,7 +3019,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 6
-      m_TileSpriteIndex: 6
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3074,8 +3074,6 @@ Tilemap:
     m_Data: {fileID: -6655378755476805309, guid: 8acf0409e25298046ac95453f9ec8c8b, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: -8208026720248119589, guid: 3105197c0244173489289885ba138ee2, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: -2599226767029253672, guid: 8acf0409e25298046ac95453f9ec8c8b, type: 3}
   - m_RefCount: 2
@@ -19224,11 +19222,15 @@ PrefabInstance:
       objectReference: {fileID: 1488518531}
     - target: {fileID: 1083671997911944734, guid: 19c7716ec2df10840baa5baa30454f3a, type: 3}
       propertyPath: maxHealth
-      value: 1
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083671997911944734, guid: 19c7716ec2df10840baa5baa30454f3a, type: 3}
+      propertyPath: destroyAfterSecs
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1083671997911944734, guid: 19c7716ec2df10840baa5baa30454f3a, type: 3}
       propertyPath: maxPossibleHealth
-      value: 1
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 1083671997911944735, guid: 19c7716ec2df10840baa5baa30454f3a, type: 3}
       propertyPath: audioSource
