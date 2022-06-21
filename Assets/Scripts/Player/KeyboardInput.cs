@@ -23,9 +23,13 @@ public class KeyboardInput : MonoBehaviour
     private void FixedUpdate()
     {
         if (!_gameManager.IsPlayerControlled) return;
-        var horizontal = Input.GetAxis(Axis.Horizontal);
-        var vertical = Input.GetAxis(Axis.Vertical);
-
+        var horizontal = 0;
+        var vertical = 0;
+        if (Input.GetKey(KeyCode.W)) vertical = 1;
+        else if (Input.GetKey(KeyCode.S)) vertical = -1;
+        if (Input.GetKey(KeyCode.D)) horizontal = 1;
+        else if (Input.GetKey(KeyCode.A)) horizontal = -1;
+        
         movement.Move(new Vector2(horizontal, vertical));
     }
 }
