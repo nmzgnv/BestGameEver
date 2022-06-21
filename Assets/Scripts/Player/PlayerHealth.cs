@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public bool toDestroyAfterDeath = true;
     public const int LimitHealth = 12;
     public event Action OnPlayerTakesDamage;
     public event Action OnPlayerApplyHeal;
@@ -92,7 +93,8 @@ public class PlayerHealth : MonoBehaviour
         foreach (Transform child in transform)
             Destroy(child.gameObject);
 
-        StartCoroutine(DestroyAfterDelay(destroyAfterSecs));
+        if(toDestroyAfterDeath)
+            StartCoroutine(DestroyAfterDelay(destroyAfterSecs));
     }
 
     private void ReceiveDamageIfBullet(GameObject other)
