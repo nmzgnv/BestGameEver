@@ -12026,6 +12026,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8163225412854015948, guid: 7b4cae4b6130e9f4497c23263e0ecb71, type: 3}
+      propertyPath: mutedSceneNamesList.Array.data[2]
+      value: CutScene3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163225412854015948, guid: 7b4cae4b6130e9f4497c23263e0ecb71, type: 3}
+      propertyPath: mutedSceneNamesList.Array.data[3]
+      value: level_8
+      objectReference: {fileID: 0}
     - target: {fileID: 8163225412854015949, guid: 7b4cae4b6130e9f4497c23263e0ecb71, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -12069,10 +12077,6 @@ PrefabInstance:
     - target: {fileID: 8163225412854015949, guid: 7b4cae4b6130e9f4497c23263e0ecb71, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8163225412854015950, guid: 7b4cae4b6130e9f4497c23263e0ecb71, type: 3}
-      propertyPath: m_Volume
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8163225412854015951, guid: 7b4cae4b6130e9f4497c23263e0ecb71, type: 3}
       propertyPath: m_Name

@@ -117,8 +117,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3500885809086755033}
   - component: {fileID: 3500885809086755037}
-  - component: {fileID: 3500885809086755027}
   - component: {fileID: 958594391963750408}
+  - component: {fileID: 971905359572109183}
   m_Layer: 6
   m_Name: HealthUpImprovement
   m_TagString: Untagged
@@ -158,55 +158,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac681aac268ffbd42a9e294571bc3733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  toDestroyAfterDeath: 1
   IsDead: 0
   maxPossibleHealth: 6
   maxHealth: 1
   invulnerableTime: 0
   destroyAfterSecs: 0.1
---- !u!60 &3500885809086755027
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3500885809086755026}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5733333, y: 0.522}
-    newSize: {x: 1.6, y: 1.6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.12608695, y: -0.008695652}
-      - {x: 0.060869563, y: 0.056521736}
-      - {x: 0.069565214, y: 0.11304347}
-      - {x: 0.07391304, y: 0.13913043}
-      - {x: 0.030434782, y: 0.18695651}
-      - {x: -0.034782607, y: 0.18695651}
-      - {x: -0.047826085, y: 0.17826086}
-      - {x: -0.07391304, y: 0.1521739}
-      - {x: -0.07391304, y: 0.117391296}
-      - {x: -0.056521736, y: 0.056521736}
-      - {x: -0.12608695, y: -0.013043478}
-      - {x: -0.1347826, y: -0.030434782}
-      - {x: -0.1347826, y: -0.11304347}
-      - {x: -0.13043478, y: -0.1347826}
-      - {x: -0.086956516, y: -0.18695651}
-      - {x: 0.07391304, y: -0.18695651}
-      - {x: 0.11304347, y: -0.1521739}
-      - {x: 0.1347826, y: -0.11304347}
-      - {x: 0.1347826, y: -0.034782607}
 --- !u!114 &958594391963750408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,3 +178,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   applySound: {fileID: 8300000, guid: 44d8670fff3778c4f83224fec912b0f3, type: 3}
   additionalHealth: 1
+--- !u!58 &971905359572109183
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3500885809086755026}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.02}
+  serializedVersion: 2
+  m_Radius: 0.41849586
