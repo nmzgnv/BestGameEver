@@ -51,14 +51,14 @@ public class WeaponAI : MonoBehaviour
         Debug.DrawLine(startPosition, hitFrom, Color.red); // ignored ray
         Debug.DrawLine(hitFrom, targetPosition, Color.blue);
         
-        var isPlayerVisible = hit.collider.GetComponent<PlayerAttack>() != null; // TODO change condition 
-
+        var isPlayerVisible = hit.collider.GetComponent<Player>() != null; // TODO change condition 
+        
         if (!isPlayerVisible)
             vectorToTarget = _initialTransform.position - startPosition;
-
+        
         _weapon.CanShoot = isPlayerVisible && vectorToTarget.magnitude > minShootRadius;
 
-        var speed = isPlayerVisible ? aimSpeed : restoreSpeed;
+        var speed = true ? aimSpeed : restoreSpeed;
         var angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg;
         var q = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * speed);

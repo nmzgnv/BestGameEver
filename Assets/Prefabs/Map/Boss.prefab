@@ -268,7 +268,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 1
+  m_SpriteSortPoint: 0
 --- !u!50 &1083671997911944723
 Rigidbody2D:
   serializedVersion: 4
@@ -420,11 +420,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac681aac268ffbd42a9e294571bc3733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  toDestroyAfterDeath: 1
   IsDead: 0
   maxPossibleHealth: 65
   maxHealth: 65
   invulnerableTime: 0.1
-  destroyAfterSecs: 5
+  destroyAfterSecs: 10
 --- !u!114 &1083671997911944721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -466,7 +467,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.010186136, y: 0.72257376}
+  m_Offset: {x: -0.010186136, y: 0.8177109}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -477,7 +478,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.618306, y: 0.8747406}
+  m_Size: {x: 1.618306, y: 0.8419342}
   m_EdgeRadius: 0
 --- !u!1 &1083671997950956721
 GameObject:
@@ -527,6 +528,10 @@ PrefabInstance:
     - target: {fileID: 4666251672936604357, guid: 626c436f20a4dbd4e8a2ac0243ee1040, type: 3}
       propertyPath: playOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666251672936604357, guid: 626c436f20a4dbd4e8a2ac0243ee1040, type: 3}
+      propertyPath: TriggerModule.enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4666251672936604357, guid: 626c436f20a4dbd4e8a2ac0243ee1040, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits

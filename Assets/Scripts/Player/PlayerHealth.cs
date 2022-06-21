@@ -93,7 +93,7 @@ public class PlayerHealth : MonoBehaviour
         foreach (Transform child in transform)
             Destroy(child.gameObject);
 
-        if(toDestroyAfterDeath)
+        if (toDestroyAfterDeath)
             StartCoroutine(DestroyAfterDelay(destroyAfterSecs));
     }
 
@@ -102,6 +102,12 @@ public class PlayerHealth : MonoBehaviour
         var bullet = other.GetComponent<BulletBase>();
         if (bullet)
             ReceiveDamage(bullet.Damage);
+    }
+
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        ReceiveDamageIfBullet(other.gameObject);
     }
 
     public void OnCollisionEnter2D(Collision2D other)
