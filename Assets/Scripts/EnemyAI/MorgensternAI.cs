@@ -100,12 +100,19 @@ public class MorgensternAI : BossAIBase
 
     private IEnumerator Loop()
     {
+        var possibleAttacks = new Func<IEnumerator>[]
+        {
+            SpawnEnemiesAttack,
+            AttackWithFreeze,
+            SimpleAttack,
+            SpawnEnemiesAttack,
+            SimpleAttack,
+        };
         while (true)
         {
             movementAI.CanMove = true;
             yield return new WaitForSeconds(movementSeconds);
             movementAI.CanMove = false;
-            var possibleAttacks = new Func<IEnumerator>[] {SimpleAttack, AttackWithFreeze, SpawnEnemiesAttack};
             var randomAttack = possibleAttacks[Random.Range(0, possibleAttacks.Length)];
             StartCoroutine(randomAttack());
             yield return new WaitForSeconds(secondsDelayAfterAttack);
