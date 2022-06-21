@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 7358321870197447343}
   - component: {fileID: 7358321870197447339}
   - component: {fileID: 7358321870197447334}
-  - component: {fileID: 7358321870197447333}
+  - component: {fileID: 1396336644846825067}
   m_Layer: 6
   m_Name: ManaRestorePotion
   m_TagString: Untagged
@@ -158,6 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac681aac268ffbd42a9e294571bc3733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  toDestroyAfterDeath: 1
   IsDead: 0
   maxPossibleHealth: 6
   maxHealth: 1
@@ -177,8 +178,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   applySound: {fileID: 8300000, guid: c614772846691a041ab1c50657c37139, type: 3}
   manaRestorePoints: 300
---- !u!60 &7358321870197447333
-PolygonCollider2D:
+--- !u!58 &1396336644846825067
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -190,34 +191,6 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 1.6, y: 1.6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.12608695, y: -0.008695652}
-      - {x: 0.060869563, y: 0.056521736}
-      - {x: 0.069565214, y: 0.11304347}
-      - {x: 0.07391304, y: 0.13913043}
-      - {x: 0.030434782, y: 0.18695651}
-      - {x: -0.034782607, y: 0.18695651}
-      - {x: -0.047826085, y: 0.17826086}
-      - {x: -0.07391304, y: 0.1521739}
-      - {x: -0.07391304, y: 0.117391296}
-      - {x: -0.056521736, y: 0.056521736}
-      - {x: -0.12608695, y: -0.013043478}
-      - {x: -0.1347826, y: -0.030434782}
-      - {x: -0.1347826, y: -0.11304347}
-      - {x: -0.13043478, y: -0.1347826}
-      - {x: -0.086956516, y: -0.18695651}
-      - {x: 0.07391304, y: -0.18695651}
-      - {x: 0.11304347, y: -0.1521739}
-      - {x: 0.1347826, y: -0.11304347}
-      - {x: 0.1347826, y: -0.034782607}
+  m_Offset: {x: 0.04, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.39
